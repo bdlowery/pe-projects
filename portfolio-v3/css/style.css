@@ -1,0 +1,117 @@
+/* RESET */
+@import "meyer-reset.css";
+@import "setup.css";
+
+/* @import 'developer-styles.css';  */
+/* comment this ^ out - when you are ready */
+
+/* SETTINGS */
+@import "settings.css"; /* variables/ etc */
+
+/* STRUCTURE */
+@import "structure.css";
+
+/* TYPOGRAPHY */
+@import "typography.css";
+
+/* COMPONENTS */
+@import "components.css";
+
+/* MODULES */
+@import "modules/masthead.css";
+@import "modules/graphic-diptych.css";
+@import "modules/call-to-action.css";
+@import "modules/articles-intro.css";
+@import "modules/article-card.css";
+@import "modules/site-map.css";
+/* should everything/nothing be in it's own file? */
+
+html {
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+/*
+	This the area where you work out your styles 
+	If it makes sense, you can break these out into their own files.
+*/
+
+/* SITE SECTIONS */
+
+/* .site-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+} */
+
+/* OK! SITE STYLES! */
+
+/* eventually this will be black */
+/* body {
+  background-color: var(--black);
+} */
+
+header {
+  background-color: var(--black);
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  width: 1700px;
+  height: 400px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-image: url(../images/stars.svg);
+}
+
+/* things kinda just start grouping up... and you'll know when something should be grouped into another file - most of the time */
+
+.get-involved {
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+} /* interesting way to include the whole image in your CSS */
+
+.get-involved::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.help-us {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.help-us::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.site-footer {
+  background-color: var(--light-accent);
+}
+
+.footer-header {
+  color: var(--black);
+}

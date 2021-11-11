@@ -1,0 +1,53 @@
+mast-head {
+  display: block;
+}
+
+mast-head nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+mast-head .logo {
+  max-width: 60px;
+}
+
+mast-head a {
+  padding: 10px;
+}
+
+mast-head .site-menu a {
+  position: relative;
+}
+
+mast-head .button {
+  padding: 10px 15px;
+}
+
+mast-head .site-menu a:nth-of-type(2n)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color);
+}
+
+.couple mast-head .site-menu a:nth-of-type(2n)::after {
+  background-color: var(--dark-accent);
+}
+
+.couple mast-head .button {
+  padding: 10px 20px;
+}
+
+@media (min-width: 600px) {
+  mast-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

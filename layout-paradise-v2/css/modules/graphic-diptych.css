@@ -1,0 +1,91 @@
+graphic-diptych {
+  display: block;
+}
+
+graphic-diptych {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+graphic-diptych text-content {
+  display: block;
+  position: relative;
+  max-width: 74ch;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+graphic-diptych text-content::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../../icons/tree.svg);
+  background-repeat: no-repeat;
+}
+
+graphic-diptych text-content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -15px;
+  left: 0;
+  border-bottom: 1px solid var(--color);
+}
+
+graphic-diptych picture + text-content {
+  margin-top: 80px;
+}
+
+.couple graphic-diptych text-content::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../../icons/couple-flower.svg);
+  background-repeat: no-repeat;
+}
+
+.couple graphic-diptych text-content::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  top: 0px;
+  left: 0;
+  border-bottom: none;
+}
+
+@media (min-width: 600px) {
+  graphic-diptych text-content::before {
+    width: 40px;
+    height: 40px;
+    top: -65px;
+  }
+
+  graphic-diptych text-content::after {
+    top: -25px;
+  }
+
+  graphic-diptych picture + text-content {
+    margin-top: 100px;
+  }
+
+  .couple graphic-diptych text-content::before {
+    width: 50px;
+    height: 50px;
+    top: -83px;
+  }
+
+  .couple graphic-diptych picture + text-content {
+    margin-top: 120px;
+  }
+}

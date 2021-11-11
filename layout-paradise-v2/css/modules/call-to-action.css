@@ -1,0 +1,159 @@
+call-to-action {
+  display: block;
+  position: relative;
+  /* */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+/* call-to-action h2::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  border-bottom: 1px solid var(--color);
+} */
+
+call-to-action a {
+  font-family: "Work Sans";
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+call-to-action .calm-voice {
+  font-size: 18px;
+}
+
+call-to-action p {
+  max-width: 60ch;
+}
+
+.couple call-to-action {
+  position: relative;
+  /* */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--black);
+
+  z-index: 1;
+}
+
+.couple .text-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 37.5%;
+  background-color: var(--couple-accent);
+  padding: 40px 40px 0px 40px;
+  z-index: 1;
+}
+
+.couple .text-content::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--couple-accent);
+  z-index: -1;
+}
+
+.couple call-to-action picture {
+  max-width: 600px;
+  z-index: 1;
+}
+
+.couple .get-involved inner-column {
+  position: relative;
+}
+
+.couple call-to-action .text-content .button {
+  margin-bottom: 50px;
+}
+
+/* .couple .get-involved inner-column::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 0px;
+  padding-bottom: 35%;
+  top: 50px;
+  right: 0px;
+  background-image: url("../../images/couple-call-to-action-1.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+} */
+
+@media (min-width: 1000px) {
+  .couple call-to-action {
+    position: relative;
+    /* */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--black);
+
+    z-index: 1;
+  }
+
+  .couple call-to-action::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    background-color: var(--couple-accent);
+    z-index: -1;
+  }
+
+  .couple call-to-action picture img {
+    opacity: 0;
+  }
+  .couple call-to-action picture {
+    transform: translateY(70px);
+    max-width: none;
+    height: 0px;
+    padding-bottom: 40%;
+    background-image: url("../../images/couple-call-to-action-1.jpg");
+    background-size: cover;
+    background-position: center;
+    flex-basis: 62.5%;
+  }
+
+  .couple call-to-action .text-content {
+    align-items: flex-start;
+    padding: 40px 20px 40px 40px;
+  }
+
+  .couple .text-content::before {
+    width: 0px;
+    height: 0px;
+  }
+
+  .couple call-to-action .text-content .button {
+    margin-bottom: 0px;
+  }
+
+  .couple .help-us call-to-action {
+    flex-direction: row-reverse;
+  }
+
+  .couple .help-us call-to-action picture {
+    background-image: url("../../images/couple-call-to-action-2.jpg");
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Super Responsive Layout</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container nav-flex">
+          <img class="logo" src="./images/apollo-logo.png" alt="Apollo logo" />
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="#gene-cernan">Gene Cernan</a></li>
+            <li class="nav-list-item"><a href="#ronald-evans">Ronald Evans</a></li>
+            <li class="nav-list-item"><a href="#harrison-schmitt">Harrison Schmitt</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-flex">
+            <div class="hero-image">
+              <img src="./images/apollo-17-launch.jpg" alt="Apollo 17 launch" />
+            </div>
+
+            <div class="hero-text">
+              <p>
+                Apollo 17 was the last mission in which humans traveled to the Moon, and remains the
+                most recent time humans have traveled beyond low Earth orbit. It was distinguished
+                by extended hardware capability, larger scientific payload capacity and the use of
+                the battery-powered Lunar Roving Vehicle.
+              </p>
+              <p>
+                Its crew consisted of Commander
+                <a class="hero-link" href="#gene-cernan">Eugene Cernan</a>, Lunar Module Pilot
+                <a class="hero-link" href="#harrison-schmitt">Harrison Schmitt</a>, and Command
+                Module Pilot <a class="hero-link" href="#ronald-evans">Ronald Evans</a>, and it
+                carried a biological experiment containing five mice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="astronaut-info">
+        <div class="container">
+          <div class="astronaut-info-flex">
+            <div id="gene-cernan" class="astronaut-card">
+              <div class="astronaut-headshot">
+                <img
+                  class="astronaut-image"
+                  src="./images/gene-cernan3.png"
+                  alt="Gene Cernan Headshot Photo"
+                />
+              </div>
+              <div class="astronaut-text">
+                <h2>Gene Cernan</h2>
+                <p>
+                  Eugene Andrew Cernan was an American astronaut, naval aviator, electrical
+                  engineer, aeronautical engineer, and fighter pilot. During the Apollo 17 mission,
+                  Cernan became the eleventh person to walk on the Moon.
+                </p>
+                <form action="https://www.hq.nasa.gov/alsj/a17/a17.crew.html#genebio">
+                  <button class="astronaut-button" type="submit">More about Gene Cernan</button>
+                </form>
+              </div>
+            </div>
+            <div id="ronald-evans" class="astronaut-card">
+              <div class="astronaut-headshot">
+                <img
+                  class="astronaut-image"
+                  src="./images/ronald-evans3.png"
+                  alt="Ronald Evans Headshot Photo"
+                />
+              </div>
+              <div class="astronaut-text">
+                <h2>Ronald Evans</h2>
+                <p>
+                  Ronald Ellwin Evans Jr. was an American naval officer and aviator, electrical
+                  engineer, aeronautical engineer, and NASA astronaut. As command module pilot on
+                  Apollo 17 he was one of the 24 astronauts to have flown to the Moon.
+                </p>
+                <form action="https://www.hq.nasa.gov/alsj/a17/a17.crew.html#genebio">
+                  <button class="astronaut-button" type="submit">More about Ronald Evans</button>
+                </form>
+              </div>
+            </div>
+            <div id="harrison-schmitt" class="astronaut-card">
+              <div class="astronaut-headshot">
+                <img
+                  class="astronaut-image"
+                  src="./images/harrison-schmitt.png"
+                  alt="Harrison Schmitt Headshot"
+                />
+              </div>
+              <div class="astronaut-text">
+                <h2>Harrison Schmitt</h2>
+                <p>
+                  Harrison Hagan "Jack" Schmitt is an American geologist, retired NASA astronaut,
+                  university professor, former U.S. senator from New Mexico, and the most recent
+                  person still living to have walked on the Moon.
+                </p>
+                <form action="https://www.hq.nasa.gov/alsj/a17/a17.crew.html#jackbio">
+                  <button class="astronaut-button" type="submit">
+                    More about Harrison Schmitt
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <ul class="footer-nav">
+          <li>
+            <a href="https://www.hq.nasa.gov/alsj/a17/a17.html">Apollo 17 Lunar Surface Journal</a>
+          </li>
+          <li><a href="https://www.hq.nasa.gov/alsj/a17/images17.html">Apollo 17 Images</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

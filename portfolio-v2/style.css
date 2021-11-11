@@ -1,0 +1,241 @@
+@import "meyer-reset.css";
+@import "setup.css";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue"), local("Helvetica-Neue"),
+    local("HelveticaNeue-Regular") url(fonts/HelveticaNeue-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: local("HelveticaNeue-Bold"), local("HelveticaNeueBold"), url(fonts/HelveticaNeue-Bold.otf);
+  font-weight: 700;
+}
+
+html {
+  background-color: #f1f2f2;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.portfolio {
+  padding-bottom: 250px;
+}
+
+.loud-voice {
+  font-family: "Helvetica Neue Bold", sans-serif;
+  font-size: clamp(50px, 10vw, 72px);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.attention-voice {
+  font-family: "Helvetica Neue Bold", Helvetica, sans-serif;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.neutral-voice {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.quiet-voice {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+p + p {
+  margin-top: 30px;
+}
+
+h1 + p {
+  margin-top: 60px;
+}
+
+h2 + p {
+  margin-top: 30px;
+}
+
+h1 + .card {
+  margin-top: 35px;
+}
+
+.inner-column {
+  max-width: 1100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+::selection {
+  background: #111111;
+  color: #f1f2f2;
+}
+
+p a {
+  color: #111111;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  padding: 2px;
+}
+
+p a:hover {
+  color: #f1f2f2;
+  background-color: #111111;
+}
+
+.logo {
+  max-width: 600px;
+}
+
+.landing-text {
+  max-width: 78ch;
+}
+
+.highlight {
+  color: #c8335d;
+}
+
+.portfolio-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 25px;
+  margin-top: 50px;
+}
+
+.portfolio .loud-voice {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.portfolio .loud-voice::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #c8335d;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border: 4px solid black;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.card-links {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.joyfully-clean {
+  background-image: url("./images/joyfully-clean.jpg");
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: top;
+}
+
+.layout-in-paradise {
+  background-image: url("./images/layout-in-paradise.jpg");
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: top;
+}
+
+.card-text .neutral-voice {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.card-picture + .card-text {
+  margin-top: 30px;
+}
+
+.card-text + .card-links {
+  margin-top: 30px;
+}
+
+.card-text h2 + p {
+  margin-top: 12.5px;
+}
+
+.card:hover {
+}
+
+.button-solid,
+.button-transparent {
+  display: inline-block;
+  font-family: "Helvetica Neue Bold", Helvetica, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.button-solid {
+  background-color: #111111;
+  color: #f1f2f2;
+  border: 4px solid transparent;
+}
+
+.button-transparent {
+  border: 4px solid #111111;
+}
+
+.button-solid + .button-transparent {
+  margin-left: 12.5px;
+}
+
+.button-solid:hover {
+  border: 4px solid #111111;
+  background-color: #f1f2f2;
+  color: #111111;
+}
+
+.button-transparent:hover {
+  background-color: #111111;
+  color: #f1f2f2;
+  border: 4px solid transparent;
+}
+
+.card .quiet-voice {
+  font-size: 16px;
+  max-width: 45ch;
+}
+
+@media (min-width: 390px) {
+}

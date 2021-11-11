@@ -1,0 +1,77 @@
+body {
+  background-color: rgba(67, 183, 255, 0.4);
+  font-size: 18px;
+  margin: 0;
+}
+
+.inner-column {
+  max-width: 750px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a {
+  margin-right: 10px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 10px;
+
+  color: salmon;
+}
+
+header,
+footer {
+  background-color: rgba(67, 183, 255, 0.6);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  color: aquamarine;
+}
+
+h2 {
+  color: violet;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Helvetica;
+  max-width: 54ch;
+}
+
+.color-one {
+  color: yellow;
+}
+
+.color-two {
+  color: tomato;
+}
+
+.color-three {
+  color: thistle;
+}
+
+.color-four {
+  color: wheat;
+}
+
+.color-five {
+  color: red;
+}
+
+.landing {
+  background-color: rgba(67, 183, 255, 1);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 3px solid black;
+}

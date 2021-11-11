@@ -1,0 +1,60 @@
+body {
+  background-color: rgba(67, 183, 255, 0.4);
+  font-size: 18px;
+  margin: 0;
+}
+
+.inner-column {
+  max-width: 750px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header,
+footer {
+  background-color: rgba(67, 183, 255, 0.6);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+ol {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.landing {
+  background-color: rgba(67, 183, 255, 1);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border: 3px solid black;
+}

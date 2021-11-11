@@ -1,0 +1,134 @@
+@import "meyer-reset.css";
+@import "setup.css";
+
+.inner-column {
+  max-width: 1200px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.landing {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 80vh;
+}
+
+.where-to-watch {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-top: 5px solid #444;
+  border-bottom: 5px solid #444;
+}
+
+.downloading {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-top: 5px solid #444;
+  border-bottom: 5px solid #444;
+}
+
+.loud-voice + .calm-voice {
+  margin-top: 15px;
+}
+
+.calm-voice + p {
+  margin-top: 20px;
+}
+
+html {
+  background-color: #000;
+}
+
+.loud-voice {
+  font-family: Helvetica;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.calm-voice {
+  font-family: Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+picture {
+  max-width: 540px;
+}
+
+.logo {
+  color: #fff;
+}
+
+.site-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing {
+  background-color: #111;
+}
+
+.landing-text h1 {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.where-to-watch-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.where-to-watch-text {
+  max-width: 64ch;
+}
+
+picture + .where-to-watch-text {
+  margin-right: 70px;
+}
+
+.downloading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.downloading-text {
+  max-width: 550px;
+}
+
+picture + .downloading-text {
+  margin-left: 70px;
+}

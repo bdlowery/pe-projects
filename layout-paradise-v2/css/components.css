@@ -1,0 +1,40 @@
+/* COMPONENTS */
+.button {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  /* should a link look like a "button" though? */
+  display: inline-block;
+  border: 1px solid var(--color);
+  background-color: var(--color);
+  padding: 15px 25px;
+  text-decoration: none;
+  font-family: "Work Sans";
+  transition: 0.25s ease-in-out;
+}
+
+.button:hover {
+  color: var(--color);
+  background-color: var(--white);
+  transition: 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+.couple .button {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 14px;
+  border: 1px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.couple .button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* .arrow {
+  /* maybe icons in here? Any reusable smaller things
+} */

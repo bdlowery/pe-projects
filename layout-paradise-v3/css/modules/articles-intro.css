@@ -1,0 +1,21 @@
+articles-intro {
+  display: block;
+}
+
+articles-intro header {
+  margin-bottom: 30px;
+}
+
+articles-intro article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 25px;
+}
+
+articles-intro .calm-voice {
+  max-width: 64ch;
+}
+
+articles-intro header h2 + p {
+  margin-top: 15px;
+}

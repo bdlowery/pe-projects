@@ -1,0 +1,341 @@
+@import "meyer-reset.css";
+@import "./setup.css";
+
+p {
+  line-height: 1.7;
+}
+
+.site-menu li {
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
+.loud-voice {
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.calm-voice {
+  font-family: Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.neutral-voice {
+  font-family: Helvetica;
+  font-size: 23px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.loud-voice + .calm-voice {
+  margin-top: 15px;
+}
+
+.masthead {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.masthead {
+  background-color: #ffffff;
+}
+
+.landing {
+  position: relative;
+  background-color: #ff001f;
+  overflow: hidden;
+}
+
+.information {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer {
+  background-color: #ac0316;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.burger,
+.fries {
+  display: none;
+}
+
+.inner-column {
+  max-width: 900px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.site-menu li + li {
+  margin-left: 10px;
+}
+
+.menu-link {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 2px;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo + .menu-list {
+  margin-left: 20px;
+}
+
+.landing-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-image {
+  max-width: 300px;
+}
+
+.landing-text {
+  color: #ffffff;
+  max-width: 440px;
+}
+
+.landing-image + .landing-text {
+  margin-top: 20px;
+}
+
+.information-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.information-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 400px;
+}
+
+.info-image {
+  max-width: 100px;
+}
+
+.info-image img {
+  border-radius: 50%;
+}
+
+.information-card + .information-card {
+  margin-top: 50px;
+}
+
+.solid-button {
+  font-size: 16px;
+  font-family: Helvetica;
+  text-decoration: underline;
+}
+
+.information-card h2 + p {
+  margin-top: 15px;
+}
+.information-card p + a {
+  margin-top: 15px;
+}
+
+picture + .information-card-text {
+  margin-top: 15px;
+}
+
+.site-footer .site-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer .menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  align-items: flex-start;
+}
+
+.site-footer .site-menu .logo + .menu-list {
+  margin-top: 15px;
+}
+
+.site-footer li + li {
+  margin-left: 0;
+}
+
+.site-footer {
+  color: #ffffff;
+}
+
+@media (min-width: 500px) {
+  .information-card {
+    z-index: 1;
+  }
+  .information .burger {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    bottom: -60px;
+    right: -90px;
+  }
+
+  .landing-text {
+    flex-basis: 50%;
+  }
+
+  .landing-image {
+    flex-basis: 50%;
+  }
+
+  .landing-flex-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landing-image + .landing-text {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .information-card {
+    flex-direction: row;
+    align-items: center;
+    max-width: 450px;
+  }
+
+  .info-image {
+    max-width: 100px;
+  }
+
+  picture + .information-card-text {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .site-footer .menu-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-footer .site-menu {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-footer .site-menu .logo + .menu-list {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .site-footer li + li {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .landing-image,
+  .landing-text {
+    z-index: 1;
+  }
+  .landing .burger {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    left: -50px;
+    bottom: -30px;
+  }
+
+  .landing .fries {
+    display: block;
+    position: absolute;
+    bottom: -80px;
+    right: 90px;
+    opacity: 0.4;
+  }
+
+  .information .burger {
+    bottom: -30px;
+    right: -50px;
+  }
+
+  .information .inner-column {
+    max-width: 950px;
+  }
+  .information-flex-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .information-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 450px;
+  }
+
+  picture + .information-card-text {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .information-card + .information-card {
+    margin-top: 0;
+    margin-left: 90px;
+  }
+
+  .solid-button {
+    display: inline-block;
+    background-color: #ff001f;
+    padding: 12px 40px 12px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid transparent;
+  }
+
+  .solid-button:hover {
+    border: 2px solid #ff001f;
+    background-color: #ffffff;
+    color: #ff001f;
+  }
+}

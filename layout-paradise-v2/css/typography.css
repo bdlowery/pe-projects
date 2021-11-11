@@ -1,0 +1,106 @@
+.loud-voice {
+  font-family: "Playfair Display";
+  font-size: clamp(36px, 6vw, 50px);
+  line-height: 1.2;
+}
+@media (min-width: 600px) {
+  /* .loud-voice {
+    font-weight: 700;
+  } */
+}
+
+.intro-voice {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.attention-voice {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.neutral-voice {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.calm-voice {
+  font-family: "Work Sans";
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+p + p {
+  margin-top: 15px;
+}
+
+h1 + p {
+  margin-top: 30px;
+}
+
+h2 + p {
+  margin-top: 30px;
+}
+
+article-card .calm-voice {
+  line-height: 1.5;
+}
+
+.couple .loud-voice {
+  font-family: "Times New Roman", sans-serif;
+  font-size: clamp(25px, 6vw, 35px);
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.couple .calm-voice {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.couple .intro-voice {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.couple .attention-voice {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.couple .neutral-voice {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.couple article-card .calm-voice {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.couple .footer-header .attention-voice {
+  max-width: 50ch;
+}

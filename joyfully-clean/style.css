@@ -1,0 +1,469 @@
+@import "meyer-reset.css";
+@import "setup.css";
+* {
+  box-sizing: border-box;
+}
+
+/* "SETUP" (this would be site-wide) */
+picture {
+  display: block;
+  /* it's inline by default for some reason */
+}
+
+picture img {
+  display: block;
+  /* it's inline-block by default */
+  width: 100%;
+  height: auto;
+  /* allow it to fully fill it's parent element! */
+}
+
+/* GLOBAL LINKS RESET/SETUP*/
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  /* remove default link styles */
+  /* set links to be blocks so you can wrap thing */
+  /* inline elements can't have block elements inside! */
+}
+
+p a {
+  /* "all links in paragraphs..." */
+  display: inline-block;
+  text-decoration: underline;
+  color: blue; /* put back styles for normal links */
+}
+/* yes! you might also want to do this for other headings and list items etc --- this is just a basic use-case */
+
+h1 {
+  font-family: "Cormorant Garamond", Serif;
+  font-size: 120px;
+  color: #ffffff;
+
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.07em;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", Serif;
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+p {
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5f6c7b;
+}
+
+li {
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.testimonial h2,
+.about-us h2,
+.services h2 {
+  color: #094067;
+}
+
+h3 + ul {
+  margin-top: 10px;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.landing p {
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.landing-text p {
+  text-shadow: 0px 0.5px #000;
+}
+
+.inner-column {
+  max-width: 900px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/landingv3-flipped.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+}
+
+.landing-text p:nth-of-type(2) {
+  max-width: 400px;
+}
+
+.landing-text p + p {
+  margin-top: 15px;
+}
+
+.button-solid {
+  display: inline-block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  color: #ffffff;
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  border: 2px solid #3da9fc;
+  background-color: #3da9fc;
+  border-radius: 20px;
+}
+
+.button-transparent {
+  display: inline-block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+
+.landing-text .button-solid,
+.landing-text .button-transparent {
+  margin-top: 30px;
+}
+
+.button-solid:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #3da9fc;
+}
+
+.button-transparent:hover {
+  border: 2px solid #094067;
+  background-color: #094067;
+  color: #ffffff;
+}
+
+h1 + p {
+  margin-top: 30px;
+}
+
+.landing-text .button-solid + .button-transparent {
+  margin-left: 20px;
+}
+
+.about-us .inner-column {
+  text-align: center;
+}
+
+.about-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-image {
+  max-width: 200px;
+  background-color: #d8eefe;
+}
+
+.about-image + .about-image {
+  margin-left: 30px;
+}
+
+.about-text {
+  text-align: center;
+  max-width: 66ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text p + p {
+  margin-top: 10px;
+}
+
+.about-image-container + .about-text,
+h2 + .about-image-container {
+  margin-top: 30px;
+}
+
+.testimonial {
+  background-color: #d8eefe;
+}
+
+.testimonial h2 {
+  text-align: center;
+}
+
+.testimonial-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+  justify-items: center;
+}
+
+h2 + .testimonial-grid-container {
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* breaks grid 
+  max-width: 400px;
+  */
+
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #fffffe;
+
+  box-shadow: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.stars {
+  max-width: 60px;
+}
+
+.products-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.product-card p {
+  max-width: 30ch;
+}
+
+.product-card picture {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64px;
+  border-radius: 50%;
+}
+
+.product-card + .product-card {
+  margin-left: 20px;
+}
+
+.product-card h3 + p {
+  margin-top: 10px;
+}
+
+.product-card picture + h3 {
+  margin-top: 20px;
+}
+
+.service-card picture {
+  background-size: cover;
+  background-position: center;
+  height: 0;
+  padding-bottom: 60%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.card-one {
+  background-image: url(https://i.imgur.com/a7fGZb8.jpg);
+}
+
+.card-two {
+  background-image: url(https://i.imgur.com/Um48lkk.jpg);
+}
+
+.card-three {
+  background-image: url(https://i.imgur.com/nfCQuI8.jpg);
+}
+
+/* .service-card picture img {
+
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+} */
+
+h2 + .services-container {
+  margin-top: 30px;
+}
+
+.services {
+  background-color: #d8eefe;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card {
+  background-color: #fffffe;
+  border-radius: 5px;
+  width: 300px;
+
+  box-shadow: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.service-card-text {
+  padding: 20px;
+}
+
+.service-card-bottom {
+  display: inline-block;
+
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.service-card-button {
+  display: inline-block;
+  color: #d8eefe;
+  background-color: #094067;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.service-card li {
+  color: #5f6c7b;
+}
+
+.service-card h3 {
+  color: #094067;
+}
+
+.service-card + .service-card {
+  margin-top: 20px;
+}
+
+.service-card li + li {
+  margin-top: 10px;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+footer h2 {
+  color: #094067;
+  letter-spacing: 0.07em;
+}
+
+footer picture {
+  width: 32px;
+}
+
+.footer-row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 + .footer-social {
+  margin-top: 30px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social picture + picture {
+  margin-left: 10px;
+}
+
+@media (min-width: 700px) {
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .service-card + .service-card {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .footer-row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h2 + .footer-social {
+    margin-top: 0px;
+  }
+
+  .footer-social picture + picture {
+    margin-left: 20px;
+  }
+}
