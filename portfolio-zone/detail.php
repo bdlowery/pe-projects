@@ -23,6 +23,7 @@ foreach ($myWorkPersonal as $personalProject) {
         <?= $detail["name"] ?>
       </h1>
       <p><?= $detail["description"]  ?></p>
+      <p></p>
     </div>
   </header>
 
