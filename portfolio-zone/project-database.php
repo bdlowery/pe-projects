@@ -1,29 +1,10 @@
 <?php
 
-$projectsHomepage = [
-  [
-    "name" => "Layout in Paradise",
-    "image" => "https://peprojects.dev/images/landscape.jpg",
-    "tools" => "HTML, CSS, Responsive Design",
-    "type" => "Side Projects",
-  ],
-  [
-    "name" => "SoftSeaweed",
-    "image" => "https://peprojects.dev/images/landscape.jpg",
-    "tools" => "HTML, CSS, Figma Design, Responsive",
-    "type" => "Client Work",
-  ],
-  [
-    "name" => "Joyfully Clean",
-    "image" => "https://peprojects.dev/images/landscape.jpg",
-    "tools" => "HTML, CSS, Responsive Design, Goal driven",
-    "type" => "Client Work",
-  ]
-];
-
-$myWorkPersonal = [
+$projectData = [
   [
     "id" => "layout-in-paradise",
+    "projectType" => "personal",
+    "featured" => true,
     "name" => "Layout in Paradise",
     "image" => "https://peprojects.dev/images/landscape.jpg",
     "tools" => "HTML, CSS, PHP, PHP Themeing",
@@ -31,6 +12,8 @@ $myWorkPersonal = [
   ],
   [
     "id" => "bookmarkly",
+    "projectType" => "personal",
+    "featured" => false,
     "name" => "Bookmarkly",
     "image" => "https://peprojects.dev/images/landscape.jpg",
     "tools" => "HTML, CSS, Javascript",
@@ -38,16 +21,17 @@ $myWorkPersonal = [
   ],
   [
     "id" => "super-ultra-responsive",
+    "projectType" => "personal",
+    "featured" => false,
     "name" => "Super Ultra Responsive",
     "image" => "https://peprojects.dev/images/landscape.jpg",
     "tools" => "HTML, CSS, Mobile first, Responsive Design",
     "description" => "A barebones responsive website using media queries and flexbox. Works on any screen size.",
-  ]
-];
-
-$myWorkClient = [
+  ],
   [
     "id" => "joyfully-clean",
+    "projectType" => "client",
+    "featured" => true,
     "name" => "Joyfully Clean",
     "image" => "https://peprojects.dev/images/landscape.jpg",
     "tools" => "HTML, CSS, Goal Driven Development",
@@ -56,19 +40,34 @@ $myWorkClient = [
   ],
   [
     "id" => "softseaweed",
+    "projectType" => "client",
+    "featured" => true,
     "name" => "Softseaweed",
     "image" => "https://peprojects.dev/images/landscape.jpg",
     "tools" => "HTML, CSS, Goal Driven Development",
     "description" => "A SaaS company wanted to get seaweed farmers excited about their upcoming product.",
-  ]
-];
-
-$myWorkExperiments = [
+  ],
   [
     "id" => "arrow-animation",
+    "projectType" => "experiments",
+    "featured" => false,
     "name" => "Arrow Animation",
     "image" => "https://peprojects.dev/images/landscape.jpg",
     "tools" => "GSap, CSS",
     "description" => "Used a timeline in GSap, used as a way to get better at animation",
   ],
 ];
+
+function getProjects($data, $key, $value)
+{
+
+  $projects = array_filter($data, function ($project) use ($key, $value) {
+    return $project[$key] == $value;
+  });
+
+  return $projects;
+}
+
+$clientProjects = getProjects($projectData, "featured", true);
+
+var_dump($clientProjects);
