@@ -66,6 +66,20 @@ ul li {
   gap: 30px;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card p {
+  max-width: 35ch;
+}
+
+.project-card a {
+  text-decoration: underline;
+}
+
 .action-link {
   text-decoration: underline;
 }
@@ -76,6 +90,11 @@ ul li {
   color: #e2e2e2;
 }
 
+.my-work-cards {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 620px) {
   .extra-information {
     flex-direction: row;
@@ -83,6 +102,10 @@ ul li {
   }
 
   .project-cards {
+    flex-direction: row;
+  }
+
+  .my-work-cards {
     flex-direction: row;
   }
 }
