@@ -54,7 +54,7 @@ $projectData = [
     "name" => "Arrow Animation",
     "image" => "https://peprojects.dev/images/landscape.jpg",
     "tools" => "GSap, CSS",
-    "description" => "Used a timeline in GSap, used as a way to get better at animation",
+    "description" => "Used a timeline in GSap. A way to get better at animation",
   ],
 ];
 

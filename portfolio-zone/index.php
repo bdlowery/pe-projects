@@ -36,9 +36,9 @@ function getTemplate($pageName)
   </header>
 
   <main class="site-content">
-    test
+
     <?php getTemplate($page); ?>
-    test2
+
   </main>
 
   <footer>

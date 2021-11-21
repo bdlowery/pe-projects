@@ -6,7 +6,7 @@ if (isset($_GET["project"])) {
 }
 
 
-foreach ($myWorkPersonal as $personalProject) {
+foreach ($projectData as $personalProject) {
   if ($projectId == $personalProject["id"]) {
     //what exactly does this mean. 
     $detail = $personalProject;
