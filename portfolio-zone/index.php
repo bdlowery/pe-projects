@@ -3,7 +3,7 @@
 <?php
 
 require("router.php");
-include("project-database.php");
+
 
 
 function getTemplate($pageName)
@@ -36,7 +36,9 @@ function getTemplate($pageName)
   </header>
 
   <main class="site-content">
+    test
     <?php getTemplate($page); ?>
+    test2
   </main>
 
   <footer>

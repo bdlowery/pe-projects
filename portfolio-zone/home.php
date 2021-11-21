@@ -1,6 +1,7 @@
 <?php include("project-database.php") ?>
 
 <section class="about-me-landing">
+
   <div class="inner-column">
     <div class="who-i-am">
       <h1>Who I am</h1>
@@ -36,7 +37,7 @@
     <p>Three of my favorite projects. All of them are completely responsive and built mobile first.</p>
 
     <div class="project-cards">
-      <?php foreach ($projectsHomepage as $project) { ?>
+      <?php foreach ($featuredProjects as $project) { ?>
         <div class="project-card">
           <picture>
             <img src="<?= $project["image"] ?>" alt="$todo">

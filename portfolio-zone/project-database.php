@@ -68,6 +68,7 @@ function getProjects($data, $key, $value)
   return $projects;
 }
 
-$clientProjects = getProjects($projectData, "featured", true);
-
-var_dump($clientProjects);
+$clientProjects = getProjects($projectData, "projectType", "client");
+$personalProjects = getProjects($projectData, "projectType", "personal");
+$experimentProjects = getProjects($projectData, "projectType", "experiments");
+$featuredProjects = getprojects($projectData, "featured", true);

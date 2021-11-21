@@ -2,8 +2,8 @@
 <header class="page-header">
   <div class="inner-column">
     <h1>
-      Project Directory
+      Experiments
     </h1>
-    <p>A directory for all of my work, past and present.</p>
+    <p>Welcome to my experimental lab... Watch out, you may find some super cool stuff!</p>
   </div>
 </header>
