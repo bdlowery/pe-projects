@@ -5,6 +5,27 @@
   max-width: 100px;
 }
 
+nav a.active {
+  background-color: #ff757c88;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.field + .field {
+  margin-top: 20px;
+}
+
+.field + .submit-button {
+  margin-top: 20px;
+}
+
+.field :is(label, input) {
+  display: block;
+}
+
 .project-card picture {
   max-width: 240px;
 }
