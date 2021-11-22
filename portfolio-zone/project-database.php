@@ -72,3 +72,28 @@ $clientProjects = getProjects($projectData, "projectType", "client");
 $personalProjects = getProjects($projectData, "projectType", "personal");
 $experimentProjects = getProjects($projectData, "projectType", "experiments");
 $featuredProjects = getprojects($projectData, "featured", true);
+?>
+
+<?php function renderProject($project)
+{ ?>
+  <div class="project-card">
+    <div class="project-card-text">
+      <picture>
+        <img src="<?= $project["image"] ?>" alt="$todo">
+      </picture>
+      <h2><?= $project["name"] ?></h2>
+      <p><?= $project["tools"] ?></p>
+    </div>
+    <a href="?page=detail&project=<?= $project["id"]; ?>">View</a>
+  </div>
+
+<?php } ?>
+
+<?php
+function renderProjects($projects)
+{
+  foreach ($projects as $project) {
+    renderProject($project);
+  }
+}
+?>
