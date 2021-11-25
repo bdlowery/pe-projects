@@ -1,17 +1,33 @@
 @import "meyer-reset.css";
 @import "setup.css";
+@import "typography.css";
+@import "structure.css";
 
 .masthead picture {
   max-width: 100px;
+}
+
+ul {
+  list-style-type: square;
+  padding-inline-start: 20px;
+  line-height: 1.5;
+}
+
+ul li {
+  margin-top: 5px;
 }
 
 nav a.active {
   background-color: #ff757c88;
 }
 
-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.education {
+  position: relative;
+  z-index: 1;
+}
+
+.about-me-landing {
+  overflow: hidden;
 }
 
 .field + .field {
@@ -30,30 +46,13 @@ section {
   max-width: 240px;
 }
 
-.inner-column {
-  max-width: 900px;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .inner-column p {
   max-width: 60ch;
 }
 
-.site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.site-content {
-  flex: 1;
-}
-
 .masthead {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0px;
@@ -87,18 +86,30 @@ ul li {
   gap: 30px;
 }
 
-.project-card {
+.my-work-project-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.project-card p {
-  max-width: 35ch;
+/* $todo -- add a hover effect on the card when user hovers. Shows clickability. */
+
+.project-picture {
+  transition: 0.25s ease-in-out;
 }
 
-.project-card a {
-  text-decoration: underline;
+.project-card-link:hover .project-picture {
+  transform: scale(1.03);
+  transition: 0.25s ease-in-out;
+}
+
+/* $note -- might not need, depends on how deep flex parent / child is */
+/* .project-card {
+  width: 100%;
+} */
+
+.project-card p {
+  max-width: 35ch;
 }
 
 .action-link {
@@ -117,6 +128,21 @@ ul li {
 }
 
 @media (min-width: 620px) {
+  .masthead {
+    flex-direction: row;
+  }
+
+  .education::after {
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: 190%;
+    background-color: wheat;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+  }
+
   .extra-information {
     flex-direction: row;
     justify-content: space-between;
@@ -128,5 +154,10 @@ ul li {
 
   .my-work-cards {
     flex-direction: row;
+  }
+
+  .what-i-want + .education {
+    margin-top: 0px;
+    margin-left: 30px;
   }
 }

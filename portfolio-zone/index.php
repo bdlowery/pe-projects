@@ -25,7 +25,8 @@ function getTemplate($pageName)
   <meta property="og:image" content="[[meta image source]]" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+
 </head>
 
 <body class="site">

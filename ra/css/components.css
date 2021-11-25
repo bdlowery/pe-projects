@@ -1,0 +1,24 @@
+
+.site-menu {
+	display: flex;
+	flex-direction: row;
+	transform: translateX(-10px);
+}
+
+.site-menu a {
+	padding: 10px;
+	font-size: 16px;
+	font-family: monospace;
+}
+
+.site-menu .cta {
+	margin-left: auto;
+}
+
+project-card {
+	display: block;
+}
+
+project-card a {
+	display: inline-block;
+}

@@ -1,0 +1,20 @@
+
+/* STRUCTURE */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+inner-column {
+	display:  block;
+	max-width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px 14px;
+}
+
+.page-content {
+	flex-grow:  1; 
+	/* stretch to push footer to the bottom */
+}

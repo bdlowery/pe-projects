@@ -1,0 +1,88 @@
+
+@import 'meyer-reset.css';
+@import 'setup.css';
+@import 'structure.css';
+@import 'settings.css';
+@import 'typography.css';
+@import 'components.css';
+@import 'modules.css';
+
+
+html {
+	--black: hsl(132, 6%, 17%);
+	--white: #dddddd;
+	--color: #0974ea;
+	--color-dark: #0B6BD4;
+
+	--green: hsl(137, 51%, 57%);
+	--red: hsl(359, 82%, 55%);
+	--yellow: hsl(62, 78%, 62%);
+	--purple: hsl(274, 63%, 78%);
+	--gray-light: hsl(116, 0%, 92%);
+
+	--background: var(--black);
+	--foreground:  white;
+}
+
+
+body {
+	background-color: var(--background);
+	color: var(--foreground);
+}
+
+body * {
+	border:  2px dotted rgba(255, 255, 255, .5);
+	padding:  10px;
+}
+
+/*main > section:nth-of-type(odd) {
+	background-color: rgba(255,255,255,.2);
+}*/
+
+main > section inner-column {
+	padding-top:  60px;
+	padding-bottom:  60px;
+}
+
+
+.one .page-header, li.one a {
+	background-color: var(--red);
+	color: white;
+}
+
+.two .page-header, li.two a {
+	background-color: var(--green);
+	color: black;
+}
+
+.three .page-header, li.three a {
+	background-color: var(--yellow);
+	color: black;
+}
+
+
+form {
+	display: block;
+	padding-bottom: 200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+field {
+	display:  block;
+}
+
+input {
+	color: var(--black);
+}
+
+button {
+	color:  black;
+}
+
+
+
+.site-footer inner-column {
+	padding-bottom:  100px;
+}
