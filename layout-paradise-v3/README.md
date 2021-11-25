@@ -1,38 +1,21 @@
+# Hello!
 
-# Hello! This is a README
+This was a project for [Perpetual Education's](https://perpetual.education) "Design For The Web" course.
 
-It is written in "markdown." Do you know what that is? If not, ask. : )
+# Goal
 
-# Heading 1
+Given the same HTML as everyone else in the class, create a website design targeted at a specific industry. After creating my design and implementing it with CSS I was given the approval to change the HTML and hydrate the page with specific body copy for each theme.
 
-Regular paragraph
+## My Industry
 
-## Heading 2
+I chose a "beach vacation" company.
 
-A paragraph with...
+* There's 2 different themes for 2 different audiences. 
 
-* A list of
+* One is a family-friendly resort, the other is an adult-only resort.
 
-* Things like this
+* Click on the links in the header to switch between themes.
 
-## What is the point?
+## Link to project
 
-You READ it. "Read Me!"
-
-When you first get to a project, this is the "how to" for getting set up and helpful instruction on how to parse the file structure and get thigns up and running.
-
-## Requirements
-
-1. MAMP
-
-2. A browser
-
-3. A text editor
-
-## HOW TO
-
-READ the index.php file from top to bottom. Every time something is 'included' - go look at that file. Keep going until you've read the whole document. Look at the folder structure. You should understand most of it. Write down any questions you have and ask them. : )
-
-## Further info
-
-You can download a "markdown" viewer with Sublime. You can also read about markdown on [the website](https://daringfireball.net/projects/markdown/).
+https://peprojects.dev/alpha-2/bdlowery/layout-paradise-v2/
