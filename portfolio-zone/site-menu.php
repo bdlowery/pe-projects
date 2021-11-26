@@ -1,6 +1,8 @@
 <div class="masthead">
-  <picture class="logo">
-    <img src="./images/BDL.svg" alt="">
+  <a href="?page=home">
+    <picture class="logo">
+      <img src="./images/BDL.svg" alt="$todo">
+  </a>
   </picture>
 
   <nav class="site-menu">
