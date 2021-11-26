@@ -3,6 +3,17 @@
 @import "typography.css";
 @import "structure.css";
 
+/* $todo 
+Temporary color styles to try and show heierarchy.
+These will be css variables eventually */
+.project-card p {
+  color: #5f666a;
+}
+
+.project-card .description-voice {
+  color: #33383b;
+}
+
 .masthead .logo {
   max-width: 70px;
 }
