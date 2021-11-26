@@ -1,7 +1,7 @@
 <?php include("project-database.php") ?>
 <header class="page-header">
   <div class="inner-column">
-    <h1 class="loud-voice">
+    <h1 class="title-voice">
       My Work
     </h1>
     <p>A directory for all of my work, past and present.</p>
@@ -10,42 +10,48 @@
 
 <section>
   <div class="inner-column">
-    <h2 class="attention-voice">Personal Projects</h1>
-      <p>Projects that I've made for extra practice and fun.</p>
-      <div class="project-cards">
+    <div class="projects-intro">
+      <h2 class="strong-voice">Personal Projects</h1>
+        <p>These are projects I've made to learn and grow as a developer/designer.</p>
+    </div>
+    <div class="project-cards">
 
-        <?php
-        renderProjects($personalProjects);
-        ?>
+      <?php
+      renderProjects($personalProjects);
+      ?>
 
-      </div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="inner-column">
-    <h2 class="attention-voice">Client Projects</h1>
-      <p>Every client has an underlying goal with their website. It was my job to identify that goal and build a website accomplishing it.</p>
-      <div class="project-cards">
+    <div class="projects-intro">
+      <h2 class="strong-voice">Client Projects</h1>
+        <p>I also work with local businesses. I identify their goals as a business and apply those during the design and development of their website.</p>
+    </div>
+    <div class="project-cards">
 
-        <?php
-        renderProjects($clientProjects);
-        ?>
+      <?php
+      renderProjects($clientProjects);
+      ?>
 
-      </div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="inner-column">
-    <h2 class="attention-voice">Experiments</h1>
-      <p>Things I've made that are too small for a full fledged personal project.</p>
-      <div class="project-cards">
+    <div class="projects-intro">
+      <h2 class="strong-voice">Experiments</h1>
+        <p>These are fun little one off creations I've made. I usually take these and apply them to a bigger client project or personal project.</p>
+    </div>
+    <div class="project-cards">
 
-        <?php
-        renderProjects($experimentProjects);
-        ?>
+      <?php
+      renderProjects($experimentProjects);
+      ?>
 
-      </div>
+    </div>
   </div>
 </section>

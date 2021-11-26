@@ -19,7 +19,7 @@ foreach ($projectData as $personalProject) {
 
   <header class="page-header">
     <div class="inner-column">
-      <h1>
+      <h1 class="title-voice">
         <?= $detail["name"] ?>
       </h1>
       <p><?= $detail["description"]  ?></p>
@@ -32,7 +32,7 @@ foreach ($projectData as $personalProject) {
 
   <header class="page-header">
     <div class="inner-column">
-      <h1>
+      <h1 class="title-voice">
         No Project Found
       </h1>
       <p>You've navigated to the wrong page. Go to <a href="./?page=my-work">My Work</a> and try again</p>

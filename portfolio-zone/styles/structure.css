@@ -3,6 +3,22 @@ section {
   padding-bottom: 80px;
 }
 
+footer {
+  padding: 40px 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  z-index: 1;
+}
+
+.page-header {
+  padding: 40px 0px;
+}
+
 .inner-column {
   max-width: 900px;
   width: 95%;
@@ -32,6 +48,10 @@ section {
   margin-top: 5px;
 }
 
+.strong-voice + p {
+  margin-top: 5px;
+}
+
 .what-i-want + .education {
   margin-top: 30px;
 }
@@ -53,6 +73,14 @@ section {
   margin-top: 50px;
 }
 
-.project-card .quiet-voice + .micro-voice {
+.project-card .stern-voice + .quiet-voice {
   margin-top: 5px;
+}
+
+.project-card .quiet-voice + .description-voice {
+  margin-top: 10px;
+}
+
+.project-card-text + .project-card-link {
+  margin-top: 10px;
 }

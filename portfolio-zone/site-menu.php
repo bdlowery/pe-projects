@@ -1,5 +1,5 @@
 <div class="masthead">
-  <picture>
+  <picture class="logo">
     <img src="./images/BDL.svg" alt="">
   </picture>
 

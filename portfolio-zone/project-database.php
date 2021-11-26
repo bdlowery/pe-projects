@@ -20,13 +20,13 @@ $projectData = [
     "description" => "Practice making a website from a Figma design.",
   ],
   [
-    "id" => "super-ultra-responsive",
+    "id" => "super-responsive",
     "projectType" => "personal",
     "featured" => false,
-    "name" => "Super Ultra Responsive",
+    "name" => "Super Responsive",
     "image" => "https://peprojects.dev/alpha-2/blackbox.jpg",
     "tools" => "HTML, CSS",
-    "description" => "A barebones responsive website using media queries and flexbox. Works on any screen size.",
+    "description" => "A barebones responsive website using media queries and flexbox.",
   ],
   [
     "id" => "joyfully-clean",
@@ -34,8 +34,8 @@ $projectData = [
     "featured" => true,
     "name" => "Joyfully Clean",
     "image" => "https://peprojects.dev/alpha-2/blackbox.jpg",
-    "tools" => "HTML, CSS, Goal Driven Development",
-    "description" => "Identified the goals of a local cleaning company and used those to make an effective website",
+    "tools" => "HTML, CSS, Design, Development",
+    "description" => "Identified the goals of a local cleaning company and used them to make an effective website",
 
   ],
   [
@@ -44,7 +44,7 @@ $projectData = [
     "featured" => true,
     "name" => "Softseaweed",
     "image" => "https://peprojects.dev/alpha-2/blackbox.jpg",
-    "tools" => "HTML, CSS, Goal Driven Development",
+    "tools" => "HTML, CSS, Design, Development",
     "description" => "A SaaS company wanted to get seaweed farmers excited about their upcoming product.",
   ],
   [
@@ -54,7 +54,16 @@ $projectData = [
     "name" => "Arrow Animation",
     "image" => "https://peprojects.dev/alpha-2/blackbox.jpg",
     "tools" => "GSap, CSS",
-    "description" => "Used a timeline in GSap. A way to get better at animation",
+    "description" => "Explored timelines in GSap to get better at animation.",
+  ],
+  [
+    "id" => "get-axed",
+    "projectType" => "client",
+    "featured" => false,
+    "name" => "Get Axed",
+    "image" => "https://peprojects.dev/alpha-2/blackbox.jpg",
+    "tools" => "HTML, CSS, Design, Development",
+    "description" => "Overhauled a local businesses website from design to code.",
   ],
 ];
 
@@ -76,16 +85,19 @@ $featuredProjects = getprojects($projectData, "featured", true);
 
 <?php function renderProject($project)
 { ?>
-  <div class="project-card my-work-project-card">
-    <div class="project-card-text">
-      <picture>
-        <img src="<?= $project["image"] ?>" alt="$todo">
-      </picture>
-      <h2 class="stern-voice"><?= $project["name"] ?></h2>
-      <p class="quiet-voice"><?= $project["tools"] ?></p>
+  <a class="project-card-link" href="?page=detail&project=<?= $project["id"]; ?>">
+    <div class="project-card my-work-project-card">
+      <div class="project-card-text">
+        <picture class="project-picture">
+          <img src="<?= $project["image"] ?>" alt="$todo">
+        </picture>
+        <h2 class="stern-voice"><span><?= $project["name"] ?></span></h2>
+        <p class="quiet-voice"><?= $project["tools"] ?></p>
+        <p class="description-voice"><?= $project["description"]  ?></p>
+      </div>
+
     </div>
-    <a href="?page=detail&project=<?= $project["id"]; ?>">View</a>
-  </div>
+  </a>
 
 <?php } ?>
 
