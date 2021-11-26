@@ -21,8 +21,8 @@ function getTemplate($pageName)
 
   <title>Brian Lowery</title>
   <!-- Meta Tags-->
-  <meta name="description" content="[[insert description]]" />
-  <meta property="og:image" content="[[meta image source]]" />
+  <meta name="description" content="Brian Lowery, Web Developer and Designer in California"" />
+  <meta property=" og:image" content="[[meta image source]]" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="./styles/style.css" />
