@@ -92,7 +92,14 @@ ul,
 }
 
 a {
+  font-family: "Helvetica Neue Bold", Helvetica, sans-serif;
+  font-size: 17px;
+  text-underline-offset: 1px;
+  font-weight: 700;
+}
+
+nav a {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
-  text-underline-offset: 1px;
+  font-weight: 400;
 }

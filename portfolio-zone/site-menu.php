@@ -4,24 +4,24 @@
   </picture>
 
   <nav class="site-menu">
-    <a href="?page=home" class="
+    <a href="?page=home" class="site-link 
     <?php if ($page == "home") {
       echo "active";
-    } ?>">Home</a>
+    } ?>"><span>Home</span></a>
 
-    <a href="?page=my-work" class="
+    <a href="?page=my-work" class="site-link 
     <?php if ($page == "my-work") {
       echo "active";
-    } ?>">Work</a>
+    } ?>"><span>Work</span></a>
 
-    <a href="?page=experiments" class="
+    <a href="?page=experiments" class="site-link 
     <?php if ($page == "experiments") {
       echo "active";
-    } ?>">Experiments</a>
+    } ?>"><span>Experiments</span></a>
 
-    <a href="?page=suggest" class="
+    <a href="?page=suggest" class="site-link 
     <?php if ($page == "suggest") {
       echo "active";
-    } ?>">Suggest</a>
+    } ?>"><span>Suggest</span></a>
   </nav>
 </div>
