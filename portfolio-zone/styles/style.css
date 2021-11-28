@@ -3,6 +3,14 @@
 @import "typography.css";
 @import "structure.css";
 
+/* .about-me-landing {
+  background: linear-gradient(145deg, rgba(0, 16, 153, 0.2) 0, rgba(58, 217, 255, 0.2) 96%);
+}
+
+body {
+  background: black;
+} */
+
 /* $todo 
 Temporary color styles to try and show heierarchy.
 These will be css variables eventually */
@@ -158,6 +166,19 @@ ul li {
 
 .project-card p {
   max-width: 30ch;
+}
+
+.writing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 50px;
+}
+
+.writing-card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .action-link {

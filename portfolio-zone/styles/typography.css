@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Marvin Visions Big Bold";
   src: local("Marvin Visions Big Bold"), local("Marvin-Visions-Big-Bold"),
-    local("MarvinVisionsBig-Bold") url(/fonts/MarvinVisionsBig-Bold.woff2);
+    local("MarvinVisionsBig-Bold"), url(/fonts/MarvinVisionsBig-Bold.woff2);
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Helvetica Neue";
-  src: local("HelveticaNeue"), local("Helvetica-Neue"),
-    local("HelveticaNeue-Regular") url(/fonts/HelveticaNeue.woff2);
+  src: local("HelveticaNeue"), local("Helvetica-Neue"), local("HelveticaNeue-Regular"),
+    url(/fonts/HelveticaNeue.woff2);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Helvetica Neue Bold";
-  src: local("HelveticaNeueBold"), local("Helvetica-Neue-Bold"),
-    local("HelveticaNeue-Bold") url(/fonts/HelveticaNeue-Bold.woff2);
+  src: local("HelveticaNeueBold"), local("Helvetica-Neue-Bold"), local("HelveticaNeue-Bold"),
+    url(/fonts/HelveticaNeue-Bold.woff2);
   font-weight: 700;
 }
 
@@ -49,6 +49,7 @@
   line-height: 1.2;
 
   font-weight: 700;
+  max-width: 30ch;
 }
 
 .stern-voice {
@@ -89,6 +90,7 @@ ul,
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 a {
@@ -102,4 +104,27 @@ nav a {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
+}
+
+.writing-text .regular-voice {
+  max-width: 40ch;
+  color: #33383b;
+}
+
+.writing-text .quiet-voice {
+  color: #5f666a;
+  line-height: 1.5;
+}
+
+.writing-card-link .description-voice {
+  font-family: "Helvetica Neue Bold";
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #33383b;
+  line-height: 1.5;
+  display: block;
+}
+
+.page-header .loud-voice {
+  max-width: 30ch;
 }

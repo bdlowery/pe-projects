@@ -84,3 +84,30 @@ footer {
 .project-card-text + .project-card-link {
   margin-top: 10px;
 }
+
+.writing-text .attention-voice + .regular-voice {
+  margin-top: 15px;
+}
+
+.writing-text + .quiet-voice {
+  margin-top: 15px;
+}
+
+.writing-intro + .writing-cards {
+  margin-top: 50px;
+}
+
+.writing-text .quiet-voice + .attention-voice {
+  margin-top: 5px;
+}
+
+.writing-text + .quiet-voice {
+  font-family: "Helvetica Neue Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.writing-cards + .action-link {
+  margin-top: 50px;
+}

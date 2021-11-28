@@ -1,4 +1,5 @@
 <?php include("project-database.php") ?>
+<?php include('writing-database.php') ?>
 
 <section class="about-me-landing">
 
@@ -11,21 +12,21 @@
 
     <div class="extra-information">
       <div class="what-i-want">
-        <h3 class="attention-voice">What I want</h3>
-        <ul>
-          <li>I'm looking for a paid internship as a Front-end Web Developer.</li>
-          <li>Here's a list of all of my work, and all of my "experiments". </li>
-          <li>If interested, let's get in touch.</li>
-        </ul>
+        <h2 class="attention-voice">What I want</h3>
+          <ul>
+            <li>I'm looking for a paid internship as a Front-end Web Developer.</li>
+            <li>Here's a list of all of my work, and all of my "experiments". </li>
+            <li>If interested, let's get in touch.</li>
+          </ul>
       </div>
 
       <div class="education">
-        <h3 class="attention-voice">Education</h3>
-        <ul>
-          <li>2nd year Computer Science student at Sacramento State</li>
-          <li>6 month internship at Perpetual Education</li>
-          <li>Something else here to make this section longer</li>
-        </ul>
+        <h2 class="attention-voice">Education</h3>
+          <ul>
+            <li>2nd year Computer Science student at Sacramento State</li>
+            <li>6 month internship at Perpetual Education</li>
+            <li>Something else here to make this section longer</li>
+          </ul>
       </div>
     </div>
   </div>
@@ -53,5 +54,27 @@
     </div>
 
     <a class="action-link" href="?page=my-work">View More →</a>
+  </div>
+</section>
+
+<section class="writing">
+  <div class="inner-column">
+    <div class="writing-intro">
+      <h1 class="loud-voice">Writing</h1>
+      <p>Some intro thing I don't know what to put here please send help please and thank you those are the magic words.</p>
+    </div>
+    <div class="writing-cards">
+      <?php foreach ($featuredPosts as $post) { ?>
+        <a href="?page=writing&post=<?= $post["id"] ?>" class="writing-card-link">
+          <div class="writing-text">
+            <time datetime="2021-11-27" class="quiet-voice"><?= $post["date"] ?></time>
+            <h2 class="attention-voice"><?= $post["title"] ?></h2>
+            <p class="regular-voice">Flexbox doesn't have to be hard, you just made it hard! I can break it down in a few simple steps to get you started on the right track.</p>
+          </div>
+          <span class="quiet-voice">read more →</span>
+        </a>
+      <?php } ?>
+    </div>
+    <a href="?page=writing" class="action-link">View More →</a>
   </div>
 </section>
