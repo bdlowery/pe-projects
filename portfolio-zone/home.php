@@ -69,7 +69,7 @@
           <div class="writing-text">
             <time datetime="2021-11-27" class="quiet-voice"><?= $post["date"] ?></time>
             <h2 class="attention-voice"><?= $post["title"] ?></h2>
-            <p class="regular-voice">Flexbox doesn't have to be hard, you just made it hard! I can break it down in a few simple steps to get you started on the right track.</p>
+            <p class="regular-voice"><?= $post["description"]  ?></p>
           </div>
           <span class="quiet-voice">read more →</span>
         </a>
