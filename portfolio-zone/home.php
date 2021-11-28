@@ -69,9 +69,9 @@
           <div class="writing-text">
             <time datetime="2021-11-27" class="quiet-voice"><?= $post["date"] ?></time>
             <h2 class="attention-voice"><?= $post["title"] ?></h2>
-            <p class="regular-voice"><?= $post["description"]  ?></p>
+            <p class="description-voice"><?= $post["description"]  ?></p>
           </div>
-          <span class="quiet-voice">read more →</span>
+          <span class="quiet-voice read-more">read more →</span>
         </a>
       <?php } ?>
     </div>
