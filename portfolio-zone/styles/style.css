@@ -231,6 +231,10 @@ ul li {
   /*color: #e2e2e2;*/
 }
 
+.page-header p {
+  color: var(--white);
+}
+
 .my-work-cards {
   display: flex;
   flex-direction: column;
