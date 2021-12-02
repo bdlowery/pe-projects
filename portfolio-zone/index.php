@@ -11,6 +11,14 @@ function getTemplate($pageName)
   include("$pageName.php");
 }
 
+$themeClass = '';
+if (isset($_GET['theme']) && $_GET['theme'] == 'dark') {
+  $themeClass = 'dark-theme';
+}
+
+$themeToggle = ($themeClass == 'dark-theme') ? 'light' : 'dark';
+
+
 ?>
 
 <html lang="en">
@@ -29,7 +37,7 @@ function getTemplate($pageName)
 
 </head>
 
-<body class="site">
+<body class="site <?php echo $themeClass; ?>">
   <header class="site-header">
     <div class="inner-column">
       <?php include('site-menu.php') ?>

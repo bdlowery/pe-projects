@@ -386,3 +386,78 @@ footer {
     color: var(--primary-neutral-lighter);
   }
 }
+
+/* dark mode toggle */
+@media (min-width: 0px) {
+  :root.dark-theme {
+    --box-shadow: var(--white-transparent);
+  }
+  body.dark-theme {
+    background-color: var(--black);
+  }
+
+  .dark-theme .site-header {
+    background-color: var(--primary-neutral-darker);
+  }
+
+  .dark-theme footer {
+    background-color: var(--primary-neutral-darker);
+  }
+
+  .dark-theme nav a {
+    color: var(--white);
+  }
+
+  .dark-theme .site-menu .active {
+    background-color: var(--primary-neutral-dark);
+  }
+
+  .dark-theme .projects {
+    background-color: var(--primary-neutral-darker);
+  }
+
+  .dark-theme .regular-voice,
+  .dark-theme p,
+  .dark-theme ul,
+  .dark-theme .attention-voice {
+    color: var(--white);
+  }
+
+  .dark-theme .education::after {
+    background-color: var(--primary-neutral-dark);
+  }
+
+  .dark-theme .loud-voice,
+  .dark-theme .stern-voice,
+  .dark-theme .strong-voice {
+    color: var(--primary);
+  }
+
+  .dark-theme .project-card p {
+    color: var(--primary-neutral-light);
+  }
+
+  .dark-theme .writing-text .quiet-voice {
+    color: var(--primary-neutral-light);
+  }
+
+  .dark-theme .writing-text .description-voice {
+    color: var(--primary-neutral-lighter);
+  }
+
+  .dark-theme .writing-text + .quiet-voice {
+    color: var(--white);
+  }
+
+  .dark-theme .logo svg text {
+    fill: var(--white);
+  }
+
+  .dark-theme .action-link {
+    color: var(--white);
+  }
+
+  .dark-theme .project-card .description-voice {
+    color: var(--primary-neutral-lighter);
+  }
+}

@@ -31,5 +31,6 @@
     <?php if ($page == "suggest") {
       echo "active";
     } ?>"><span>Suggest</span></a>
+    <a href="?theme=<?php echo $themeToggle; ?>" class="site-link">Toggle Dark Mode</a>
   </nav>
 </div>
