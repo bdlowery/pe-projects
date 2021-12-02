@@ -3,6 +3,37 @@
 @import "typography.css";
 @import "structure.css";
 
+:root {
+  --white: #ffffff;
+  --white-transparent: hsla(0, 0%, 100%, 0.2);
+  --black: #000000;
+  --black-transparent: hsla(0, 0%, 0%, 0.2);
+
+  --box-shadow: var(--black-transparent);
+
+  --primary: #279cde;
+  --primary-light: #6bb7e3;
+  --primary-dark: #1f77ab;
+  --primary-darker: #0f425e;
+
+  --accent: #d57b02;
+  --accent-light: #ffa32c;
+  --accent-dark: #b86801;
+  --accent-darker: #6f3f01;
+
+  --primary-neutral-lightest: #eef4f8;
+  --primary-neutral-lighter: #e2eaf0;
+  --primary-neutral-light: #a2a8ac;
+  --primary-neutral: #7a848a;
+  --primary-neutral-dark: #5f666a;
+  --primary-neutral-darker: #33383b;
+
+  --accent-neutral-light: #a0968b;
+  --accent-neutral: #776d61;
+  --accent-neutral-dark: #655d53;
+  --accent-neutral-darker: #3d3832;
+}
+
 /* .about-me-landing {
   background: linear-gradient(145deg, rgba(0, 16, 153, 0.2) 0, rgba(58, 217, 255, 0.2) 96%);
 }
@@ -14,12 +45,17 @@ body {
 /* $todo 
 Temporary color styles to try and show heierarchy.
 These will be css variables eventually */
+
+body {
+  background-color: var(--white);
+}
+
 .project-card p {
-  color: #5f666a;
+  color: var(--primary-neutral-dark);
 }
 
 .project-card .description-voice {
-  color: #33383b;
+  color: var(--primary-neutral-darker);
 }
 
 .masthead .logo {
@@ -37,7 +73,7 @@ ul li {
 }
 
 .site-menu .active {
-  background-color: #acacac88;
+  background-color: var(--primary-neutral-light);
 }
 
 .site-menu .site-link span {
@@ -111,7 +147,7 @@ ul li {
 }
 
 .projects {
-  background-color: #e4e7e6;
+  background-color: var(--primary-neutral-lighter);
 }
 
 .project-cards {
@@ -183,16 +219,25 @@ ul li {
 
 .action-link {
   text-decoration: underline;
+  color: var(--black);
 }
 
 .page-header {
-  background-color: #000000;
-  color: #e2e2e2;
+  background-image: url(../images/stars-background.png);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--black);
+  color: var(--white);
+  /*color: #e2e2e2;*/
 }
 
 .my-work-cards {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  background-color: var(--primary-neutral-lighter);
 }
 
 .site-footer {
@@ -212,8 +257,8 @@ ul li {
 }
 
 .footer-links a:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
   transition: 0.15s ease-in-out;
   text-decoration: none;
 }
@@ -235,7 +280,7 @@ ul li {
     position: absolute;
     width: 115%;
     height: 190%;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--primary-neutral-lightest);
     top: -20px;
     left: -20px;
     z-index: -1;
@@ -261,5 +306,79 @@ ul li {
 
   .site-footer {
     flex-direction: row;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --box-shadow: var(--white-transparent);
+  }
+  body {
+    background-color: var(--black);
+  }
+
+  .site-header {
+    background-color: var(--primary-neutral-darker);
+  }
+
+  footer {
+    background-color: var(--primary-neutral-darker);
+  }
+
+  nav a {
+    color: var(--white);
+  }
+
+  .site-menu .active {
+    background-color: var(--primary-neutral-dark);
+  }
+
+  .projects {
+    background-color: var(--primary-neutral-darker);
+  }
+
+  .regular-voice,
+  p,
+  ul,
+  .attention-voice {
+    color: var(--white);
+  }
+
+  .education::after {
+    background-color: var(--primary-neutral-dark);
+  }
+
+  .loud-voice,
+  .stern-voice,
+  .strong-voice {
+    color: var(--primary);
+  }
+
+  .project-card p {
+    color: var(--primary-neutral-light);
+  }
+
+  .writing-text .quiet-voice {
+    color: var(--primary-neutral-light);
+  }
+
+  .writing-text .description-voice {
+    color: var(--primary-neutral-lighter);
+  }
+
+  .writing-text + .quiet-voice {
+    color: var(--white);
+  }
+
+  .logo svg text {
+    fill: var(--white);
+  }
+
+  .action-link {
+    color: var(--white);
+  }
+
+  .project-card .description-voice {
+    color: var(--primary-neutral-lighter);
   }
 }

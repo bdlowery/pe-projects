@@ -33,6 +33,7 @@
   line-height: 1.2;
   letter-spacing: 0.025em;
   font-weight: 700;
+  color: var(--primary-darker);
 }
 
 .strong-voice {
@@ -41,6 +42,7 @@
   line-height: 1.2;
 
   font-weight: 700;
+  color: var(--primary-darker);
 }
 
 .attention-voice {
@@ -50,6 +52,7 @@
 
   font-weight: 700;
   max-width: 30ch;
+  color: var(--black);
 }
 
 .stern-voice {
@@ -58,6 +61,7 @@
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 700;
+  color: var(--primary-darker);
 }
 
 .quiet-voice {
@@ -91,6 +95,7 @@ ul,
   font-size: 17px;
   line-height: 1.5;
   font-weight: 400;
+  color: var(--black);
 }
 
 a {
@@ -104,6 +109,7 @@ nav a {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
+  color: var(--black);
 }
 
 .writing-text .regular-voice {
@@ -112,13 +118,13 @@ nav a {
 }
 
 .writing-text .quiet-voice {
-  color: #5f666a;
+  color: var(--primary-neutral-dark);
   line-height: 1.5;
 }
 
 .writing-text .description-voice {
   max-width: 40ch;
-  color: #33383b;
+  color: var(--primary-neutral-darker);
   line-height: 1.5;
 }
 
