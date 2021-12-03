@@ -31,6 +31,9 @@
     <?php if ($page == "suggest") {
       echo "active";
     } ?>"><span>Suggest</span></a>
-    <a href="?theme=<?php echo $themeToggle; ?>" class="site-link">Toggle Dark Mode</a>
+    <label class="darkmode-toggle" for="dark-mode-checkbox">
+      <input type="checkbox" name="dark-mode-checkbox" id="dark-mode-checkbox">
+
+    </label>
   </nav>
 </div>

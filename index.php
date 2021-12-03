@@ -11,12 +11,12 @@ function getTemplate($pageName)
   include("$pageName.php");
 }
 
+
 $themeClass = '';
-if (isset($_GET['theme']) && $_GET['theme'] == 'dark') {
+if (!empty($_COOKIE['theme']) && $_COOKIE['theme'] == 'dark') {
   $themeClass = 'dark-theme';
 }
 
-$themeToggle = ($themeClass == 'dark-theme') ? 'light' : 'dark';
 
 
 ?>
@@ -63,6 +63,8 @@ $themeToggle = ($themeClass == 'dark-theme') ? 'light' : 'dark';
         <a href="https://github.com/bdlowery">GitHub</a>
     </div>
     </div>
+
+    <script src="/scripts.js"></script>
 </body>
 
 </html>
