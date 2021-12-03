@@ -62,9 +62,10 @@ if (!empty($_COOKIE['theme']) && $_COOKIE['theme'] == 'dark') {
         <a href="https://codepen.io/bdlowery">CodePen</a>
         <a href="https://github.com/bdlowery">GitHub</a>
     </div>
-    </div>
 
-    <script src="./scripts.js" defer></script>
+  </footer>
+
+  <script src="./scripts.js" defer></script>
 </body>
 
 </html>
