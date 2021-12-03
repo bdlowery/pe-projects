@@ -64,7 +64,7 @@ if (!empty($_COOKIE['theme']) && $_COOKIE['theme'] == 'dark') {
     </div>
     </div>
 
-    <script src="/scripts.js"></script>
+    <script src="/scripts.js" defer></script>
 </body>
 
 </html>
