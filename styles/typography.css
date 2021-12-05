@@ -21,7 +21,7 @@
 
 .title-voice {
   font-family: "Marvin Visions Big Bold", Helvetica, sans-serif;
-  font-size: 60px;
+  font-size: clamp(50px, calc(1rem + 10vw), 60px);
   line-height: 1.2;
   letter-spacing: 0.025em;
   font-weight: 700;
