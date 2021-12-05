@@ -10,3 +10,7 @@
 .style-guide-text hr {
   margin-bottom: 20px;
 }
+
+.specific-pattern {
+  max-width: 30ch;
+}

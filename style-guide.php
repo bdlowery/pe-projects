@@ -64,8 +64,10 @@ $testPost = [
       <hr>
     </div>
     <?php foreach ($typePatterns as $typePattern) { ?>
-      <div class="<?= $typePattern["id"] ?>">
-        <p class="<?= $typePattern["id"] ?>"><?= $typePattern["id"] ?> abcdefghijklmnopqrstuvwxyz</p>
+      <div class="<?= $typePattern["id"] ?> specific-pattern">
+        <p class="<?= $typePattern["id"] ?>">
+          <?= $typePattern["id"] ?>
+          abcdefghijklmnopqrstuvwxyz</p>
       </div>
     <?php } ?>
   </div>
