@@ -2,6 +2,7 @@
 @import "setup.css";
 @import "typography.css";
 @import "structure.css";
+@import "style-guide.css";
 
 :root {
   --white: #ffffff;
@@ -172,6 +173,25 @@ ul li {
   transition: 0.25s ease-in-out;
 }
 
+.project-card-link {
+  display: inline-block;
+}
+
+.writing-card-link .attention-voice span,
+.read-more span {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: left bottom 0px;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: 0.25s ease-in-out;
+}
+
+.writing-card-link:hover .attention-voice span,
+.writing-card-link:hover .read-more span {
+  background-size: 100% 1px;
+  transition: 0.25s ease-in-out;
+}
+
 .project-card-link:hover .project-picture {
   transform: scale(1.03);
   transition: 0.25s ease-in-out;
@@ -232,6 +252,10 @@ ul li {
 }
 
 .page-header p {
+  color: var(--white);
+}
+
+.page-header .loud-voice {
   color: var(--white);
 }
 
@@ -358,6 +382,10 @@ footer {
     color: var(--primary);
   }
 
+  .page-header .loud-voice {
+    color: var(--white);
+  }
+
   .project-card p {
     color: var(--primary-neutral-light);
   }
@@ -431,6 +459,10 @@ footer {
   .dark-theme .stern-voice,
   .dark-theme .strong-voice {
     color: var(--primary);
+  }
+
+  .dark-theme .page-header .loud-voice {
+    color: var(--white);
   }
 
   .dark-theme .project-card p {
