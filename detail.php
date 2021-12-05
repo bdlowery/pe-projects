@@ -1,22 +1,31 @@
-<?php include("project-database.php");
+<?php include("./database/project-database.php");
+include("./database/writing-database.php");
 
 
 if (isset($_GET["project"])) {
   $projectId = $_GET["project"];
-}
 
-
-foreach ($projectData as $project) {
-  if ($projectId == $project["id"]) {
-    //set detail equal to the inidividual project in the object.
-    $detail = $project;
+  foreach ($projectData as $project) {
+    if ($projectId == $project["id"]) {
+      //set detail equal to the inidividual project in the object.
+      $detail = $project;
+    }
   }
 }
 
+if (isset($_GET["post"])) {
+  $postId = $_GET["post"];
 
+  foreach ($writingData as $post) {
+    if ($postId == $post["id"]) {
+      //set detail equal to the inidividual project in the object.
+      $detail = $post;
+    }
+  }
+}
 ?>
 
-<?php if (isset($detail)) {  ?>
+<?php if (isset($detail) && isset($project)) {  ?>
 
   <header class="page-header">
     <div class="inner-column">
@@ -24,19 +33,28 @@ foreach ($projectData as $project) {
         <?= $detail["name"] ?>
       </h1>
       <p><?= $detail["description"]  ?></p>
-      <p></p>
     </div>
   </header>
 
 
+<?php } elseif (isset($detail) && isset($post)) { ?>
+
+  <header class="page-header">
+    <div class="inner-column">
+      <h1 class="loud-voice">
+        <?= $detail["title"] ?>
+      </h1>
+      <p><?= $detail["description"]  ?></p>
+    </div>
+  </header>
 <?php } else { ?>
 
   <header class="page-header">
     <div class="inner-column">
       <h1 class="title-voice">
-        No Project Found
+        Page not found
       </h1>
-      <p>You've navigated to the wrong page. Go to <a href="./?page=my-work">My Work</a> and try again</p>
+      <p>You've navigated to the wrong page. Go to <a href="./?page=home">The Homepage</a> and try again</p>
     </div>
   </header>
 <?php } ?>
