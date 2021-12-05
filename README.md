@@ -20,4 +20,4 @@ I used PHP to get a better understand of how to use functions, and routing. I ma
 
 ## Link to Project
 
-https://peprojects.dev/alpha-2/bdlowery/portfolio-zone
+https://peprojects.dev/alpha-3/bdlowery
