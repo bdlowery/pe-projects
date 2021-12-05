@@ -94,7 +94,18 @@ picture {
 }
 
 .landing {
-  background-color: #111;
+  position: relative;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/23c72870-12c8-4682-9f55-337a083ccfa7/b88fb340-17eb-4086-a257-f023a5f57a0b/US-en-20211129-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  z-index: 1;
+}
+
+.landing::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 .landing-text h1 {
