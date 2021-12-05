@@ -1,5 +1,5 @@
-<?php include("project-database.php") ?>
-<?php include('writing-database.php') ?>
+<?php include("./database/project-database.php") ?>
+<?php include('./database/writing-database.php') ?>
 
 <section class="about-me-landing">
 
@@ -40,16 +40,7 @@
     </div>
     <div class="project-cards">
       <?php foreach ($featuredProjects as $project) { ?>
-        <a class="project-card-link" href="?page=detail&project=<?= $project["id"] ?>">
-          <div class="project-card">
-            <picture class="project-picture">
-              <img src="<?= $project["image"] ?>" alt="$todo">
-            </picture>
-            <h2 class="stern-voice"><span><?= $project["name"] ?></span></h2>
-            <p class="quiet-voice"><?= $project["tools"] ?></p>
-            <p class="micro-voice"><em><?= $project["projectType"] ?></em></p>
-          </div>
-        </a>
+        <?php include("./modules/project-card.php") ?>
       <?php } ?>
     </div>
 
@@ -64,16 +55,7 @@
       <p>Some intro thing I don't know what to put here please send help please and thank you those are the magic words.</p>
     </div>
     <div class="writing-cards">
-      <?php foreach ($featuredPosts as $post) { ?>
-        <a href="?page=writing&post=<?= $post["id"] ?>" class="writing-card-link">
-          <div class="writing-text">
-            <time datetime="2021-11-27" class="quiet-voice"><?= $post["date"] ?></time>
-            <h2 class="attention-voice"><?= $post["title"] ?></h2>
-            <p class="description-voice"><?= $post["description"]  ?></p>
-          </div>
-          <span class="quiet-voice read-more">read more →</span>
-        </a>
-      <?php } ?>
+      <?php renderWritings($featuredPosts) ?>
     </div>
     <a href="?page=writing" class="action-link">View More →</a>
   </div>
