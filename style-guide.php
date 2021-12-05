@@ -73,6 +73,20 @@ $testPost = [
   </div>
 </section>
 
+<section class="style-guide site-wide-nav">
+  <div class="inner-column">
+    <div class="style-guide-text">
+      <h2 class="attention-voice">
+        Site menu
+      </h2>
+      <hr>
+    </div>
+    <div class="site-wide-nav">
+      <?php include("./modules/site-menu.php") ?>
+    </div>
+  </div>
+</section>
+
 <section class="style-guide home-section-intro">
   <div class="inner-column">
     <div class="style-guide-text">
@@ -81,7 +95,7 @@ $testPost = [
       </h2>
       <hr>
     </div>
-    <div class="writing-intro">
+    <div class="section-intro">
       <h1 class="loud-voice">Section</h1>
       <p>This is the intro paragraph to a new section on the homepage. It will most likely be multiple lines, and it will introduce the section</p>
     </div>
