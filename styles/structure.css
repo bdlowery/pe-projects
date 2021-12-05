@@ -111,3 +111,11 @@ footer {
 .writing-cards + .action-link {
   margin-top: 50px;
 }
+
+p + p {
+  margin-top: 20px;
+}
+
+.quiet-voice + .micro-voice {
+  margin-top: 0px;
+}
