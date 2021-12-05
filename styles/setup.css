@@ -49,3 +49,9 @@ strong {
 em {
   font-style: italic;
 }
+
+mark {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #ffdd33;
+}
