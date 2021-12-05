@@ -125,6 +125,7 @@ ul li {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0px;
+  gap: 10px;
 }
 
 .site-menu {
@@ -226,7 +227,7 @@ ul li {
 
 .writing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(289px, 1fr));
   grid-gap: 50px;
 }
 
@@ -291,11 +292,17 @@ footer {
   text-decoration: none;
 }
 
+.footer-links-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
 .footer-links {
   display: flex;
-
+  margin-left: auto;
   gap: 15px;
-  margin-top: auto;
 }
 
 @media (min-width: 620px) {
