@@ -1,0 +1,12 @@
+.type-patterns div + div {
+  margin-top: 10px;
+}
+
+.style-guide {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.style-guide-text hr {
+  margin-bottom: 20px;
+}
