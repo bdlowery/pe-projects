@@ -1,12 +1,5 @@
-<?php include("project-database.php") ?>
-<header class="page-header">
-  <div class="inner-column">
-    <h1 class="title-voice">
-      My Work
-    </h1>
-    <p>A directory for all of my work, past and present.</p>
-  </div>
-</header>
+<?php include("./database/project-database.php") ?>
+<?php include("./modules/page-header.php") ?>
 
 <section>
   <div class="inner-column">
