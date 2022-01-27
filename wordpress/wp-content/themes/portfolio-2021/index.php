@@ -19,6 +19,8 @@ if (is_page("sign-in")) {
 }
 
 
+
+
 if (is_page("account-info")) {
   include("templates/pages/account-info.php");
 }
