@@ -47,14 +47,7 @@ wordpress/xmlrpc.php
 wordpress/wp-admin
 wordpress/wp-includes
 wordpress/wp-content/index.php
-wordpress/wp-content/themes/twentyten
-wordpress/wp-content/themes/twentyeleven
-wordpress/wp-content/themes/twentytwelve
-wordpress/wp-content/themes/twentythirteen
-wordpress/wp-content/themes/twentyfourteen
-wordpress/wp-content/themes/twentyfifteen
-wordpress/wp-content/themes/twentysixteen
-wordpress/wp-content/themes/twentyseventeen
+
 wordpress/wp-content/themes/twentyeighteen
 wordpress/wp-content/themes/twentynineteen
 wordpress/wp-content/themes/twentytwenty
