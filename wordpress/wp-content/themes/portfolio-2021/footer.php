@@ -25,6 +25,20 @@
         <a href="https://github.com/bdlowery">GitHub</a>
       </nav>
     </div>
+    <div class="views-counter">
+      <?php
+
+      $counter = file_get_contents(getFile("views.php"));
+      if (empty($_SESSION["visited"])) {
+
+        file_put_contents(getFile("views.php"), $counter++);
+      }
+      $_SESSION["visited"] = true;
+
+      ?>
+
+      <?= $counter  ?>
+    </div>
   </div>
 
 </footer>

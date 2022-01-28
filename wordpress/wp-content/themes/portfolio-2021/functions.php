@@ -24,6 +24,14 @@ function portfolio_enqueue_scripts()
 }
 add_action("wp_enqueue_scripts", "portfolio_enqueue_scripts");
 
+function start_new_session()
+{
+  if (!session_id()) {
+    session_start();
+  }
+}
+add_action('init', 'start_new_session');
+
 
 
 //enable wordpress menus under Appearance
