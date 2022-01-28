@@ -28,16 +28,19 @@
     <div class="views-counter">
       <?php
 
-      $counter = file_get_contents(getFile("views.php"));
-      if (empty($_SESSION["visited"])) {
 
-        file_put_contents(getFile("views.php"), $counter++);
+      if (empty($_SESSION['visited'])) {
+        $counter = file_get_contents(getFile("views.php"));
+        +1;
+        file_put_contents(getFile("views.php"), $counter);
       }
+
+
       $_SESSION["visited"] = true;
 
       ?>
 
-      <?= $counter  ?>
+      <?= file_get_contents(getFile("views.php")) ?>
     </div>
   </div>
 
