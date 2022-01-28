@@ -28,19 +28,18 @@
     <div class="views-counter">
       <?php
       $file = getFile("views.txt");
-      echo $file;
 
       // add the previous counter value if the file exists    
       if (file_exists($file)) {
         $counter = file_get_contents($file);
+        echo $counter;
       } else {
         $counter = 0;
       }
       $counter++;
+
       file_put_contents($file, $counter);
       ?>
-
-      <?= $counter; ?>
     </div>
   </div>
 
