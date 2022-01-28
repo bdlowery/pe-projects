@@ -27,16 +27,16 @@
     </div>
     <div class="views-counter">
       <?php
-      $file = fopen(getFile("views.php"), "r");
-      $counter = fread($file, 50);
-      fclose($file);
+      $file = getFile("views.txt");
 
+      // add the previous counter value if the file exists    
+      if (file_exists($file)) {
+        $counter = file_get_contents($file);
+      } else {
+        $counter = 0;
+      }
       $counter++;
-
-      $file = fopen(getFile("views.php"), "w");
-      fwrite($file, $counter);
-      fclose($file);
-
+      file_put_contents($file, $counter);
       ?>
 
       <?= $counter; ?>
