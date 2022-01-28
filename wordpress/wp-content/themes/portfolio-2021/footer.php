@@ -27,20 +27,19 @@
     </div>
     <div class="views-counter">
       <?php
+      $file = fopen(getFile("views.php"), "r");
+      $counter = fread($file, 50);
+      fclose($file);
 
+      $counter++;
 
-      if (empty($_SESSION['visited'])) {
-        $counter = file_get_contents(getFile("views.php"));
-        +1;
-        file_put_contents(getFile("views.php"), $counter);
-      }
-
-
-      $_SESSION["visited"] = true;
+      $file = fopen(getFile("views.php"), "w");
+      fwrite($file, $counter);
+      fclose($file);
 
       ?>
 
-      <?= file_get_contents(getFile("views.php")) ?>
+      <?= $counter; ?>
     </div>
   </div>
 
