@@ -4,7 +4,17 @@ $title = get_the_title();
 $permalink = get_the_permalink();
 $description = get_the_excerpt();
 $date = get_the_date();
-$dateNumbersOnly = get_the_date("Y-m-d")
+$dateNumbersOnly = get_the_date("Y-m-d");
+
+$dateModified = get_the_modified_date();
+$displayModified = "Modified: " . $dateModified;
+
+
+
+if ($date == $dateModified) {
+  $displayModified = "";
+}
+
 
 ?>
 <article>
@@ -12,6 +22,8 @@ $dateNumbersOnly = get_the_date("Y-m-d")
     <div class="inner-column">
       <h1 class="loud-voice"><?= $title ?></h1>
       <p><em><?= $description ?></em></p>
+      <p>Posted: <?= $date ?></p>
+      <p><?= $displayModified ?></p>
     </div>
   </header>
 
