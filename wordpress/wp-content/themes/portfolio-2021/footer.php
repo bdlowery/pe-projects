@@ -25,21 +25,6 @@
         <a href="https://github.com/bdlowery">GitHub</a>
       </nav>
     </div>
-    <div class="views-counter">
-      <?php
-      $file = getFile("views.txt");
-      $counter = 1;
-
-      // add the previous counter value if the file exists    
-      if (file_exists($file)) {
-        $counter =  $counter + file_get_contents($file);
-      }
-
-      file_put_contents($file, $counter);
-      $viewcount = file_get_contents($file);
-      echo $viewcount;
-      ?>
-    </div>
   </div>
 
 </footer>
