@@ -26,7 +26,35 @@ add_action("wp_enqueue_scripts", "portfolio_enqueue_scripts");
 
 
 
+//post view counter
+function displayPostViews($postID)
+{
+  $counterKey = "post_views";
+  $numberOfViews = get_post_meta($postID, $counterKey, true);
 
+  if ($numberOfViews == "") {
+    delete_post_meta($postID, $counterKey);
+    add_post_meta($postID, $counterKey, 0);
+    return "0 views";
+  }
+  return $numberOfViews . " views";
+}
+
+function incrementPostViews($postID)
+{
+  $counterKey = "post_views";
+  $numberOfViews = get_post_meta($postID, $counterKey, true);
+
+  if ($numberOfViews == "") {
+    $numberOfViews = 0;
+    delete_post_meta($postID, $counterKey);
+    add_post_meta($postID, $counterKey, 0);
+  } else {
+    $numberOfViews++;
+    update_post_meta($postID, $counterKey, $numberOfViews);
+  }
+}
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 //enable wordpress menus under Appearance
 function register_my_menu()

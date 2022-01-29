@@ -11,6 +11,7 @@ $description = get_field("description", $card->ID);
 $toolsUsed = get_field("tool", $card->ID);
 $permalink = get_permalink($card->ID);
 
+
 if ($projectImage) {
   $projectImage = $projectImage["url"];
 } else {

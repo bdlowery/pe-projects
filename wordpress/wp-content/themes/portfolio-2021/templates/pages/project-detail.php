@@ -2,6 +2,7 @@
 $name = get_field("name");
 $projectImage = get_field("project_image");
 $description = get_field("description");
+incrementPostViews(get_the_ID());
 
 if ($projectImage) {
   $projectImage = get_field("project_image");
@@ -16,7 +17,7 @@ if ($projectImage) {
       <?php echo get_hansel_and_gretel_breadcrumbs() ?>
       <h1 class="title-voice"><?= $name ?></h1>
       <p class="regular-voice"><?= $description ?></p>
-
+      <p><?= displayPostViews(get_the_ID()) ?></p>
       <?php
       $user = wp_get_current_user();
       if (in_array('administrator', (array) $user->roles) || in_array('editor', (array) $user->roles)) {
