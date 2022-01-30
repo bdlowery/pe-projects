@@ -26,6 +26,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --box-shadow: var(--black-transparent);
   --primary: #279cde;
   --primary-light: #6bb7e3;
+  --primary-lighter: #afe2ff;
   --primary-dark: #1f77ab;
   --primary-darker: #0f425e;
   --accent: #d57b02;
@@ -141,10 +142,6 @@ ul li + li {
   display: block;
 }
 
-/* .project-card picture {
-  max-width: 240px;
-} */
-
 .inner-column p {
   max-width: 60ch;
 }
@@ -212,16 +209,20 @@ ul li {
 }
 
 .writing-card-link .attention-voice span {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: left bottom 0px;
-  padding-bottom: 3px;
+  background-image: linear-gradient(
+    transparent 50%,
+    var(--primary-lighter) 50%,
+    var(--primary-lighter) 85%,
+    transparent 85%,
+    transparent 100%
+  );
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 100%;
   transition: 0.25s ease-in-out;
 }
 
 .writing-card-link:hover .attention-voice span {
-  background-size: 100% 2px;
+  background-size: 100% 100%;
   transition: 0.25s ease-in-out;
 }
 
@@ -236,16 +237,20 @@ ul li {
 }
 
 .project-card .stern-voice span {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: left bottom 0px;
-  padding-bottom: 1px;
+  background-image: linear-gradient(
+    transparent 50%,
+    var(--primary-lighter) 50%,
+    var(--primary-lighter) 85%,
+    transparent 85%,
+    transparent 100%
+  );
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 100%;
   transition: 0.25s ease-in-out;
 }
 
 .project-card-link:hover .stern-voice span {
-  background-size: 100% 2px;
+  background-size: 100% 100%;
   transition: 0.25s ease-in-out;
 }
 
@@ -296,6 +301,29 @@ width: 100%;
 .my-work-cards {
   display: flex;
   flex-direction: column;
+}
+
+.writing-page-card,
+.writing-page-card .description-voice {
+  max-width: 60ch;
+}
+
+.writing-page-card .strong-voice span {
+  background-image: linear-gradient(
+    transparent 50%,
+    var(--primary-lighter) 50%,
+    var(--primary-lighter) 85%,
+    transparent 85%,
+    transparent 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: 0.25s ease-in-out;
+}
+
+.writing-page-card:hover .strong-voice span {
+  background-size: 100% 100%;
+  transition: 0.25s ease-in-out;
 }
 
 footer {
