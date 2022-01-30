@@ -145,3 +145,7 @@ p + p {
 /* .stern-voice + .tools {
   margin-top: 2px;
 } */
+
+.writing-page-card + .writing-page-card {
+  margin-top: 60px;
+}
