@@ -141,9 +141,9 @@ ul li + li {
   display: block;
 }
 
-.project-card picture {
+/* .project-card picture {
   max-width: 240px;
-}
+} */
 
 .inner-column p {
   max-width: 60ch;
