@@ -7,7 +7,9 @@
 <?php
 $parameters = array(
   "post_type" => "project-type",
-  'post__not_in' => array(46),
+  "post__not_in" => array(46),
+  "orderby" => "ID",
+  "order" => "ASC",
 );
 
 $query = new WP_Query($parameters);

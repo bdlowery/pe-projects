@@ -14,7 +14,6 @@ if ($projectImage) {
 <article>
   <header class="page-header">
     <div class="inner-column">
-      <?php echo get_hansel_and_gretel_breadcrumbs() ?>
       <h1 class="title-voice"><?= $name ?></h1>
       <p class="regular-voice"><?= $description ?></p>
       <p><?= displayPostViews(get_the_ID()) ?></p>
