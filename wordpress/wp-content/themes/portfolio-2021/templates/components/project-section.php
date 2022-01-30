@@ -3,7 +3,7 @@ $sectionTitle = get_field("section_title");
 $sectionDescription = get_field("section_description");
 
 ?>
-<section>
+<section class="my-work">
   <div class="inner-column">
     <div class="projects-intro">
       <h2 class="strong-voice"><?= $sectionTitle ?></h2>
