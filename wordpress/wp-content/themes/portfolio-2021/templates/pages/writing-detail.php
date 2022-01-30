@@ -7,7 +7,7 @@ $date = get_the_date();
 $dateNumbersOnly = get_the_date("Y-m-d");
 
 $dateModified = get_the_modified_date();
-$displayModified = "Modified: " . $dateModified;
+$displayModified = " -- Modified: " . $dateModified;
 
 
 
@@ -21,9 +21,9 @@ if ($date == $dateModified) {
   <header class="page-header">
     <div class="inner-column">
       <h1 class="loud-voice"><?= $title ?></h1>
+
+      <p class="quiet-voice">Posted: <?= $date ?> <?= $displayModified ?></p>
       <p><em><?= $description ?></em></p>
-      <p>Posted: <?= $date ?></p>
-      <p><?= $displayModified ?></p>
     </div>
   </header>
 
