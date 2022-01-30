@@ -8,6 +8,7 @@ Thumbs.db
 
 # wordpress specific
 wordpress/wp-config.php
+wordpress/wp-content/uploads/
 wordpress/wp-content/blogs.dir/
 wordpress/wp-content/upgrade/*
 wordpress/wp-content/backup-db/*
