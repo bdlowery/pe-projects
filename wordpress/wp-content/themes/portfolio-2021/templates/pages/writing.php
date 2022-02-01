@@ -9,6 +9,7 @@
     <?php
     $parameters = array(
       "post_type" => "post",
+      "post__not_in" => array(85),
     );
 
     $query = new WP_Query($parameters);

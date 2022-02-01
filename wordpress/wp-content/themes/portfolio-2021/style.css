@@ -90,19 +90,10 @@ ul li + li {
   background-repeat: no-repeat;
   padding-bottom: 2px;
   background-size: 0% 1px;
-  transition: 0.25s ease-in-out;
 }
 
 .site-menu .site-link:hover span {
   background-size: 100% 1px;
-  transition: 0.25s ease-in-out;
-}
-
-.site-link span {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: left bottom 0px;
-  background-repeat: no-repeat;
-  background-size: 0% 1px;
   transition: 0.25s ease-in-out;
 }
 
@@ -212,13 +203,12 @@ ul li {
   background-image: linear-gradient(
     transparent 50%,
     var(--primary-lighter) 50%,
-    var(--primary-lighter) 85%,
+    var(--primary-lighterz) 85%,
     transparent 85%,
     transparent 100%
   );
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  transition: 0.25s ease-in-out;
 }
 
 .writing-card-link:hover .attention-voice span {
@@ -246,7 +236,6 @@ ul li {
   );
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  transition: 0.25s ease-in-out;
 }
 
 .project-card-link:hover .stern-voice span {
@@ -318,7 +307,6 @@ width: 100%;
   );
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  transition: 0.25s ease-in-out;
 }
 
 .writing-page-card:hover .strong-voice span {
