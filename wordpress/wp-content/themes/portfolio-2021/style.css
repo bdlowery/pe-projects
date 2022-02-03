@@ -167,7 +167,7 @@ ul li {
 .project-cards {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 
 .my-work-project-card {
@@ -180,7 +180,6 @@ ul li {
   width: 100%;
 }
 
-/* $todo -- add a hover effect on the card when user hovers. Shows clickability. */
 .project-picture {
   height: 0;
   padding-bottom: 60%;
@@ -191,6 +190,7 @@ ul li {
 }
 
 .project-card-link {
+  max-width: 350px;
   display: inline-block;
 }
 
@@ -243,9 +243,9 @@ ul li {
 width: 100%;
 } */
 
-.project-card p {
+/* .project-card p {
   max-width: 30ch;
-}
+} */
 
 .writing-cards {
   display: grid;
@@ -468,10 +468,12 @@ article p + h2 {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .project-cards {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .my-work-cards {
     flex-direction: row;
   }
