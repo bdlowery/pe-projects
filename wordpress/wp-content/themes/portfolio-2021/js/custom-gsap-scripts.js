@@ -29,6 +29,7 @@ if (intro) {
           {
             x: -700,
             ease: Power1.easeOut,
+            opacity: 0,
           },
           0.05
         );
@@ -38,6 +39,7 @@ if (intro) {
           {
             x: -600,
             ease: Circ.easeOut,
+            opacity: 0,
           },
           0.05,
           "-=0.3"
@@ -48,6 +50,7 @@ if (intro) {
           {
             y: -900,
             ease: Circ.easeOut,
+            opacity: 0,
           },
           0.05,
           "-=0.8"
@@ -58,6 +61,7 @@ if (intro) {
           {
             y: -900,
             ease: Circ.easeOut,
+            opacity: 0,
           },
           0.05,
           "-=0.8"
@@ -68,6 +72,7 @@ if (intro) {
           {
             y: -900,
             ease: Circ.easeOut,
+            opacity: 0,
           },
           0.05,
           "-=0.8"
@@ -78,6 +83,7 @@ if (intro) {
           {
             y: -900,
             ease: Circ.easeOut,
+            opacity: 0,
           },
           0.05,
           "-=0.8"
@@ -88,6 +94,7 @@ if (intro) {
           {
             x: -1850,
             ease: Power1.easeOut,
+            opacity: 0,
           },
           0.05,
           "-=0.2"
