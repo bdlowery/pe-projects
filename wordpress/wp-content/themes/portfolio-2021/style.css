@@ -119,6 +119,19 @@ intro-animation svg {
       6px 6px 0 var(--primary-dark), 7px 7px 0 var(--primary-dark);
   }
 }
+
+intro-animation svg #b,
+#r,
+#i,
+#a,
+#n {
+  animation-name: shadow;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 .what-i-want a {
   display: inline-block;
 }
