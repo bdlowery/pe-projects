@@ -149,6 +149,24 @@ stars {
   z-index: -1;
   overflow: hidden;
 }
+
+divider {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+}
+
+inverted-divider {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* inverted-divider svg {
+  transform: translate(0, -95%);
+} */
 .what-i-want a {
   display: inline-block;
 }
