@@ -106,6 +106,19 @@ intro-animation svg {
   overflow: visible;
 }
 
+@keyframes shadow {
+  0% {
+    text-shadow: 0px 0px 0 var(--primary-dark), 0px 0px 0 var(--primary-dark),
+      0px 0px 0 var(--primary-dark), 0px 0px 0 var(--primary-dark), 0px 0px 0 var(--primary-dark),
+      0px 0px 0 var(--primary-dark), 0px 0px 0 var(--primary-dark);
+  }
+
+  100% {
+    text-shadow: 1px 1px 0 var(--primary-dark), 2px 2px 0 var(--primary-dark),
+      3px 3px 0 var(--primary-dark), 4px 4px 0 var(--primary-dark), 5px 5px 0 var(--primary-dark),
+      6px 6px 0 var(--primary-dark), 7px 7px 0 var(--primary-dark);
+  }
+}
 .what-i-want a {
   display: inline-block;
 }
