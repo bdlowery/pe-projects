@@ -269,19 +269,22 @@
   </div>
 </section>
 
+
 <section class="projects">
   <div class="inner-column">
     <?php
     $parameters = array(
       "post_type" => "project-type",
       "meta_key"  => "section_title",
-      "meta_value" => "Projects"    );
+      "meta_value" => "Projects"
+    );
 
     $query = new WP_Query($parameters);
 
     while ($query->have_posts()) : $query->the_post();
       include(getFile("templates/components/project-home.php"));
     endwhile;
+
     //reset what was done above.
     //Allows looping of more items below this.
     wp_reset_postdata();
@@ -296,14 +299,16 @@
       <p>Some intro thing I don't know what to put here please send help please and thank you those are the magic words.</p>
     </div>
     <div class="writing-cards">
-      <?php      $parameters = array(
+      <?php
+      $parameters = array(
         "post_type" => "post",
         "category_name"  => "featured",
       );
 
       $query = new WP_Query($parameters);
 
-      while ($query->have_posts()) : $query->the_post();        include(getFile("templates/components/writing-home.php"));
+      while ($query->have_posts()) : $query->the_post();
+        include(getFile("templates/components/writing-home.php"));
 
       endwhile;
 
