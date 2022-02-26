@@ -535,7 +535,7 @@ article section h2 {
     position: absolute;
     width: 115%;
     height: 190%;
-    background-color: var(--primary-neutral-lightest);
+    background-color: var(--primary-neutral-lighter);
     top: -20px;
     left: -20px;
     z-index: -1;
