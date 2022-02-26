@@ -10,6 +10,15 @@ section {
 .projects {
   padding-bottom: 130px;
 }
+
+.intro {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url("../images/portfolio-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .my-work {
   padding-top: 50px;
   padding-bottom: 50px;
