@@ -132,6 +132,23 @@ intro-animation svg #b,
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+
+.intro {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+stars {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  overflow: hidden;
+}
 .what-i-want a {
   display: inline-block;
 }
