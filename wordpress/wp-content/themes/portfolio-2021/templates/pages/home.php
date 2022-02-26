@@ -1,17 +1,17 @@
 <section class="intro">
 
-  <picture>
+  <intro-animation>
     <svg viewBox="0 0 1874 762" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
       <path id="Artboard8" fill="none" d="M0 0h1873.57v761.116H0z" />
-      <text id="introduction" x="27.187" y="83.133" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="100" fill="#0f425e">Hello! I&apos;m</text>
-      <text id="job" x="654.687" y="734.582" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="100" fill="#0f425e">W<tspan x="743.387 800.787" y="734.582 734.582">eb</tspan> Developer/Designer</text>
-      <text id="b" x="-7.313" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="#0f425e">B</text>
-      <text id="r" x="415.087" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="#0f425e">R</text>
-      <text id="i" x="848.287" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="#0f425e">I</text>
-      <text id="a" x="1025.41" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="#0f425e">A</text>
-      <text id="n" x="1436.29" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="#0f425e">N</text>
+      <text id="introduction" x="27.187" y="83.133" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="100" fill="var(--primary)">Hello! I&apos;m</text>
+      <text id="job" x="654.687" y="734.582" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="100" fill="var(--primary)">W<tspan x="743.387 800.787" y="734.582 734.582">eb</tspan> Developer/Designer</text>
+      <text id="b" x="-7.313" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="var(--primary-lighter)">B</text>
+      <text id="r" x="415.087" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="var(--primary-lighter)">R</text>
+      <text id="i" x="848.287" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="var(--primary-lighter)">I</text>
+      <text id="a" x="1025.41" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="var(--primary-lighter)">A</text>
+      <text id="n" x="1436.29" y="587.157" font-family="'HelveticaNeue-Bold','Helvetica Neue'" font-weight="700" font-size="600" fill="var(--primary-lighter)">N</text>
     </svg>
-  </picture>
+  </intro-animation>
 </section>
 
 <section class="about-me-landing">
@@ -26,8 +26,7 @@
         <h2 class="attention-voice">What I want</h2>
         <ul>
           <li>I'm looking for a paid internship as a Front-end Web Developer.</li>
-          <li>Here's a list of all of <a href="/my-work">My Work</a></li>
-          <li>If interested, let's get in touch.</li>
+          <li>Here's a list of all of <a href="/my-work">My Work</a></li>          <li>If interested, let's get in touch.</li>
         </ul>
       </div>
 
