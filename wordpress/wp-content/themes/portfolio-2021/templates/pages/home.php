@@ -250,7 +250,8 @@
         <h2 class="attention-voice">What I want</h2>
         <ul>
           <li>I'm looking for a paid internship as a Front-end Web Developer.</li>
-          <li>Here's a list of all of <a href="/my-work">My Work</a></li>          <li>If interested, let's get in touch.</li>
+          <li>Here's a list of all of <a href="/my-work">My Work</a></li>
+          <li>If interested, let's get in touch.</li>
         </ul>
       </div>
 
@@ -259,7 +260,7 @@
         <ul>
           <li>2nd year Computer Science student at Sacramento State</li>
           <li>6 month internship at Perpetual Education</li>
-          <li>Something else here to make this section longer</li>
+          <li>Completed a 6-month-long Web Design and Web Development bootcamp</li>
         </ul>
       </div>
 
@@ -302,8 +303,7 @@
 
       $query = new WP_Query($parameters);
 
-      while ($query->have_posts()) : $query->the_post();
-        include(getFile("templates/components/writing-home.php"));
+      while ($query->have_posts()) : $query->the_post();        include(getFile("templates/components/writing-home.php"));
 
       endwhile;
 
