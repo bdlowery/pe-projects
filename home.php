@@ -25,7 +25,7 @@
           <ul>
             <li>2nd year Computer Science student at Sacramento State</li>
             <li>6 month internship at Perpetual Education</li>
-            <li>Something else here to make this section longer</li>
+            <li>Attending a Web Development / Web Design Bootcamp</li>
           </ul>
       </div>
     </div>
