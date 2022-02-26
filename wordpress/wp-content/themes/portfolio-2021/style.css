@@ -167,6 +167,17 @@ inverted-divider {
 /* inverted-divider svg {
   transform: translate(0, -95%);
 } */
+
+skyline-divider {
+  display: block;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+}
+
+skyline-divider svg {
+}
 .what-i-want a {
   display: inline-block;
 }
