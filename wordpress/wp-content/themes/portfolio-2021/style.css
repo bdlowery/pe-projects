@@ -415,6 +415,12 @@ footer {
   margin-top: 15px;
 }
 
+.footer-text h3,
+.footer-text p,
+.footer-links-group .footer-links a {
+  color: var(--white);
+}
+
 .footer-links a,
 .what-i-want a {
   text-decoration: underline;
