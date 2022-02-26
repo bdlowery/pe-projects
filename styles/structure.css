@@ -52,10 +52,6 @@ footer {
   margin-top: 5px;
 }
 
-.what-i-want + .education {
-  margin-top: 30px;
-}
-
 /* $todo -- remove this when proper landing eye-catching-thing is added */
 .about-me-landing {
   padding-top: 150px;
