@@ -223,6 +223,19 @@
       </g>
     </svg>
   </stars>
+
+
+  <divider>
+    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+      <path id="Artboard15" fill="none" d="M0 0h6000v250H0z" />
+      <clipPath id="_clip1">
+        <path d="M0 0h6000v250H0z" />
+      </clipPath>
+      <g clip-path="url(#_clip1)">
+        <path d="M0 .091 3000 215.56 6000 .091l.178 249.909H.178L0 .091Z" fill="#fff" />
+      </g>
+    </svg>
+  </divider>
 </section>
 
 <section class="about-me-landing">
@@ -268,7 +281,6 @@
     while ($query->have_posts()) : $query->the_post();
       include(getFile("templates/components/project-home.php"));
     endwhile;
-
     //reset what was done above.
     //Allows looping of more items below this.
     wp_reset_postdata();
