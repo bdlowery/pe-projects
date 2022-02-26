@@ -243,7 +243,7 @@
 
     <div class="who-i-am">
       <h1 class="loud-voice">Who I am</h1>
-      <p><strong>Hello!</strong> I'm a web developer and web designer focusing on goal driven development and design. I currently help local businesses craft a cohesive goal driven website to enhance and compliment their existing business.</p>
+      <p>I'm a <strong>web developer</strong> and <strong>web designer</strong> focusing on goal driven development and design. I currently help local businesses craft a cohesive goal to enhance, and compliment their existing business.</p>
     </div>
     <div class="extra-information">
       <div class="what-i-want">
@@ -295,8 +295,7 @@
       <p>Some intro thing I don't know what to put here please send help please and thank you those are the magic words.</p>
     </div>
     <div class="writing-cards">
-      <?php
-      $parameters = array(
+      <?php      $parameters = array(
         "post_type" => "post",
         "category_name"  => "featured",
       );
