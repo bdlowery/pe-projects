@@ -95,7 +95,8 @@ ul li + li {
   transition: 0.25s ease-in-out;
 }
 
-.intro picture {
+intro-animation {
+  display: block;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
