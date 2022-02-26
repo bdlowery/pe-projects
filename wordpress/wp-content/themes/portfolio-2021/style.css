@@ -44,12 +44,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --accent-neutral-dark: #655d53;
   --accent-neutral-darker: #3d3832;
 }
-/* .about-me-landing {
-background: linear-gradient(145deg, rgba(0, 16, 153, 0.2) 0, rgba(58, 217, 255, 0.2) 96%);
+
+.about-me-landing {
 }
-body {
-background: black;
-} */
+
 /* $todo 
 
 Temporary color styles to try and show heierarchy.
