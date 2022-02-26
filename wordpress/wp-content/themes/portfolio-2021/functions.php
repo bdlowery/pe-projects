@@ -7,6 +7,26 @@ function getFile($path)
   return dirname(__FILE__) . "/" . $path;
 }
 
+function stickySaveWidgetStyles()
+{
+  echo '<style>
+    .wp-admin #poststuff {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #post-body.columns-2 #postbox-container-1 {
+      min-height: 100%;
+    }
+
+    .wp-admin #poststuff #post-body.columns-2 #side-sortables {
+      position: sticky;
+      top: 40px;
+    }
+  </style>';
+}
+// add_action('admin_head', 'stickySaveWidgetStyles');
+
 // Disable Wordpress Admin Bar for all users
 add_filter("show_admin_bar", "__return_false");
 
