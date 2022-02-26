@@ -56,6 +56,8 @@ wordpress/wp-content/themes/index.php
 wordpress/wp-content/plugins/index.php
 wordpress/wp-content/plugins/akismet*
 
+wordpress/config.codekit3
+
 # large/disallowed file types
 # a CDN should be used for these
 *.hqx
