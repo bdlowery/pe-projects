@@ -330,6 +330,18 @@
     </div>
   </div>
 
+  <inverted-bump>
+    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+      <path id="Artboard17" fill="none" d="M0 0h6000v250H0z" />
+      <clipPath id="_clip1">
+        <path d="M0 0h6000v250H0z" />
+      </clipPath>
+      <g clip-path="url(#_clip1)">
+        <path d="m0 0 3000 250L6000 0H0Z" fill="#fff" fill-rule="nonzero" />
+      </g>
+    </svg>
+  </inverted-bump>
+</section>
   <skyline-divider>
     <svg viewBox="0 0 5994 462" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
       <path id="Artboard16" fill="none" d="M0 0h5993.38v461.229H0z" />
