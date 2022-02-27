@@ -43,6 +43,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --accent-neutral: #776d61;
   --accent-neutral-dark: #655d53;
   --accent-neutral-darker: #3d3832;
+
+  --flicker-duration: 4s;
 }
 
 /* $todo 
@@ -103,6 +105,37 @@ intro-animation svg {
   overflow: visible;
 }
 
+/* stars svg path:nth-of-type(2n + 1) {
+  animation: starFlicker;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+} */
+
+/* stars svg path:nth-of-type(2n + 1) {
+  animation: starFlicker;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+} */
+
+/* stars svg path:nth-of-type(5n) {
+  animation: starFlicker;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+} */
+
+@keyframes starFlicker {
+  25% {
+    opacity: 0;
+  }
+}
+
 @keyframes shadow {
   0% {
     text-shadow: 0px 0px 0 var(--primary-dark), 0px 0px 0 var(--primary-dark),
@@ -114,6 +147,22 @@ intro-animation svg {
     text-shadow: 1px 1px 0 var(--primary-dark), 2px 2px 0 var(--primary-dark),
       3px 3px 0 var(--primary-dark), 4px 4px 0 var(--primary-dark), 5px 5px 0 var(--primary-dark),
       6px 6px 0 var(--primary-dark), 7px 7px 0 var(--primary-dark);
+  }
+}
+
+@keyframes comet {
+  0%,
+  40% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60%,
+  100% {
+    transform: translateX(-100vmax);
+    opacity: 0;
   }
 }
 
@@ -139,14 +188,59 @@ intro-animation svg #b,
 stars {
   display: block;
   position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 800px;
   z-index: -1;
   overflow: hidden;
 }
 
+.stars-svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  animation: starFlicker var(--flicker-duration) ease-in-out infinite;
+}
+
+.stars-svg:nth-child(2) {
+  animation-delay: calc(var(--flicker-duration) * -0.33);
+}
+.stars-svg:nth-child(3) {
+  animation-delay: calc(var(--flicker-duration) * -0.66);
+}
+
+.star {
+  fill: #ffffff;
+}
+.star:nth-child(3n) {
+  opacity: 0.8;
+}
+.star:nth-child(7n) {
+  opacity: 0.6;
+}
+.star:nth-child(13n) {
+  opacity: 0.4;
+}
+.star:nth-child(19n) {
+  opacity: 0.2;
+}
+
+.comet {
+  transform-origin: center center;
+  animation: comet 10s linear infinite;
+}
+
+.comet-b {
+  animation-delay: -3.3s;
+}
+
+.comet-c {
+  animation-delay: -5s;
+}
 divider {
   display: block;
   position: absolute;
@@ -169,8 +263,9 @@ skyline-divider {
   display: block;
   position: absolute;
   bottom: 0;
-
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
 }
 
 .skyline {
@@ -180,10 +275,19 @@ skyline-divider {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-top: 400px;
-  padding-bottom: 0px;
+  padding-top: 350px;
+  padding-bottom: 50px;
 
   z-index: -1;
+}
+
+@media (min-width: 570px) {
+  skyline-divider {
+    width: 100%;
+  }
+}
+
+@media (min-width: 975px) {
 }
 
 .writing {
@@ -261,6 +365,7 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  max-width: 880px;
 }
 
 .projects {
@@ -545,7 +650,7 @@ article section h2 {
     position: absolute;
     width: 115%;
     height: 190%;
-    background-color: var(--primary-neutral-lighter);
+    background-color: var(--primary-neutral-lightest);
     top: -20px;
     left: -20px;
     z-index: -1;
