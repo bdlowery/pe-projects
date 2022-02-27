@@ -342,6 +342,8 @@
     </svg>
   </inverted-bump>
 </section>
+
+<section aria-hidden="true" class="skyline">
   <skyline-divider>
     <svg viewBox="0 0 5994 462" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
       <path id="Artboard16" fill="none" d="M0 0h5993.38v461.229H0z" />
