@@ -179,14 +179,32 @@ skyline-divider {
 skyline-divider svg {
 }
 
-.writing {
+.skyline {
   position: relative;
+
   background-image: url("./images/writing-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-top: 200px;
-  padding-bottom: 350px;
+  padding-top: 400px;
+  padding-bottom: 0px;
+
+  z-index: -1;
+}
+
+.writing {
+  position: relative;
+
+  padding-top: 180px;
+  padding-bottom: 140px;
+}
+
+inverted-bump {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 100%);
+  width: 100%;
 }
 
 .what-i-want a {
@@ -412,10 +430,6 @@ footer {
   gap: 15px;
 }
 
-.footer-text h3 + p {
-  margin-top: 15px;
-}
-
 .footer-text h3,
 .footer-text p,
 .footer-links-group .footer-links a {
@@ -436,11 +450,12 @@ footer {
   text-decoration: none;
 }
 
-.footer-links-group {
+.footer-links-group,
+.footer-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 15px;
+  gap: 25px;
 }
 
 .footer-links {
