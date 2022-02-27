@@ -236,12 +236,16 @@ stars {
 }
 
 .comet-b {
-  animation-delay: -3.3s;
+  animation-fill-mode: backwards;
+
+  animation-delay: 3.3s;
 }
 
 .comet-c {
-  animation-delay: -5s;
+  animation-fill-mode: backwards;
+  animation-delay: 5s;
 }
+
 divider {
   display: block;
   position: absolute;
