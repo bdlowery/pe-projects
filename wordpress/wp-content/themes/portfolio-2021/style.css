@@ -45,9 +45,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --accent-neutral-darker: #3d3832;
 }
 
-.about-me-landing {
-}
-
 /* $todo 
 
 Temporary color styles to try and show heierarchy.
@@ -174,9 +171,6 @@ skyline-divider {
   bottom: 0;
 
   width: 100%;
-}
-
-skyline-divider svg {
 }
 
 .skyline {
