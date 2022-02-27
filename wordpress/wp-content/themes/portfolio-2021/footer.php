@@ -3,7 +3,7 @@
   <div class="inner-column site-footer">
     <div class="footer-text">
       <h3 class="regular-voice"><strong>Brian Lowery</strong></h3>
-      <p>Last updated <time datetime="2021-11-25"> November 25th, 2021</time></p>
+      <p>Last updated <time datetime="2021-11-25"> February 27th, 2022</time></p>
     </div>
     <div class="footer-links-group">
       <nav class="site-menu footer-links">
