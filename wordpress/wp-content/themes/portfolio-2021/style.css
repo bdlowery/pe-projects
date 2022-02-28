@@ -258,12 +258,11 @@ skyline-divider {
 .skyline {
   position: relative;
 
-  background-image: url("./images/writing-background.jpg");
+  background-image: url("./images/skyline-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-top: 350px;
-  padding-bottom: 0px;
+  min-height: 350px;
   overflow: hidden;
   z-index: -1;
 }
