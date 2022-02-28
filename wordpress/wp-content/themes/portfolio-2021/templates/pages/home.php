@@ -1,4 +1,5 @@
 <section class="intro">
+  <h1 class="visually-hidden">Brian Lowery, Web Developer and Designer</h1>
   <!-- WHY DO I HAVE TO INCLUDE THE SKYLINE DIVIDER SVG UP HERE FOR IT TO NOT BE BROKEN IN THE FOOTERIS THIS BROKEN -->
   <!-- <svg viewBox="0 0 5994 462" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
     <path id="Artboard16" fill="none" d="M0 0h5993.38v461.229H0z" />
@@ -719,7 +720,7 @@
 
 <section class="writing">
   <inverted-divider>
-    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" preserveAspectRatio="none">
       <path id="Artboard15" fill="none" d="M0 0h6000v250H0z" />
       <clipPath id="_clip1">
         <path d="M0 0h6000v250H0z" />
@@ -756,7 +757,7 @@
   </div>
 
   <inverted-bump>
-    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" preserveAspectRatio="none">
       <path id="Artboard17" fill="none" d="M0 0h6000v250H0z" />
       <clipPath id="_clip1">
         <path d="M0 0h6000v250H0z" />
