@@ -63,7 +63,11 @@ body {
   color: var(--primary-neutral-darker);
 }
 
-.masthead .logo {
+my-logo {
+  display: block;
+}
+
+.masthead my-logo {
   max-width: 70px;
 }
 
@@ -717,7 +721,7 @@ article section h2 {
   .writing-text + .quiet-voice {
     color: var(--white);
   }
-  .logo svg text {
+  my-logo svg text {
     fill: var(--white);
   }
   .action-link {
@@ -813,7 +817,7 @@ article section h2 {
   .dark-theme .writing-text + .quiet-voice {
     color: var(--white);
   }
-  .dark-theme .logo svg text {
+  .dark-theme my-logo svg text {
     fill: var(--white);
   }
   .dark-theme .action-link {

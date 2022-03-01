@@ -642,14 +642,8 @@
   </stars>
 
   <divider>
-    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-      <path id="Artboard15" fill="none" d="M0 0h6000v250H0z" />
-      <clipPath id="_clip1">
-        <path d="M0 0h6000v250H0z" />
-      </clipPath>
-      <g clip-path="url(#_clip1)">
-        <path d="M0 .091 3000 215.56 6000 .091l.178 249.909H.178L0 .091Z" fill="#fff" />
-      </g>
+    <svg viewBox="0 0 6000 250" preserveAspectRatio="none">
+      <path d="M0 .091 3000 215.56 6000 .091l.178 249.909H.178L0 .091Z" fill="#fff" />
     </svg>
   </divider>
 </section>
@@ -710,14 +704,8 @@
 
 <section class="writing">
   <inverted-divider>
-    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" preserveAspectRatio="none">
-      <path id="Artboard15" fill="none" d="M0 0h6000v250H0z" />
-      <clipPath id="_clip1">
-        <path d="M0 0h6000v250H0z" />
-      </clipPath>
-      <g clip-path="url(#_clip1)">
-        <path d="M0 249.909 3000 34.44l3000 215.469L6000.178 0H.178L0 249.909Z" fill="var(--primary-neutral-lighter)" />
-      </g>
+    <svg viewBox="0 0 6000 250" preserveAspectRatio="none">
+      <path d="M0 249.909 3000 34.44l3000 215.469L6000.178 0H.178L0 249.909Z" fill="var(--primary-neutral-lighter)" />
     </svg>
   </inverted-divider>
   <div class="inner-column">
@@ -747,14 +735,8 @@
   </div>
 
   <inverted-bump>
-    <svg viewBox="0 0 6000 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" preserveAspectRatio="none">
-      <path id="Artboard17" fill="none" d="M0 0h6000v250H0z" />
-      <clipPath id="_clip1">
-        <path d="M0 0h6000v250H0z" />
-      </clipPath>
-      <g clip-path="url(#_clip1)">
-        <path d="m0 0 3000 250L6000 0H0Z" fill="#fff" fill-rule="nonzero" />
-      </g>
+    <svg viewBox="0 0 6000 250" preserveAspectRatio="none">
+      <path d="m0 0 3000 250L6000 0H0Z" fill="#fff" fill-rule="nonzero" />
     </svg>
   </inverted-bump>
 </section>
