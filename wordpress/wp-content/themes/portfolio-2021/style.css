@@ -172,6 +172,10 @@ stars {
   overflow: hidden;
 
   pointer-events: none;
+  will-change: opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .stars-svg {
@@ -251,7 +255,7 @@ skyline-divider {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, calc(0% + 1px));
   width: 600px;
 }
 
@@ -262,7 +266,7 @@ skyline-divider {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  min-height: 350px;
+  min-height: 400px;
   overflow: hidden;
   z-index: -1;
 }
