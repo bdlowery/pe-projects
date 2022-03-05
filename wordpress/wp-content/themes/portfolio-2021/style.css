@@ -47,10 +47,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --flicker-duration: 4s;
 }
 
-/* $todo 
+/* section,
+header,
+footer {
+  background-image: url("https://peprojects.dev/alpha-2/images/noise.webp");
+} */
 
-Temporary color styles to try and show heierarchy.
-These will be css variables eventually */
+/* article {
+  background-image: url("https://peprojects.dev/alpha-2/images/noise.webp");
+} */
+
 body {
   background-color: var(--white);
 }
@@ -612,6 +618,30 @@ footer {
   display: none;
 }
 
+goal {
+  display: block;
+  position: relative;
+  padding: 16px 16px;
+  font-family: Helvetica;
+  border: 1px solid black;
+  max-width: 400px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.05);
+}
+
+goal p {
+  line-height: 1.5;
+}
+
+goal::before {
+  content: "Goal";
+  position: absolute;
+  top: -15px;
+  padding: 0 16px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: white;
+}
+
 /* Article Styles */
 
 article section {
@@ -670,7 +700,8 @@ article section h2 {
     flex-direction: row;
   }
 }
-@media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --box-shadow: var(--white-transparent);
   }
@@ -764,7 +795,8 @@ article section h2 {
       transparent 100%
     );
   }
-}
+} */
+
 /* dark mode toggle */
 @media (min-width: 0px) {
   :root.dark-theme {
