@@ -670,7 +670,8 @@ article ol li {
   max-width: 60ch;
 }
 
-article ul {
+article ul,
+article ol {
   padding-inline-start: 40px;
 }
 
