@@ -624,7 +624,7 @@ goal {
   padding: 16px 16px;
   font-family: Helvetica;
   border: 1px solid black;
-  max-width: 64ch;
+  max-width: 75ch;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.05);
 }
 
@@ -658,7 +658,7 @@ article picture {
 }
 
 article .inner-column p {
-  max-width: 68ch;
+  max-width: 75ch;
 }
 
 article section h2 {
