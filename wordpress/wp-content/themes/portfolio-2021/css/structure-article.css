@@ -25,9 +25,16 @@ article .picture-module .inner-column h2 + picture {
   margin-top: 15px;
 }
 
-article .picture-module .inner-column picture + p,
 article .figure-module .inner-column figure picture + figcaption,
 article .figure-module .inner-column h2 + figure {
+  margin-top: 15px;
+}
+
+article .picture-module .inner-column picture + p {
+  margin-top: 25px;
+}
+
+article .picture-module .inner-column p + picture {
   margin-top: 25px;
 }
 
