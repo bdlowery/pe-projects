@@ -665,6 +665,11 @@ article section h2 {
   max-width: 35ch;
 }
 
+article ul li,
+article ol li {
+  max-width: 60ch;
+}
+
 @media (min-width: 620px) {
   .masthead {
     flex-direction: row;
