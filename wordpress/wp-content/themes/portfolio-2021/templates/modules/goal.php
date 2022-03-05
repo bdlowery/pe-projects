@@ -7,13 +7,11 @@ while (have_rows('goal')) {
 }
 
 ?>
+
 <section class="goal-module">
   <div class="inner-column">
-    <div class="goal-content">
-      <p><?= $goalHeading ?></p>
-      <div class="goal-text">
-        <p><?= $goalContent ?></p>
-      </div>
-    </div>
+    <goal>
+      <p><?= $goalContent ?></p>
+    </goal>
   </div>
 </section>
