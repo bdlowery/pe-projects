@@ -670,6 +670,10 @@ article ol li {
   max-width: 60ch;
 }
 
+article ul {
+  padding-inline-start: 40px;
+}
+
 @media (min-width: 620px) {
   .masthead {
     flex-direction: row;
