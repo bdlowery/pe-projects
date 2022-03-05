@@ -38,6 +38,9 @@ article .list-module .inner-column h2 + p {
 article .list-module .inner-column p + ul {
   margin-top: 15px;
 }
+article .list-module .inner-column ul + p {
+  margin-top: 15px;
+}
 
 article p + p {
   margin-top: 15px;
