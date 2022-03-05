@@ -655,6 +655,7 @@ article section.post {
 
 article picture {
   max-width: 650px;
+  box-shadow: 0 10px 16px rgb(0 0 0 / 5%);
 }
 
 article .inner-column p {
