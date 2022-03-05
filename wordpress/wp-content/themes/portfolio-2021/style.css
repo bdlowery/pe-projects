@@ -624,7 +624,7 @@ goal {
   padding: 16px 16px;
   font-family: Helvetica;
   border: 1px solid black;
-  max-width: 400px;
+  max-width: 64ch;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.05);
 }
 
