@@ -28,7 +28,7 @@ article .picture-module .inner-column h2 + picture {
 article .picture-module .inner-column picture + p,
 article .figure-module .inner-column figure picture + figcaption,
 article .figure-module .inner-column h2 + figure {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 article .list-module .inner-column h2 + p {
