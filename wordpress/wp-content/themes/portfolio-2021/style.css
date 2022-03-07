@@ -541,11 +541,15 @@ footer {
   line-height: 1.5;
 }
 
-.footer-links a:hover,
+.footer-links a:hover {
+  background-color: var(--white);
+  color: var(--black);
+  text-decoration: none;
+}
+
 .what-i-want a:hover {
   background-color: var(--black);
   color: var(--white);
-  transition: 0.15s ease-in-out;
   text-decoration: none;
 }
 
