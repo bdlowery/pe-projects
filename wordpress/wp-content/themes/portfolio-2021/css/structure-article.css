@@ -31,11 +31,11 @@ article .figure-module .inner-column h2 + figure {
 }
 
 article .picture-module .inner-column picture + p {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 article .picture-module .inner-column p + picture {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 article .list-module .inner-column h2 + p {
@@ -55,5 +55,13 @@ article .inner-column p + ul {
 }
 
 article p + p {
+  margin-top: 15px;
+}
+
+article h2 + h3 {
+  margin-top: 25px;
+}
+
+article h3 + p {
   margin-top: 15px;
 }
