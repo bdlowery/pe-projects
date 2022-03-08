@@ -3,6 +3,7 @@ $imageHeading = get_sub_field("heading");
 $image = get_sub_field("image")["url"];
 $imageDescription = get_sub_field("description");
 $has_intro = get_sub_field("has_intro");
+
 $intro = get_sub_field("intro");
 ?>
 
