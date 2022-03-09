@@ -181,15 +181,17 @@ stars {
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 50%;
   width: 100%;
   z-index: -1;
   overflow: hidden;
 
+  background-image: url("images/stars-background-transparent.png");
+
   pointer-events: none;
   will-change: opacity;
-  transform: translateZ(0);
+  transform: translateZ(0) translateX(-50%);
   backface-visibility: hidden;
   perspective: 1000px;
 }
