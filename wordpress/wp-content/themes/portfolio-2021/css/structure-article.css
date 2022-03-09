@@ -61,7 +61,7 @@ article p + p {
 }
 
 article h2 + h3 {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 article h3 + p {
@@ -69,5 +69,5 @@ article h3 + p {
 }
 
 article p + h3 {
-  margin-top: 25px;
+  margin-top: 30px;
 }
