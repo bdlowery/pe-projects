@@ -9,6 +9,10 @@ $intro = get_sub_field("intro");
 $hasSecondImage = get_sub_field("has_second_image");
 $secondImage = get_sub_field("second_image")["url"];
 $secondDescription = get_sub_field("second_description");
+
+$hasThirdImage = get_sub_field("has_second_image");
+$thirdImage = get_sub_field("second_image")["url"];
+$thirdDescription = get_sub_field("second_description");
 ?>
 
 <section class="picture-module">
@@ -30,6 +34,13 @@ $secondDescription = get_sub_field("second_description");
         <img src="<?= $secondImage; ?>" alt="">
       </picture>
       <?= $secondDescription ?>
+    <?php } ?>
+
+    <?php if ($hasThirdImage) { ?>
+      <picture>
+        <img src="<?= $thirdImage; ?>" alt="">
+      </picture>
+      <?= $thirdDescription ?>
     <?php } ?>
   </div>
 </section>
