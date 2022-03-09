@@ -64,6 +64,10 @@ article h2 + h3 {
   margin-top: 25px;
 }
 
+article h3 + h2 {
+  margin-top: 25px;
+}
+
 article h3 + p {
   margin-top: 15px;
 }
