@@ -17,6 +17,7 @@ wordpress/wp-content/wp-cache-config.php
 wordpress/wp-content/cache/*
 wordpress/wp-content/cache/supercache/*
 
+
 # wp core (as of 4.9.5)
 wordpress/db-config.php
 wordpress/index.php
