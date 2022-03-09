@@ -10,9 +10,13 @@ $hasSecondImage = get_sub_field("has_second_image");
 $secondImage = get_sub_field("second_image")["url"];
 $secondDescription = get_sub_field("second_description");
 
-$hasThirdImage = get_sub_field("has_second_image");
-$thirdImage = get_sub_field("second_image")["url"];
-$thirdDescription = get_sub_field("second_description");
+$hasThirdImage = get_sub_field("has_third_image");
+$thirdImage = get_sub_field("third_image")["url"];
+$thirdDescription = get_sub_field("third_description");
+
+$hasfourthImage = get_sub_field("has_fourth_image");
+$fourthImage = get_sub_field("fourth_image")["url"];
+$fourthDescription = get_sub_field("fourth_description");
 ?>
 
 <section class="picture-module">
@@ -41,6 +45,13 @@ $thirdDescription = get_sub_field("second_description");
         <img src="<?= $thirdImage; ?>" alt="">
       </picture>
       <?= $thirdDescription ?>
+    <?php } ?>
+
+    <?php if ($hasFourthImage) { ?>
+      <picture>
+        <img src="<?= $fourthImage; ?>" alt="">
+      </picture>
+      <?= $fourthDescription ?>
     <?php } ?>
   </div>
 </section>
