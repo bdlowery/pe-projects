@@ -8,7 +8,7 @@ $id = get_sub_field("id");
 
 ?>
 
-<section class=" <?= $id ?> list-module">
+<section class="list-module" id="<?= $id ?>">
   <div class="inner-column">
     <h2><?= $listHeading; ?></h2>
     <?= $listIntro; ?>

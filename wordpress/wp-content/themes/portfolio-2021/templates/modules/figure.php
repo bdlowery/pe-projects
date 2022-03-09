@@ -8,7 +8,7 @@ $figureAttributionTest = get_sub_field("attribution");
 $id = get_sub_field("id");
 
 ?>
-<section class="<?= $id ?>figure-module">
+<section class="figure-module" id="<?= $id ?>">
   <div class="inner-column">
     <h2><?= $figureHeading; ?></h2>
     <figure>

@@ -10,7 +10,7 @@ while (have_rows('goal')) {
 
 ?>
 
-<section class=" <?= $id ?> goal-module">
+<section class="goal-module" id="<?= $id ?>">
   <div class="inner-column">
     <goal>
       <p><?= $goalContent ?></p>

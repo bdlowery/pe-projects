@@ -21,7 +21,7 @@ $fourthDescription = get_sub_field("fourth_description");
 $id = get_sub_field("id");
 ?>
 
-<section class=" <?= $id ?> picture-module">
+<section class="picture-module" id="<?= $id ?>">
   <div class="inner-column">
     <?php if ($imageHeading) { ?>
       <h2><?= $imageHeading; ?></h2>
