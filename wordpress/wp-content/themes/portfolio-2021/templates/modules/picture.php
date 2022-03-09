@@ -14,7 +14,7 @@ $hasThirdImage = get_sub_field("has_third_image");
 $thirdImage = get_sub_field("third_image")["url"];
 $thirdDescription = get_sub_field("third_description");
 
-$hasfourthImage = get_sub_field("has_fourth_image");
+$hasFourthImage = get_sub_field("has_fourth_image");
 $fourthImage = get_sub_field("fourth_image")["url"];
 $fourthDescription = get_sub_field("fourth_description");
 ?>
