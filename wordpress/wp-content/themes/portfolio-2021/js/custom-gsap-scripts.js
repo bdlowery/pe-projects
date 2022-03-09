@@ -13,7 +13,7 @@ if (intro) {
         // custom GSAP code goes here
         console.log("window loaded");
 
-        var tl = new TimelineMax();
+        var tl = gsap.timeline();
         var b = document.querySelector("#b");
         var r = document.querySelector("#r");
         var i = document.querySelector("#i");
@@ -23,16 +23,17 @@ if (intro) {
         var introduction = document.querySelector("#introduction");
         var job = document.querySelector("#job");
 
-        tl.staggerFrom(
-          introduction,
-          1,
-          {
-            x: -700,
-            ease: Power1.easeOut,
-            opacity: 0,
-          },
-          0.05
-        );
+        // tl.staggerFrom(
+        //   introduction,
+        //   1,
+        //   {
+        //     ease: Power1.easeOut,
+        //     width: 0
+        //   },
+        //   0.05,
+        //   "+=0.35"
+        // );
+
         tl.staggerFrom(
           b,
           1,
@@ -42,7 +43,7 @@ if (intro) {
             opacity: 0,
           },
           0.05,
-          "-=0.3"
+          "+=1.3"
         );
         tl.staggerFrom(
           r,
@@ -90,14 +91,13 @@ if (intro) {
         );
         tl.staggerFrom(
           job,
-          1,
+          1.5,
           {
-            x: -1850,
             ease: Power1.easeOut,
             opacity: 0,
           },
           0.05,
-          "-=0.2"
+          "+=0.30"
         );
       },
       false
