@@ -17,9 +17,11 @@ $thirdDescription = get_sub_field("third_description");
 $hasFourthImage = get_sub_field("has_fourth_image");
 $fourthImage = get_sub_field("fourth_image")["url"];
 $fourthDescription = get_sub_field("fourth_description");
+
+$id = get_sub_field("id");
 ?>
 
-<section class="picture-module">
+<section class=" <?= $id ?> picture-module">
   <div class="inner-column">
     <?php if ($imageHeading) { ?>
       <h2><?= $imageHeading; ?></h2>

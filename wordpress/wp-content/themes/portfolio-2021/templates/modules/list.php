@@ -4,10 +4,11 @@ $listHeading = get_sub_field("heading");
 $listIntro = get_sub_field("intro");
 $listType = get_sub_field("type");
 $listDescription = get_sub_field("description");
+$id = get_sub_field("id");
 
 ?>
 
-<section class="list-module">
+<section class=" <?= $id ?> list-module">
   <div class="inner-column">
     <h2><?= $listHeading; ?></h2>
     <?= $listIntro; ?>

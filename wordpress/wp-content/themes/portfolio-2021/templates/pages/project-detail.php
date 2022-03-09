@@ -31,6 +31,7 @@ if ($projectImage) {
   <section class="post">
 
     <?php
+    // this file builds the entire page based on the flexible content fields
     include(getFile("module-loop.php"));
     ?>
   </section>
