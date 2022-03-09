@@ -15,8 +15,9 @@ section {
   padding-top: 250px;
   padding-bottom: 250px;
   background-image: url("../images/portfolio-background.jpg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .my-work {
