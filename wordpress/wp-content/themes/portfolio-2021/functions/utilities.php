@@ -17,10 +17,10 @@ function formatCode($code)
 }
 
 /* this takes the CMS slug field for a given module and makes it visible in the CMS to act as a title so that we can tell what module is what back there. */
-// add_filter('acf/fields/flexible_content/layout_title', function($title) {
-//   $ret = $title; // $ret ?
-//   if ($custom_title = get_sub_field('id')) {
-//     $ret = sprintf($title . ': ' . '<strong>' . $custom_title . '</strong>');
-//   }
-//   return $ret;
-// });
+add_filter('acf/fields/flexible_content/layout_title', function ($title) {
+  $ret = $title; // $ret ?
+  if ($custom_title = get_sub_field('id')) {
+    $ret = sprintf($title . ': ' . '<strong>' . $custom_title . '</strong>');
+  }
+  return $ret;
+});
