@@ -3,6 +3,7 @@
   src: local("Marvin Visions Big Bold"), local("Marvin-Visions-Big-Bold"),
     local("MarvinVisionsBig-Bold"), url(../fonts/MarvinVisionsBig-Bold.woff2);
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: local("HelveticaNeue"), local("Helvetica-Neue"), local("HelveticaNeue-Regular"),
     url(../fonts/HelveticaNeue.woff2);
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: local("HelveticaNeueBold"), local("Helvetica-Neue-Bold"), local("HelveticaNeue-Bold"),
     url(../fonts/HelveticaNeue-Bold.woff2);
   font-weight: 700;
+  font-display: swap;
 }
 
 .title-voice {
