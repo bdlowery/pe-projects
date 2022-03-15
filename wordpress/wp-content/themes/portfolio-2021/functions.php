@@ -140,24 +140,9 @@ add_action('wp_enqueue_scripts', 'theme_gsap_script');
 
 function add_prism()
 {
-
   if (has_tag('code')) {
-
-    // Register prism.css file
-    wp_register_style(
-      'prismCSS', // handle name for the style 
-      get_stylesheet_directory_uri() . '/css/prism.css' // location of the prism.css file
-    );
-
-    // Register prism.js file
-    wp_register_script(
-      'prismJS', // handle name for the script 
-      get_template_directory_uri() . '/js/prism.js' // location of the prism.js file
-    );
-
-    // Enqueue the registered style and script files
-    wp_enqueue_style('prismCSS');
-    wp_enqueue_script('prismJS');
+    wp_enqueue_style('prismCSS', get_stylesheet_directory_uri() . '/css/prism.css');
+    wp_enqueue_script('prismJS', get_stylesheet_directory_uri() . '/js/prism.js', array(), false, true);
   }
 }
 add_action('wp_enqueue_scripts', 'add_prism');
