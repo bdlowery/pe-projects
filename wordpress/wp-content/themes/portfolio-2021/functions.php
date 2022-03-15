@@ -142,7 +142,7 @@ function add_prism()
 {
   if (has_tag('code')) {
     wp_enqueue_style('prismCSS', get_stylesheet_directory_uri() . '/css/prism.css');
-    wp_enqueue_script('prismJS', get_stylesheet_directory_uri() . '/js/prism.js', array(), false, true);
+    wp_enqueue_script('prismJS', get_template_directory_uri() . '/js/prism.js', array(), false, true);
   }
 }
 add_action('wp_enqueue_scripts', 'add_prism');
