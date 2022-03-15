@@ -702,6 +702,10 @@ article ol {
   padding-inline-start: 40px;
 }
 
+pre {
+  max-width: 700px;
+}
+
 @media (min-width: 620px) {
   .masthead {
     flex-direction: row;
