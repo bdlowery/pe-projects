@@ -141,7 +141,7 @@ add_action('wp_enqueue_scripts', 'theme_gsap_script');
 function add_prism()
 {
 
-  if (is_single() && has_tag('code')) {
+  if (has_tag('code')) {
 
     // Register prism.css file
     wp_register_style(
