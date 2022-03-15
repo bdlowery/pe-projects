@@ -702,7 +702,8 @@ article ol {
   padding-inline-start: 40px;
 }
 
-pre {
+pre,
+.code-toolbar {
   max-width: 700px;
 }
 
