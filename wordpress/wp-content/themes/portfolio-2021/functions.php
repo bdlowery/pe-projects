@@ -152,7 +152,7 @@ function add_prism()
     // Register prism.js file
     wp_register_script(
       'prismJS', // handle name for the script 
-      get_stylesheet_directory_uri() . '/js/prism.js' // location of the prism.js file
+      get_template_directory_uri() . '/js/prism.js' // location of the prism.js file
     );
 
     // Enqueue the registered style and script files
