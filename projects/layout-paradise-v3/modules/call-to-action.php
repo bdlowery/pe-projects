@@ -36,3 +36,7 @@ $ctaFamilyCopy = "";
 $ctaCoupleAction = "";
 $ctaFamilyAction = "";
 ?>
+
+<?php
+foreach ($ctaCouple as $couple)
+?>

@@ -36,38 +36,6 @@ $familyDatabase = [ // an associative array (Array of key:value pairs)
 	],
 ];
 
-$ctaCouple = [
-	[
-		"heading" => "Unforgettable Getaway",
-		"copy" => "A romantic getaway with mesmerizing ocean views, gourmet room service or walks on the beach at sunset.",
-		"thumbnail" => "couple-call-to-action-1.jpg",
-		"action" => "Explore",
-	],
-	[
-		"heading" => "Blissful Escapes",
-		"copy" => "Your romantic experience should be as unique as you. Explore this guide for everything you need to plan and personalize your special occasion to be the event that truly takes your breath away.
-		",
-		"thumbnail" => "couple-call-to-action-2.jpg",
-		"action" => "Learn More",
-
-	],
-];
-
-$ctaFamily = [
-	[
-		"heading" => "A Family Voyage",
-		"copy" => "Spend endless days exploring and celebrating with family and friends over long shared meals. Your sense of wonder will be rekindled while you follow the lead of your littlest family members.",
-		"thumbnail" => "couple-call-to-action-1.jpg",
-		"action" => "Learn More",
-	],
-	[
-		"heading" => "Unique Experiences Await",
-		"copy" => "We are devoted to delivering an elevated guest experience. Guests can expect impeccable hospitality, world class spas and an elegant yet welcoming ambiance with the goal of creating lasting and cherished memories.",
-		"thumbnail" => "couple-call-to-action-2.jpg",
-		"action" => "Explore",
-	],
-];
-
 $coupleDatabase = [
 	[
 		"heading" => "Extraordinary experiences
@@ -100,4 +68,37 @@ $coupleDatabase = [
 		"description" => "Relax in any of our luxurious rooms. Enjoy private suites and villas, private swim-up pools, gorgeous accommodations with terraces, hot tubs and amazing views.",
 		"thumbnail" => "couple-picture-6.jpg",
 	]
+];
+
+$ctaCouple = [
+	[
+		"heading" => "Unforgettable Getaway",
+		"copy" => "A romantic getaway with mesmerizing ocean views, gourmet room service or walks on the beach at sunset.",
+		"thumbnail" => "couple-call-to-action-1.jpg",
+		"action" => "Explore",
+		"flipped" => false
+	],
+	[
+		"heading" => "Blissful Escapes",
+		"copy" => "Your romantic experience should be as unique as you. Explore this guide for everything you need to plan and personalize your special occasion to be the event that truly takes your breath away.
+		",
+		"thumbnail" => "couple-call-to-action-2.jpg",
+		"action" => "Learn More",
+		"flipped" => true
+	],
+];
+
+$ctaFamily = [
+	[
+		"heading" => "A Family Voyage",
+		"copy" => "Spend endless days exploring and celebrating with family and friends over long shared meals. Your sense of wonder will be rekindled while you follow the lead of your littlest family members.",
+		"thumbnail" => "couple-call-to-action-1.jpg",
+		"action" => "Learn More",
+	],
+	[
+		"heading" => "Unique Experiences Await",
+		"copy" => "We are devoted to delivering an elevated guest experience. Guests can expect impeccable hospitality, world class spas and an elegant yet welcoming ambiance with the goal of creating lasting and cherished memories.",
+		"thumbnail" => "couple-call-to-action-2.jpg",
+		"action" => "Explore",
+	],
 ];

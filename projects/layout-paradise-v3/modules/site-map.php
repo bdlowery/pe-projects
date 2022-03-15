@@ -5,13 +5,14 @@
 			<img src="icons/<?php echo $logo ?>.svg" alt="<?php echo $logoAlt	?>">
 		</a>
 		<a href='./'>Home</a>
-		<a href='404.php?theme=<?php
-														if ($theme === "family" || $theme === "couple") {
-															echo $theme;
-														} else {
-															echo "default";
-														}
-														?>'>404 error</a>
+		<a href='404.php?theme=
+		<?php
+		if ($theme === "family" || $theme === "couple") {
+			echo $theme;
+		} else {
+			echo "default";
+		}
+		?>'>404 error</a>
 	</nav>
 
 	<nav class='user-menu'>
