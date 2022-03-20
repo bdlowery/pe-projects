@@ -137,6 +137,11 @@ p + p {
   margin-top: 20px;
 }
 
+blockquote + p,
+p + blockquote {
+  margin-top: 20px;
+}
+
 .quiet-voice + .micro-voice {
   margin-top: 0px;
 }

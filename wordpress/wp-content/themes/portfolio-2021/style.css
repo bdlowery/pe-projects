@@ -668,6 +668,14 @@ goal::before {
   background-color: white;
 }
 
+blockquote {
+  background: var(--primary-neutral-lightest);
+  border-left: 10px solid var(--primary-lighter);
+  display: block;
+  padding: 1rem;
+  max-width: 710px;
+}
+
 /* Article Styles */
 
 article section {
