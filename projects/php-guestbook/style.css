@@ -1,2 +1,30 @@
 /* @import "css/meyer-reset.css"; */
 @import "css/setup.css";
+
+body {
+  font-family: Georgia, serif;
+}
+
+.small {
+  font-size: 10px;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.site-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.site-menu a:hover {
+  text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 <footer>
-  <p>this is a footer</p>
+  <p>made with 🥦 by brian.</p>
 </footer>
 </body>
 

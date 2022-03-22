@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>PHP Guestbook</title>
+  <title>P(E)HP Guestbook</title>
   <!-- Meta Tags-->
   <meta name="description" content="P(E)HP Guestbook" />
   <meta property="og:image" content="[[meta image source]]" />

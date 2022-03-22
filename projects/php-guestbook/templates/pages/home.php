@@ -1,3 +1,3 @@
 <section>
-  <h1>This is the home page</h1>
+  <h1>P<span class="small">(E)</span>HP Guestbook</h1>
 </section>
