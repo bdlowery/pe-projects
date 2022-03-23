@@ -3,10 +3,10 @@ $name = "";
 $comment = "";
 if (isset($_POST["submit-button"])) {
   if (isset($_POST["name"])) {
-    $name = $_POST["name"];
+    $name = trim($_POST["name"]);
   }
   if (isset($_POST["comment"])) {
-    $comment = $_POST["comment"];
+    $comment = trim($_POST["comment"]);
   }
 
   $newComment = [
