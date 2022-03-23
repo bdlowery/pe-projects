@@ -45,3 +45,15 @@ function encodeComments($data)
   $json = json_encode($data, JSON_PRETTY_PRINT);
   file_put_contents("comments.json", $json);
 }
+
+function deleteComment($idToDelete)
+{
+  //get the associative array
+  $comments = getComments();
+
+  //remove the $id from the array.
+  unset($comments["items"][$idToDelete]);
+
+  //turn the associative array back into json.
+  encodeComments($comments);
+}
