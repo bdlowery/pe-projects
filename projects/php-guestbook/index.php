@@ -14,20 +14,23 @@
   $currentTime = $time->format('Y-m-d H:i:s');
   $comments = getComments()["items"];
   // var_dump($comments);
+  ?>
+  <ol>
+    <?php foreach ($comments as $id => $comment) { ?>
 
-  foreach ($comments as $id => $comment) { ?>
-    <ol>
       <li><?= $comment["name"]; ?>
         <ul>
           <li><?= $comment["comment"] ?></li>
           <?php if ($comment["expireDate"] > $currentTime) { ?>
             <li><a href=?page=delete&id=<?= $id ?>>Delete</a></li>
           <?php } ?>
+          <li>Posted: <?= $comment["date"] ?></li>
+
         </ul>
       </li>
-    </ol>
-  <?php }
-  ?>
 
+    <?php }
+    ?>
+  </ol>
 </main>
 <?php include("./templates/components/footer.php") ?>
