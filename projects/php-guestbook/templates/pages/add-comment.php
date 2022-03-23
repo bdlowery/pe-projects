@@ -1,6 +1,10 @@
 <?php
+//after form is submitted make the variables empty.
 $name = "";
 $comment = "";
+$date = "";
+
+//checks if the form is submitted.
 if (isset($_POST["submit-button"])) {
   if (isset($_POST["name"])) {
     $name = trim($_POST["name"]);
@@ -9,12 +13,6 @@ if (isset($_POST["submit-button"])) {
     $comment = trim($_POST["comment"]);
   }
 
-  $newComment = [
-    "name" => $name,
-    "comment" => $comment
-  ];
-
-  addComment($newComment);
   //error handling.
   if (!empty($name) && !empty($comment)) {
     $date = $_POST["date"];
