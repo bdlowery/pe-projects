@@ -1,0 +1,23 @@
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.loud-voice {
+  font-size: clamp(36px, 8vw, 100px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.small {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.quiet-voice {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 400;
+}
