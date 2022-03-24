@@ -23,11 +23,18 @@
 
       <li><?= $comment["name"]; ?>
         <ul>
-          <li><?= $comment["comment"] ?></li>
-          <?php if ($comment["expireDate"] > $currentTime) { ?>
-            <li><a href=?page=delete&id=<?= $id ?>>Delete</a></li>
-          <?php } ?>
-          <li>Posted: <?= $comment["date"] ?></li>
+          <li><?= $comment["comment"] ?>
+            <ul>
+              <?php if ($comment["expireDate"] > $currentTime) { ?>
+                <li><a href=?page=delete&id=<?= $id ?>>Delete</a></li>
+                <li><a href="?page=edit&id=<?= $id ?>">Edit</a></li>
+              <?php } ?>
+              <li>Posted: <?= $comment["date"] ?></li>
+
+
+            </ul>
+          </li>
+
 
         </ul>
       </li>
