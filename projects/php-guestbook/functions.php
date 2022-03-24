@@ -57,3 +57,12 @@ function deleteComment($idToDelete)
   //turn the associative array back into json.
   encodeComments($comments);
 }
+
+function editComment($idToEdit, $editedComment)
+{
+  //returns an associatve array of the json
+  $comments = getComments();
+
+  $comments["items"][$idToEdit] = $editedComment;
+  encodeComments($comments);
+}
