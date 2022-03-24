@@ -8,8 +8,8 @@ $comments = getComments()["items"];
 foreach ($comments as $commentId => $comment) {
   if ($id == $commentId) {
     deleteComment($id);
-    header('Location: index.php');
+    header('Location: ?page=home');
   } else {
-    header('Location: index.php');
+    header('Location: ?page=home');
   }
 }

@@ -7,7 +7,6 @@
 <main>
   <?php getRoute($route); ?>
 
-  <?php include("./templates/pages/add-comment.php") ?>
   <?php if ($route == "home") { ?>
     <?php include("./templates/pages/add-comment.php") ?>
   <?php } ?>
