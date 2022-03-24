@@ -4,42 +4,13 @@
 <?php require("./templates/components/head.php") ?>
 
 <?php include("./templates/components/header.php") ?>
-<main>
+<main class="site-content">
   <?php getRoute($route); ?>
 
-  <?php if ($route == "home") { ?>
-    <?php include("./templates/pages/add-comment.php") ?>
-  <?php } ?>
-
-  <?php
-  $time = new DateTimeImmutable();
-  $currentTime = $time->format('Y-m-d H:i:s');
-  $comments = getComments()["items"];
-  // var_dump($comments);
-  ?>
-  <ol>
-    <?php foreach ($comments as $id => $comment) { ?>
-
-      <li><?= $comment["name"]; ?>
-        <ul>
-          <li><?= $comment["comment"] ?>
-            <ul>
-              <?php if ($comment["expireDate"] > $currentTime) { ?>
-                <li><a href=?page=delete&id=<?= $id ?>>Delete</a></li>
-                <li><a href="?page=edit&id=<?= $id ?>">Edit</a></li>
-              <?php } ?>
-              <li>Posted: <?= $comment["date"] ?></li>
-
-
-            </ul>
-          </li>
-
-
-        </ul>
-      </li>
-
-    <?php }
-    ?>
-  </ol>
+  <section class="display-comments">
+    <div class="inner-column">
+      <?php include("./templates/modules/display-comments.php") ?>
+    </div>
+  </section>
 </main>
 <?php include("./templates/components/footer.php") ?>
