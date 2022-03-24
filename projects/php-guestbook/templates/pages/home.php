@@ -1,3 +1,5 @@
 <section>
-  <h1>P<span class="small">(E)</span>HP Guestbook</h1>
+  <div class="inner-column">
+    <?php include("./templates/pages/add-comment.php") ?>
+  </div>
 </section>
