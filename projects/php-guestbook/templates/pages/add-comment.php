@@ -17,11 +17,13 @@ if (isset($_POST["submit-button"])) {
   if (!empty($name) && !empty($comment)) {
     $date = $_POST["date"];
     $expireDate = $_POST["expire-date"];
+    $prettyDate = $_POST["pretty-date"];
     $newComment = [
       "name" => $name,
       "comment" => $comment,
       "date" => $date,
-      "expireDate" => $expireDate
+      "expireDate" => $expireDate,
+      "prettyDate" => $prettyDate
     ];
     //$name and $comment have values, so add them to the json.
     addComment($newComment);
@@ -35,9 +37,6 @@ if (isset($_POST["submit-button"])) {
 }
 
 ?>
-<section>
-  <!-- <h1>This is the add comments page</h1> -->
   <?php
   include("./templates/modules/form.php");
   ?>
-</section>
