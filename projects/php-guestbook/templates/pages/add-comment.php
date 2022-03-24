@@ -26,7 +26,7 @@ if (isset($_POST["submit-button"])) {
     //$name and $comment have values, so add them to the json.
     addComment($newComment);
     //redirect page to itself to 
-    header('Location:' . $_SERVER['REQUEST_URI']);
+    header('Location: ?page=home');
   } elseif (empty($name)) {
     echo "enter name";
   } elseif (empty($comment)) {
