@@ -1,10 +1,13 @@
-<body>
+<body class="site">
   <header class="site-header">
-    <div class="masthead">
-      <nav class="site-menu">
-        <a href="?page=home">Home</a>
-        <!-- <a href="?page=comments">All comments</a>
+    <div class="inner-column">
+      <div class="masthead">
+        <h1 class="loud-voice">P<span class="small">(E)</span>HP Guestbook</h1>
+        <nav class="site-menu">
+          <a href="?page=home" class="site-link">Home</a>
+          <!-- <a href="?page=comments">All comments</a>
         <a href="?page=add-comment">Add comment</a> -->
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
