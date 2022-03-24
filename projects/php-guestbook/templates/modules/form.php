@@ -14,6 +14,7 @@
     <label for="comment">Comment</label>
     <textarea name="comment" rows="8" cols="50"><?= $comment; ?></textarea>
     <input type="hidden" value="<?= $date->format('Y-m-d H:i:s'); ?>" name="date">
+    <input type="hidden" value="<?= $date->format('F j, Y, g:i a'); ?>" name="pretty-date">
     <input type="hidden" value="<?= $expireDate->format('Y-m-d H:i:s'); ?>" name="expire-date">
   </div>
 
