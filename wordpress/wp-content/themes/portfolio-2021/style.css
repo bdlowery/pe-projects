@@ -497,9 +497,9 @@ width: 100%;
 }
 
 .page-header {
-  background-image: url(images/stars-background.png);
   background-size: cover;
   background-position: center;
+  /* Fall back background incase none is set*/
   background-color: var(--black);
   color: var(--white);
   /*color: #e2e2e2;*/
