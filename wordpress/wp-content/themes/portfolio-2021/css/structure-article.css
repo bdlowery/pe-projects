@@ -14,10 +14,10 @@ article section section + section {
   margin-top: 80px;
 }
 
-article .text-module .text-content h2 + p {
+article h2 + p {
   margin-top: 15px;
 }
-article .text-module .text-content p + h2 {
+article p + h2 {
   margin-top: 15px;
 }
 
