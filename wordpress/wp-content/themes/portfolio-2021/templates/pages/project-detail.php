@@ -2,7 +2,7 @@
 $name = get_field("name");
 $projectImage = get_field("project_image");
 $description = get_field("description");
-$projectHeaderImage = get_field("header_background_image");
+$projectHeaderImage = get_field("header_background_image")["url"];
 incrementPostViews(get_the_ID());
 
 if ($projectImage) {
