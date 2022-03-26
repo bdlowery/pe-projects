@@ -2,6 +2,7 @@
 $name = get_field("name");
 $projectImage = get_field("project_image");
 $description = get_field("description");
+$projectHeaderImage = get_field("header_background_image");
 incrementPostViews(get_the_ID());
 
 if ($projectImage) {
@@ -12,7 +13,7 @@ if ($projectImage) {
 ?>
 
 <article>
-  <header class="page-header">
+  <header class="page-header" style="background-image: url(<?= $projectHeaderImage ?>)">
     <div class="inner-column">
       <h1 class="title-voice"><?= $name ?></h1>
       <p class="regular-voice"><?= $description ?></p>
