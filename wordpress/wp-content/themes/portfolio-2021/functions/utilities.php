@@ -35,3 +35,13 @@ function get_latest_update_date()
   return date_i18n("F j, Y", strtotime($thelatest));
 }
 add_shortcode('latestupdatedate', 'get_latest_update_date');
+
+// Get the most recent date from any post.
+function get_latest_update_date_datetime()
+{
+  global $wpdb;
+  $theLatestDatetime = $wpdb->get_var("SELECT max(post_modified) FROM wp_posts WHERE post_type IN ('post', 'page', 'project');");
+  //returns formatted date like 13.08.2001
+  return date_i18n("Y-m-d", strtotime($theLatestDatetime));
+}
+add_shortcode('latestupdatedateDatetime', 'get_latest_update_date_datetime');

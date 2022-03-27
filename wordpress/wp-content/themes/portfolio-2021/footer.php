@@ -1,10 +1,13 @@
 </main>
 <footer>
-  <?php $updatedDate = get_latest_update_date(); ?>
+  <?php
+  $updatedDate = get_latest_update_date();
+  $updatedDateDatetime = get_latest_update_date_datetime();
+  ?>
   <div class="inner-column site-footer">
     <div class="footer-text">
       <h3 class="regular-voice"><strong>Brian Lowery</strong></h3>
-      <p>Last updated <time datetime="2021-11-25"><?= $updatedDate; ?></time></p>
+      <p>Last updated <time datetime="<?= $updatedDateDatetime ?>"><?= $updatedDate; ?></time></p>
     </div>
     <div class="footer-links-group">
       <nav class="site-menu footer-links">
