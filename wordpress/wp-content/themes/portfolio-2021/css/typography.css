@@ -167,3 +167,13 @@ article h3 {
   color: var(--primary-dark);
   letter-spacing: 0.025em;
 }
+
+article h4 {
+  font-family: "Marvin Visions Big Bold", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+
+  font-weight: 700;
+  color: var(--primary-dark);
+  letter-spacing: 0.025em;
+}

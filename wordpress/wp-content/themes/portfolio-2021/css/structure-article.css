@@ -72,6 +72,14 @@ article p + h3 {
   margin-top: 30px;
 }
 
+article p + h4 {
+  margin-top: 30px;
+}
+
+article h4 + p {
+  margin-top: 15px;
+}
+
 article ul li + li,
 article ol li + li {
   margin-top: 10px;
