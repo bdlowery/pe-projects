@@ -45,3 +45,14 @@ function get_latest_update_date_datetime()
   return date_i18n("Y-m-d", strtotime($theLatestDatetime));
 }
 add_shortcode('latestupdatedateDatetime', 'get_latest_update_date_datetime');
+
+// show edit post button for administrators and editors
+function show_edit_post()
+{
+
+  $user = wp_get_current_user();
+  if (in_array('administrator', (array) $user->roles) || in_array('editor', (array) $user->roles)) {
+    edit_post_link(__('Edit Post'));
+  }
+}
+add_shortcode('adminEditorEditPost', 'show_edit_post');
