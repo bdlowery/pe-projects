@@ -66,3 +66,10 @@ function editComment($idToEdit, $editedComment)
   $comments["items"][$idToEdit] = $editedComment;
   encodeComments($comments);
 }
+
+function replyToComment($idToReply, $replyMessage)
+{
+  $comments = getComments();
+  $comments["items"][$idToReply]["reply"] = $replyMessage;
+  encodeComments($comments);
+}
