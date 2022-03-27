@@ -24,3 +24,14 @@ add_filter('acf/fields/flexible_content/layout_title', function ($title) {
   }
   return $ret;
 });
+
+
+// Get the most recent date from any post.
+function get_latest_update_date()
+{
+  global $wpdb;
+  $thelatest = $wpdb->get_var("SELECT max(post_modified) FROM wp_posts WHERE post_type IN ('post', 'page');");
+  //returns formatted date like 13.08.2001
+  return date_i18n("F j, Y", strtotime($thelatest));
+}
+add_shortcode('latestupdatedate', 'get_latest_update_date');
