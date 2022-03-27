@@ -27,6 +27,7 @@ if ($date == $dateModified) {
       <p class="quiet-voice">Posted: <?= $date ?> <?= $displayModified ?></p>
       <p class="quiet-voice"><?= displayPostViews(get_the_ID()) ?></p>
       <p><em><?= $description ?></em></p>
+      <?php show_edit_post(); ?>
     </div>
   </header>
 

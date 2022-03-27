@@ -18,13 +18,7 @@ if ($projectImage) {
       <h1 class="title-voice"><?= $name ?></h1>
       <p class="regular-voice"><?= $description ?></p>
       <p><?= displayPostViews(get_the_ID()) ?></p>
-      <?php
-      $user = wp_get_current_user();
-      if (in_array('administrator', (array) $user->roles) || in_array('editor', (array) $user->roles)) {
-        edit_post_link(__('Edit Post'));
-      }
-
-      ?>
+      <?php show_edit_post(); ?>
     </div>
   </header>
 
