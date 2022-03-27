@@ -53,7 +53,7 @@ article .inner-column ul + p,
 article .inner-column p + ul,
 article .inner-column ol + p,
 article .inner-column p + ol {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 article p + p {
@@ -70,4 +70,14 @@ article h3 + p {
 
 article p + h3 {
   margin-top: 30px;
+}
+
+article ul li + li,
+article ol li + li {
+  margin-top: 10px;
+}
+
+article .code-toolbar + p,
+article p + .code-toolbar {
+  margin-top: 15px;
 }

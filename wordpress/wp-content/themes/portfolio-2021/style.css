@@ -689,7 +689,7 @@ article section.post {
 
 article picture {
   max-width: 650px;
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 article .inner-column p {
@@ -705,9 +705,26 @@ article ol li {
   max-width: 60ch;
 }
 
-article ul,
 article ol {
   padding-inline-start: 40px;
+}
+
+article ul li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 32px;
+}
+
+article ul li::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("https://peprojects.dev/alpha-2/images/arrow-right.svg");
+  background-size: contain;
+  height: 22px;
+  width: 22px;
+  left: 0;
+  top: 2px;
 }
 
 pre,
