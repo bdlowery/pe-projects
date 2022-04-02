@@ -38,5 +38,5 @@ if (isset($_POST["submit-button"])) {
 
 ?>
   <?php
-  include("./templates/modules/form.php");
+  include("./templates/components/form.php");
   ?>

@@ -1,9 +1,9 @@
-<?php require("./functions.php") ?>
+<?php require("functions.php") ?>
 <?php initializeDatabase() ?>
-<?php require("./router.php") ?>
-<?php require("./templates/components/head.php") ?>
+<?php require("router.php") ?>
+<?php require("head.php") ?>
 
-<?php include("./templates/components/header.php") ?>
+<?php include("header.php") ?>
 <main class="site-content">
   <?php getRoute($route); ?>
 
@@ -13,4 +13,4 @@
     </div>
   </section>
 </main>
-<?php include("./templates/components/footer.php") ?>
+<?php include("footer.php") ?>

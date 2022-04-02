@@ -11,10 +11,9 @@ $comments = getComments()["items"];
     //check if the id in the url matches the id in the json
     foreach ($comments as $commentId => $comment) {
       if ($id == $commentId) {
-        include("templates/modules/edit-form.php");
+        include("templates/components/edit-form.php");
       }
     }
-
     ?>
   </div>
 </section>

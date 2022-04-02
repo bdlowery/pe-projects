@@ -4,4 +4,4 @@ $id = $_GET["id"];
 $comments = getComments();
 ?>
 
-<?php include("./templates/modules/reply-form.php") ?>
+<?php include("./templates/components/reply-form.php") ?>
