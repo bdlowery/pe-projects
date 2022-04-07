@@ -208,7 +208,7 @@
   <div class="inner-column">
     <div class="writing-intro">
       <h1 class="loud-voice">Writing</h1>
-      <p>Some intro thing I don't know what to put here please send help please and thank you those are the magic words.</p>
+      <p>I also like to write! Usually filled with Case Studies for my projects and Articles about the web.</p>
     </div>
     <div class="writing-cards">
       <?php
