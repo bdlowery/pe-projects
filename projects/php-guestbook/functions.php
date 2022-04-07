@@ -23,6 +23,12 @@ function getComments()
   return $jsonToAssociativeArray;
 }
 
+function encodeComments($data)
+{
+  $json = json_encode($data, JSON_PRETTY_PRINT);
+  file_put_contents("comments.json", $json);
+}
+
 //add comments to the json file
 function addComment($comment)
 {
@@ -38,12 +44,6 @@ function addComment($comment)
   $comments["items"][$id] = $comment;
 
   encodeComments($comments);
-}
-
-function encodeComments($data)
-{
-  $json = json_encode($data, JSON_PRETTY_PRINT);
-  file_put_contents("comments.json", $json);
 }
 
 function deleteComment($idToDelete)

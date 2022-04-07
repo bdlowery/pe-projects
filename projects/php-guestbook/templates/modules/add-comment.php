@@ -13,7 +13,7 @@ if (isset($_POST["submit-button"])) {
     $comment = trim($_POST["comment"]);
   }
 
-  //error handling.
+  //Check if the name and comment fields are filled in.
   if (!empty($name) && !empty($comment)) {
     $date = $_POST["date"];
     $expireDate = $_POST["expire-date"];
@@ -25,9 +25,11 @@ if (isset($_POST["submit-button"])) {
       "expireDate" => $expireDate,
       "prettyDate" => $prettyDate
     ];
+
     //$name and $comment have values, so add them to the json.
     addComment($newComment);
-    //redirect page to itself to 
+
+    //redirect page to homepage to prevent resubmition.
     header('Location: ?page=home');
   } elseif (empty($name)) {
     echo "enter name";
@@ -35,8 +37,6 @@ if (isset($_POST["submit-button"])) {
     echo "enter comment";
   }
 }
-
 ?>
-  <?php
-  include("./templates/components/form.php");
-  ?>
+
+<?php include("./templates/components/form.php"); ?>
