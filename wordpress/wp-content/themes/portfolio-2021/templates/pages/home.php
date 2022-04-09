@@ -156,7 +156,7 @@
       <div class="what-i-want">
         <h2 class="attention-voice">What I want</h2>
         <ul>
-          <li>I'm looking for a paid internship as a Frontend&nbsp;Web&nbsp;Developer.</li>
+          <li>I'm looking for a paid internship as a Front-End&nbsp;Web&nbsp;Developer.</li>
           <li>Here's a showcase of all <a href="/my-work">My Work</a></li>
           <li>If interested, let's get in touch.</li>
         </ul>
