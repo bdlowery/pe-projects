@@ -52,8 +52,7 @@ article .list-module .inner-column ul + p {
 article .inner-column ul + p,
 article .inner-column p + ul,
 article .inner-column ol + p,
-article .inner-column p + ol,
-article .inner-column ol + h3 {
+article .inner-column p + ol {
   margin-top: 20px;
 }
 
@@ -69,7 +68,8 @@ article h3 + p {
   margin-top: 15px;
 }
 
-article p + h3 {
+article p + h3,
+article .inner-column ol + h3 {
   margin-top: 30px;
 }
 
