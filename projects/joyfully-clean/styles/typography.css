@@ -1,0 +1,87 @@
+/* cormorant-garamond-700 - latin */
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/fonts/cormorant-garamond-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("fonts/cormorant-garamond-v14-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* cormorant-garamond-700italic - latin */
+@font-face {
+  font-family: "Cormorant Garamond italic";
+  font-style: italic;
+  font-weight: 700;
+  src: local(""), url("/fonts/cormorant-garamond-v14-latin-700italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/cormorant-garamond-v14-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fira-sans-regular - latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/fonts/fira-sans-v15-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/fontsfira-sans-v15-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fira-sans-700 - latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/fonts/fira-sans-v15-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/fontsfira-sans-v15-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.title-voice {
+  font-family: "Cormorant Garamond italic", sans-serif;
+  font-size: clamp(80px, calc(1rem + 10vw), 120px);
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.07em;
+}
+
+.loud-voice {
+  font-family: "Cormorant Garamond italic", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.attention-voice {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.stern-voice {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+
+  line-height: 1.5;
+}
+
+.regular-voice,
+p,
+li {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 64ch;
+}
+
+a {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+}

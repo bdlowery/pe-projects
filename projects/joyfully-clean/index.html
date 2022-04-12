@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joyfully Clean</title>
     <meta
@@ -15,31 +14,80 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans:400,700,900"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header class="landing">
+    <header class="site-header">
       <div class="inner-column">
-        <div class="landing-text">
-          <h1>Joyfully Clean</h1>
-          <p>High end Professional Housekeeping Services.</p>
-          <p>We’ll take care of it, so you can focus on what’s most important.</p>
-          <a class="button-solid" href="#services">Services</a>
-          <a class="button-transparent" href="#about-us">About Us</a>
+        <div class="masthead">
+          <a href="/index.html">
+            <picture class="logo">
+              <img src="./images/logo.svg" alt="" />
+            </picture>
+          </a>
+          <nav class="site-menu">
+            <ul>
+              <li><a href="/index.html" class="site-link">Home</a></li>
+              <li><a href="#services" class="site-link">Services</a></li>
+              <li><a href="#testimonials" class="site-link">Testimonials</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="about-us" id="about-us">
+      <section class="landing">
+        <div class="inner-column">
+          <h1 class="title-voice">Joyfully Clean</h1>
+          <h2 class="stern-voice">High end Professional Housekeeping Services.</h2>
+          <p class="stern-voice">
+            We'll take care of it, so you can focus on what's most important.
+          </p>
+          <a class="button-solid" href="#services">Services</a>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="inner-column">
+          <div class="benefits-list">
+            <div class="benefit-card">
+              <picture class="benefit-image">
+                <img src="./images/benefits/benefit1.svg" alt="" />
+              </picture>
+              <h2 class="attention-voice">All supplies included</h2>
+              <p>
+                The right tools make a big difference. Both of us are outfitted with over $1000 in
+                professional grade tools, supplies and gear - and it's all eco-friendly!
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <picture class="benefit-image">
+                <img src="./images/benefits/benefit2.svg" alt="" />
+              </picture>
+              <h2 class="attention-voice">Eco-Friendly Cleaning Products</h2>
+              <p>
+                Did we mention we really love using eco-friendly products? We have researched to
+                find the most effective products that will keep your family and pets safe.
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <picture class="benefit-image">
+                <img src="./images/benefits/benefit3.svg" alt="" />
+              </picture>
+              <h2 class="attention-voice">Unbeatable Flexibility</h2>
+              <p>
+                You're paying for the service, make sure it fits your life! You can cancel, edit,
+                and change your appointments as much as you like. We're happy to work around your
+                schedule.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="about-us" id="about-us">
         <div class="inner-column">
           <h2>The Clean Team</h2>
 
@@ -65,14 +113,85 @@
             </p>
           </div>
         </div>
+      </section> -->
+      <section class="services" id="services">
+        <div class="inner-column">
+          <h2 class="loud-voice">Home cleaning <span>services</span></h2>
+          <p class="regular-voice">
+            We offer a variety of services at an affordable cost using the latest cleaning
+            technologies and equipment
+          </p>
+          <div class="service">
+            <div class="service-description">
+              <h2 class="attention-voice">Kitchen cleaning</h2>
+              <p>
+                We know how valuable a clean kitchen is. We take extra care and make sure everything
+                is spotless before we leave. If not, your money back guaranteed.
+              </p>
+              <ul class="service-details">
+                <li>Thorough cleaning of all surfaces and appliances.</li>
+                <li>Every surface will be dusted and wiped down.</li>
+                <li>Food safe eco friendly cleaning products used.</li>
+                <li>Oven cleaned and degreased.</li>
+              </ul>
+            </div>
+            <picture class="service-image">
+              <img aria-label="hidden" src="./images/services/clean-kitchen.jpg" alt="" />
+            </picture>
+          </div>
+
+          <div class="service reverse">
+            <div class="service-description">
+              <h2 class="attention-voice">Deep Cleaning</h2>
+              <p>
+                We'll make sure germs and bacteria are completely gone from any interior surface.
+                Stop stressing over a huge cleaning work in your home and spend more time doing what
+                you love.
+              </p>
+              <ul class="service-details">
+                <li>Deep clean couches and carpets.</li>
+                <li>Remove soap scum from bathrooms.</li>
+                <li>Clean baseboards and trim.</li>
+                <li>Windows and blinds dusted and disenfected</li>
+              </ul>
+            </div>
+            <picture class="service-image">
+              <img aria-label="hidden" src="./images/services/clean-couch.jpg" alt="" />
+            </picture>
+          </div>
+
+          <div class="service">
+            <div class="service-description">
+              <h2 class="attention-voice">Hard Surface Cleaning</h2>
+              <p>
+                It’s no secret that hard surface floor cleaning is long, backaching work that can
+                often leave you feeling underwhelmed with the finished results. There is no longer
+                any need for you to be scrubbing away for hours on end when you could be spending
+                your time with your family.
+              </p>
+              <ul class="service-details">
+                <li>High grade commercial cleaning equipment</li>
+                <li>Pressure wash tile and grout for maximum cleanliness</li>
+                <li>Sterilize floors</li>
+                <li>Optional complimentary sealing on tile</li>
+              </ul>
+            </div>
+            <picture class="service-image">
+              <img aria-label="hidden" src="./images/services/spot-treatment.jpg" alt="" />
+            </picture>
+          </div>
+        </div>
       </section>
 
-      <section class="testimonial">
+      <section class="testimonials">
         <div class="inner-column">
-          <h2>Testimonials</h2>
+          <h2 class="loud-voice">What people say about us</h2>
 
-          <div class="testimonial-grid-container">
+          <div class="testimonial-list">
             <div class="testimonial-card">
+              <picture class="portrait">
+                <img src="./images/people/person2.jpg" alt="" />
+              </picture>
               <p>
                 The owners are all about paying attention to the details. They are not done until
                 the whole project is done leaving everything clean and spotless. They take the time
@@ -86,6 +205,9 @@
               </div>
             </div>
             <div class="testimonial-card">
+              <picture class="portrait">
+                <img src="./images/people/person3.jpg" alt="" />
+              </picture>
               <p>
                 I appreciated their environmentally conscious cleaning process of using steam and
                 attentiveness with utilizing disinfectants. they ensures a safe but sanitary clean.
@@ -100,6 +222,9 @@
               </div>
             </div>
             <div class="testimonial-card">
+              <picture class="portrait">
+                <img src="./images/people/person4.jpg" alt="" />
+              </picture>
               <p>
                 I appreciated their environmentally conscious cleaning process of using steam and
                 attentiveness with utilizing disinfectants. She ensures a safe but sanitary clean. I
@@ -114,6 +239,9 @@
               </div>
             </div>
             <div class="testimonial-card">
+              <picture class="portrait">
+                <img src="./images/people/person1.jpg" alt="" />
+              </picture>
               <p>
                 I am a repeat customer of them for my short-term rental house, it has been half a
                 year and I have absolutely zero complaints regarding the service they provided. They
@@ -131,107 +259,61 @@
         </div>
       </section>
 
-      <section class="products">
-        <div class="inner-column">
-          <div class="products-row-container">
-            <div class="product-card">
-              <picture>
-                <img src="./images/basket.png" alt="" />
-              </picture>
-              <h3>All supplies included</h3>
-              <p>
-                The right tools make a big difference. Both of us are outfitted with over $1000 in
-                professional grade tools, supplies and gear - and it’s all eco-friendly!
-              </p>
-            </div>
-
-            <div class="product-card">
-              <picture>
-                <img src="./images/eco-friendly.png" alt="" />
-              </picture>
-              <h3>Eco-Friendly Cleaning Products</h3>
-              <p>
-                Did we mention we really love using eco-friendly products? We have researched to
-                find the most effective products that will keep your family and pets safe.
-              </p>
-            </div>
-
-            <div class="product-card">
-              <picture>
-                <img src="./images/to-do-list.png" alt="" />
-              </picture>
-              <h3>Unbeatable Flexibility</h3>
-              <p>
-                You're paying for the service, make sure it fits your life! You can cancel, edit,
-                and change your appointments as much as you like. We're happy to work around your
-                schedule.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="services" id="services">
-        <div class="inner-column">
-          <h2>Services</h2>
-
-          <div class="services-container">
-            <div class="service-card service-one">
-              <picture class="card-one"> </picture>
-              <div class="service-card-text">
-                <h3>Kitchen Cleaning</h3>
-                <ul>
-                  <li>Cleaning all surfaces and appliances.</li>
-                  <li>Dusting and wiping of all surfaces.</li>
-                  <li>Food safe cleaning products used.</li>
-                  <li>Environmentally friendly cleaning products used.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="service-card service-two">
-              <picture class="card-two"> </picture>
-              <div class="service-card-text">
-                <h3>Deep Cleaning</h3>
-                <ul>
-                  <li>Deep clean couches and carpets.</li>
-                  <li>Remove soap scum from bathrooms.</li>
-                  <li>Clean baseboards and trim.</li>
-                  <li>Windows and blind cleaning included.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="service-card service-three">
-              <picture class="card-three"> </picture>
-              <div class="service-card-text">
-                <h3>Stain Removal</h3>
-                <ul>
-                  <li>Spot treatmet for carpet and rugs.</li>
-                  <li>Couch and pillow treament.</li>
-                  <li>Furniture and kitchen treatment.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section class="call-now">
+        <div class="inner-column"></div>
       </section>
     </main>
     <footer>
       <div class="inner-column">
-        <div class="footer-row-container">
-          <h2>Joyfully Clean</h2>
-          <div class="footer-social">
+        <div class="site-footer">
+          <div class="footer-logo">
             <picture>
-              <a href="#"><img src="./images/facebook.png" alt="facebook logo" /></a>
+              <img src="./images/logo.svg" alt="" />
             </picture>
-
-            <picture>
-              <a href="#"> <img src="./images/instagram.png" alt="instagram logo" /></a>
-            </picture>
-
-            <picture>
-              <a href="#"><img src="./images/twitter.png" alt="twitter logo" /></a>
-            </picture>
+            <p>
+              South Pasadena cleaning experts for over 15 years. Using the latest cleaning
+              technology and practices so you can focus on what's most important.
+            </p>
+          </div>
+          <div class="site-map">
+            <nav class="site-menu">
+              <h3 class="stern-voice">Menu</h3>
+              <ul>
+                <li><a href="/index.html" class="site-link">Home</a></li>
+                <li><a href="#services" class="site-link">Services</a></li>
+                <li><a href="#testimonials" class="site-link">Testimonials</a></li>
+              </ul>
+            </nav>
+            <div class="address">
+              <h3 class="stern-voice">Address</h3>
+              <div class="address-content">
+                <picture>
+                  <img src="./images/location.svg" alt="" />
+                </picture>
+                <p>
+                  <span>331 Huntington Dr</span>
+                  <span>South Pasadena, CA</span>
+                  <span>91030</span>
+                </p>
+              </div>
+            </div>
+            <div class="contact">
+              <h3 class="stern-voice">Contact</h3>
+              <div class="contact-phone">
+                <picture>
+                  <img src="./images/phone.svg" alt="" />
+                </picture>
+                <p>
+                  <span>323-257-0098</span>
+                </p>
+              </div>
+              <div class="contact-email">
+                <picture>
+                  <img src="./images/email.svg" alt="" />
+                </picture>
+                <p>contact@joyfullyclean.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

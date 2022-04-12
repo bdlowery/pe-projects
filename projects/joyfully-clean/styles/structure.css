@@ -1,0 +1,45 @@
+.inner-column {
+  max-width: 1300px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.service-card li + li {
+  margin-top: 10px;
+}
+
+.service-card + .service-card {
+  margin-top: 20px;
+}
+
+.service-details li + li {
+  margin-top: 16px;
+}
+
+.regular-voice + .service {
+  margin-top: 72px;
+}
+
+.service + .service {
+  margin-top: 136px;
+}
+
+.loud-voice + .testimonial-list {
+  margin-top: 100px;
+}
