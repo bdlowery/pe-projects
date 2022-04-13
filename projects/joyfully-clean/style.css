@@ -85,12 +85,12 @@ main {
     background-color: #ffffff;
   }
 
-  .service-details li {
+  .service-list li {
     position: relative;
     list-style-type: none;
     padding-left: 28px;
   }
-  .service-details li::before {
+  .service-list li::before {
     content: "";
     display: block;
     position: absolute;
@@ -429,12 +429,15 @@ main {
 
 .button-solid {
   display: inline-block;
+  font-family: "Fira Sans";
+  font-weight: 500;
   background-color: var(--color-primary);
   color: #ffffff;
   padding: 12px 20px;
   border: 1px solid transparent;
   border-radius: 6px;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  letter-spacing: 0.025em;
 }
 
 .button-solid:hover {
@@ -443,6 +446,7 @@ main {
 
 .button-solid-big {
   display: inline-block;
+  font-family: "Fira Sans";
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.025em;

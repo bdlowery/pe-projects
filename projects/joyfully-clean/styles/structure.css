@@ -52,10 +52,15 @@ footer {
   margin-top: 136px;
 }
 
-.service-description {
+.service-description,
+.service-details {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.service-details {
+  align-items: flex-start;
 }
 
 .loud-voice + .regular-voice {
