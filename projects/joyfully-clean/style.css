@@ -357,6 +357,15 @@ main {
   padding: 200px 0px 367px 0px;
 }
 
+.landing .inner-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
 .landing h2 {
   max-width: 53ch;
 }
