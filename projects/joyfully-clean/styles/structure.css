@@ -6,8 +6,20 @@
 }
 
 section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 1000px) {
+  section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.call-now {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 header {
@@ -16,7 +28,7 @@ header {
 }
 
 footer {
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 150px;
 }
 
@@ -40,6 +52,42 @@ footer {
   margin-top: 136px;
 }
 
-.loud-voice + .testimonial-list {
+.service-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.loud-voice + .regular-voice {
+  margin-top: 24px;
+}
+
+.regular-voice + .testimonial-list {
   margin-top: 100px;
+}
+
+.testimonial-card .portrait + p,
+p + .bottom-card {
+  margin-top: 20px;
+}
+
+.stars + p {
+  margin-top: 4px;
+}
+
+.contact-phone + .contact-email {
+  margin-top: 20px;
+}
+
+.footer-logo picture + p {
+  margin-top: 20px;
+}
+
+.footer-logo {
+  margin-top: -72px;
+}
+
+.landing .title-voice + .stern-voice,
+.landing .stern-voice + .button-solid-big {
+  margin-top: 28px;
 }

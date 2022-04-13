@@ -5,12 +5,14 @@
 
 :root {
   --color-primary: #3da9fc;
-  --color-primary-dark: #094067;
+  --color-primary-dark: #048cf5;
+  --color-primary-darker: #094067;
 
   --color-primary-light: #d8eefe;
 
   --color-gray: #5f6c7b;
-  --color-light-gray: #f8f8f8;
+  --color-light-gray: #97aab7;
+  --color-lighter-gray: #f8f8f8;
 }
 
 main {
@@ -37,7 +39,7 @@ main {
     padding: 10px;
   }
   .logo {
-    max-width: 60px;
+    max-width: 80px;
   }
 
   .benefits {
@@ -86,7 +88,7 @@ main {
   .service-details li {
     position: relative;
     list-style-type: none;
-    padding-left: 24px;
+    padding-left: 28px;
   }
   .service-details li::before {
     content: "";
@@ -119,14 +121,13 @@ main {
 
   .service {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 64px;
+    gap: 80px;
   }
 
   .service.reverse {
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 
   .service.reverse .service-image::before {
@@ -134,10 +135,24 @@ main {
   }
 
   .portrait {
+    position: relative;
     max-width: 96px;
     border-radius: 50%;
     overflow: hidden;
     margin-top: -68px;
+  }
+
+  .portrait::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3da9fc;
+    opacity: 0.3;
+  }
+
+  .testimonials {
+    background-color: var(--color-lighter-gray);
   }
 
   .testimonials .inner-column {
@@ -159,17 +174,19 @@ main {
     /* breaks grid 
     max-width: 400px;
     */
-
-    border-radius: 5px;
+    border-radius: 4px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: #fffffe;
 
-    box-shadow: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
 
+  .testimonial-card p {
+    line-height: 1.7;
+  }
   .stars {
     max-width: 60px;
   }
@@ -178,33 +195,44 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 32px;
   }
 
   .footer-logo picture {
-    max-width: 90px;
+    max-width: 200px;
   }
 
   .site-footer .footer-logo p {
-    max-width: 30ch;
+    max-width: 36ch;
   }
 
   .site-map {
     display: flex;
-    flex-direction: row;
-    gap: 120px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
   }
 
-  .site-map h3 {
+  .site-map h2 {
     position: relative;
   }
 
-  .site-map h3::after {
+  .site-map h2::after {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 35px;
     left: 0;
-    width: 100%;
-    border-bottom: 1px solid var(--color-primary-dark);
+    width: 30%;
+    border-bottom: 1px solid var(--color-light-gray);
+  }
+
+  footer {
+  }
+
+  footer .site-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   footer .site-menu ul {
@@ -217,13 +245,13 @@ main {
   }
 
   footer .site-menu ul a:nth-of-type(1) {
-    padding-top: 15px;
+    padding-top: 0px;
   }
 
   .address {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
   .address-content {
@@ -239,7 +267,7 @@ main {
   .contact {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
   footer .site-map picture {
@@ -255,16 +283,38 @@ main {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1000px) {
   .benefits-list {
     flex-direction: row;
     align-items: stretch;
   }
+  .service {
+    flex-direction: row;
+  }
+
+  .service.reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
 }
 
-@media (min-width: 590px) {
+@media (min-width: 900px) {
   .site-footer {
     flex-direction: row;
+  }
+
+  .site-map {
+    width: 700px;
+  }
+}
+
+@media (min-width: 575px) {
+  .site-map {
+    flex-direction: row;
+    gap: 0px;
+  }
+  .site-map h2::after {
+    width: 100%;
   }
 }
 
@@ -304,7 +354,11 @@ main {
   background-repeat: no-repeat;
   z-index: 1;
 
-  padding: 260px 0px 467px 0px;
+  padding: 200px 0px 367px 0px;
+}
+
+.landing h2 {
+  max-width: 53ch;
 }
 
 .service-card picture {
@@ -345,4 +399,77 @@ main {
 
 .service-card-text {
   padding: 20px;
+}
+
+.call-now {
+  position: relative;
+  background-color: var(--color-primary);
+  background-image: url("images/call-now/call-now.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.call-now::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.55;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.button-solid {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.button-solid:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.button-solid-big {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 16px 40px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.button-solid-big:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.call-now .inner-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.call-now .loud-voice + .regular-voice {
+  margin-top: 0px;
+}
+
+.site-menu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
