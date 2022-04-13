@@ -475,7 +475,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .call-now .loud-voice + .regular-voice {
