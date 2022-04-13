@@ -15,6 +15,11 @@
   --color-lighter-gray: #f8f8f8;
 }
 
+:focus {
+  outline: 4px solid rgba(0, 125, 250, 1);
+  outline-offset: 0.45rem;
+}
+
 main {
   overflow-x: hidden;
 }
@@ -487,4 +492,20 @@ main {
 .site-menu a:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+a.skip-to-link {
+  display: inline-block;
+  padding: 10px;
+  background-color: var(--color-primary-light);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
