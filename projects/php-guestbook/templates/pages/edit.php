@@ -17,3 +17,15 @@ $comments = getComments()["items"];
     ?>
   </div>
 </section>
+
+<section class="display-comments">
+  <div class="inner-column">
+    <?php
+    foreach ($comments as $commentId => $comment) {
+      if ($id == $commentId) {
+        include("templates/modules/single-comment.php");
+      }
+    }
+    ?>
+  </div>
+</section>
