@@ -1,7 +1,10 @@
 <?php
 $date = $comment["date"];
 $expireDate = $comment["expireDate"];
+$prettyDate = $comment["prettyDate"];
+
 if (isset($_POST["edit-button"])) {
+
   if (isset($_POST["name"])) {
     $name = trim($_POST["name"]);
   }
@@ -14,7 +17,8 @@ if (isset($_POST["edit-button"])) {
       "name" => $name,
       "comment" => $comment,
       "date" => $date,
-      "expireDate" => $expireDate
+      "expireDate" => $expireDate,
+      "prettyDate" => $prettyDate
     ];
   }
 
