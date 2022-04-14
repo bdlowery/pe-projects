@@ -4,7 +4,7 @@ $time = new DateTimeImmutable();
 $currentTime = $time->format('Y-m-d H:i:s');
 
 //Get access to all of the comments
-$comments = getComments()["items"];
+$comments = array_reverse(getComments()["items"]);
 ?>
 <ol class="comments-list">
   <?php foreach ($comments as $id => $comment) { ?>

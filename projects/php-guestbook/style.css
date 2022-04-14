@@ -122,3 +122,7 @@ footer {
   color: #ffffff;
   background-color: #000000;
 }
+
+.new {
+  border: 2px solid red;
+}

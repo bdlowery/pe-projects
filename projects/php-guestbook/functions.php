@@ -25,6 +25,7 @@ function getComments()
 
 function encodeComments($data)
 {
+
   $json = json_encode($data, JSON_PRETTY_PRINT);
   file_put_contents("comments.json", $json);
 }
@@ -41,8 +42,8 @@ function addComment($comment)
 
   //$comment contains an associative array with name and comment keys.
   //insert them inside of a unique id.
-  $comments["items"][$id] = $comment;
 
+  $comments["items"][$id] = $comment;
   encodeComments($comments);
 }
 
