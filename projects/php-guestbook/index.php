@@ -7,10 +7,11 @@
 <main class="site-content">
   <?php getRoute($route); ?>
 
-  <section class="display-comments">
+  <!-- <section class="display-comments">
     <div class="inner-column">
-      <?php include("./templates/modules/display-comments.php") ?>
+      <?php // include("./templates/modules/display-comments.php") 
+      ?>
     </div>
-  </section>
+  </section> -->
 </main>
 <?php include("footer.php") ?>
