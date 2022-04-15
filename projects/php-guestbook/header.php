@@ -1,6 +1,8 @@
-<body class="site">
+<body class="site" data-theme="old">
   <header class="site-header">
     <div class="inner-column">
+      <button data-change-theme="old">default</button>
+      <button data-change-theme="reddit">reddit</button>
       <div class="masthead">
         <h1 class="loud-voice">P<span class="small">(E)</span>HP Guestbook</h1>
         <nav class="site-menu">
