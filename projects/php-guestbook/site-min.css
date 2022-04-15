@@ -350,83 +350,83 @@ footer {
   border: 2px solid red;
 }
 
-body[data-theme=reddit] {
+body[data-theme=old-reddit] {
   background-image: none;
   background-color: #ffffff;
 }
-body[data-theme=reddit] .site-header {
+body[data-theme=old-reddit] .site-header {
   border-top: none;
   border-bottom: none;
   background-color: #cee3f8;
   border-bottom: 1px solid #5f99cf;
 }
-body[data-theme=reddit] .masthead {
+body[data-theme=old-reddit] .masthead {
   position: relative;
   margin-top: 32px;
 }
-body[data-theme=reddit] .masthead .loud-voice {
+body[data-theme=old-reddit] .masthead .loud-voice {
   position: absolute;
   top: -5px;
   left: 0;
   font-size: 24px;
 }
-body[data-theme=reddit] .masthead .site-menu {
+body[data-theme=old-reddit] .masthead .site-menu {
   flex-direction: row;
   margin: 0;
   padding: 0;
   background-color: transparent;
   margin-left: 220px;
 }
-body[data-theme=reddit] .masthead .site-menu a {
+body[data-theme=old-reddit] .masthead .site-menu a {
   padding: 2px 6px 2px 6px;
   background-color: #eff7ff;
   color: #369;
   font-weight: 700;
 }
-body[data-theme=reddit] .display-comments {
+body[data-theme=old-reddit] .display-comments {
   background-image: none;
 }
-body[data-theme=reddit] .comment {
+body[data-theme=old-reddit] .comment {
   font-size: 14px;
 }
-body[data-theme=reddit] .comment-group {
+body[data-theme=old-reddit] .comment-group {
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   box-shadow: none;
 }
-body[data-theme=reddit] .comment-group:nth-child(even) {
+body[data-theme=old-reddit] .comment-group:nth-child(even) {
   background-color: #f7f7f8;
 }
-body[data-theme=reddit] .comments-list li + li {
+body[data-theme=old-reddit] .comments-list li + li {
   margin-top: 8px;
 }
-body[data-theme=reddit] .comments-list li > ul {
+body[data-theme=old-reddit] .comments-list li > ul {
   margin-top: 5px;
 }
-body[data-theme=reddit] .comment-details .name {
+body[data-theme=old-reddit] .comment-details .name {
   font-family: Verdana;
   font-size: 10px;
   color: #336699;
 }
-body[data-theme=reddit] .comment-details .posted {
+body[data-theme=old-reddit] .comment-details .posted {
   font-family: Verdana;
   font-size: 10px;
 }
-body[data-theme=reddit] .comment-details span + span {
+body[data-theme=old-reddit] .comment-details span + span {
   margin-left: 5px;
 }
-body[data-theme=reddit] .comment-edit .edit-details {
+body[data-theme=old-reddit] .comment-edit .edit-details {
   color: #888888;
   font-weight: 700;
   text-transform: lowercase;
 }
-body[data-theme=reddit] .comment-edit .edit-details span + span {
+body[data-theme=old-reddit] .comment-edit .edit-details span + span {
   margin-left: 8px;
 }
-body[data-theme=reddit] .comment-edit .posted {
+body[data-theme=old-reddit] .comment-edit .posted {
   color: #888;
 }
-body[data-theme=reddit] .edit::before {
+body[data-theme=old-reddit] .edit::before {
   content: "";
   position: relative;
   left: 0;
