@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* temp fix without reset on */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+picture {
+  display: block;
+}
+
+picture img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+mark {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #ffdd33;
+}
+
+.visually-hidden {
+  display: block;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
+  white-space: nowrap;
+  position: absolute;
+}
+
+/* code {
+  font-family: monospace;
+} */
+.inner-column {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/* footer bottom of page */
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/* end footer bottom of page */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.display-comments {
+  padding-top: 30px;
+}
+
+main section:nth-of-type(1) {
+  padding-bottom: 30px;
+}
+
+form .field + .field {
+  margin-top: 24px;
+}
+
+form .field + button {
+  margin-top: 20px;
+}
+
+form label + input,
+form label + textarea {
+  margin-top: 4px;
+}
+
+.comments-list li + li {
+  margin-top: 24px;
+}
+
+.comments-list li > ul {
+  margin-top: 8px;
+}
+
+.comment-details span + span {
+  margin-left: 8px;
+}
+
+.edit-details span + span {
+  margin-left: 12px;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.loud-voice {
+  font-size: clamp(36px, 8vw, 100px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.attention-voice {
+  font-size: clamp(36px, 8vw, 60px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.small {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.quiet-voice {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+body {
+  background-image: url("https://peprojects.dev/alpha-2/images/noise.webp");
+  background-repeat: repeat;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+textarea {
+  width: 95%;
+  max-width: 520px;
+}
+
+input {
+  width: 95%;
+  max-width: 225px;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.site-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: black;
+  color: white;
+  gap: 15px;
+  margin: 10px 0;
+}
+.site-menu a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  border-top: 10px solid #111;
+  border-bottom: 10px solid #111;
+}
+
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+form input,
+form textarea {
+  padding: 8px 12px;
+}
+
+form label {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.comments-list li > * {
+  line-height: 1.1;
+}
+
+.comment {
+  line-height: 1.5;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.posted {
+  color: #828282;
+}
+
+.comment-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.edit-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  color: #828282;
+}
+
+.edit-details span:hover {
+  text-decoration: underline;
+}
+
+.edit {
+  position: relative;
+}
+
+.edit::before {
+  content: "|";
+  position: absolute;
+  left: -8px;
+}
+
+.display-comments {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23252525' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.comment-group {
+  background-color: #ffffff;
+  max-width: 64ch;
+  padding: 12px 16px;
+  border: 1px solid #252525;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.new {
+  border: 2px solid red;
+}
+
+body[data-theme=reddit] {
+  background-image: none;
+  background-color: #ffffff;
+}
+body[data-theme=reddit] .site-header {
+  border-top: none;
+  border-bottom: none;
+  background-color: #cee3f8;
+  border-bottom: 1px solid #5f99cf;
+}
+body[data-theme=reddit] .masthead {
+  position: relative;
+  margin-top: 32px;
+}
+body[data-theme=reddit] .masthead .loud-voice {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 24px;
+}
+body[data-theme=reddit] .masthead .site-menu {
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  margin-left: 220px;
+}
+body[data-theme=reddit] .masthead .site-menu a {
+  padding: 2px 6px 2px 6px;
+  background-color: #eff7ff;
+  color: #369;
+  font-weight: 700;
+}
+body[data-theme=reddit] .display-comments {
+  background-image: none;
+}
+body[data-theme=reddit] .comment {
+  font-size: 14px;
+}
+body[data-theme=reddit] .comment-group {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  box-shadow: none;
+}
+body[data-theme=reddit] .comment-group:nth-child(even) {
+  background-color: #f7f7f8;
+}
+body[data-theme=reddit] .comments-list li + li {
+  margin-top: 8px;
+}
+body[data-theme=reddit] .comments-list li > ul {
+  margin-top: 5px;
+}
+body[data-theme=reddit] .comment-details .name {
+  font-family: Verdana;
+  font-size: 10px;
+  color: #336699;
+}
+body[data-theme=reddit] .comment-details .posted {
+  font-family: Verdana;
+  font-size: 10px;
+}
+body[data-theme=reddit] .comment-details span + span {
+  margin-left: 5px;
+}
+body[data-theme=reddit] .comment-edit .edit-details {
+  color: #888888;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+body[data-theme=reddit] .comment-edit .edit-details span + span {
+  margin-left: 8px;
+}
+body[data-theme=reddit] .comment-edit .posted {
+  color: #888;
+}
+body[data-theme=reddit] .edit::before {
+  content: "";
+  position: relative;
+  left: 0;
+}
