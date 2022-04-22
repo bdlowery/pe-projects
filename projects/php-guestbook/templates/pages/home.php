@@ -1,4 +1,4 @@
-<section>
+<section class="form">
   <div class="inner-column">
     <?php include("./templates/modules/add-comment.php") ?>
   </div>

@@ -5,7 +5,7 @@ $id = $_GET["id"];
 //open the database and retrieve the comments
 $comments = getComments()["items"];
 ?>
-<section>
+<section class="form">
   <div class="inner-column">
     <?php
     //check if the id in the url matches the id in the json
