@@ -1,12 +1,20 @@
 var body = document.querySelector("body");
+var localStorage = window.localStorage;
 
 document.addEventListener("click", function (clickEvent) {
-  if (clickEvent.target.matches("button")) {
-    body.dataset.theme = clickEvent.target.dataset.changeTheme;
-    window.localStorage.setItem("theme", body.dataset.theme);
+  if (clickEvent.target.matches("[data-change-theme]")) {
+    setTheme(clickEvent.target.dataset.changeTheme);
+    console.log(clickEvent.target.dataset.changeTheme);
   }
 });
 
-if (window.localStorage.getItem("theme")) {
-  body.dataset.theme = window.localStorage.getItem("theme");
+function setTheme(themeClicked) {
+  body.dataset.theme = themeClicked;
+  localStorage.setItem("theme", themeClicked);
+}
+
+if (!localStorage.getItem("theme")) {
+  changeTheme("old");
+} else {
+  body.dataset.theme = localStorage.getItem("theme");
 }
