@@ -16,17 +16,4 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="site-min.css" />
-
-  <script>
-    // if (window.localStorage.getItem("theme")) {
-    //   body.dataset.theme = window.localStorage.getItem("theme");
-    // }
-  </script>
-
-
-  <style type="text/css">
-    <?php //redditColors(); 
-    ?><?php //smashingMagAvatars(); 
-                              ?>
-  </style>
 </head>
