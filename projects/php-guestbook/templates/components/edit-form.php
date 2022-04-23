@@ -6,16 +6,16 @@ $prettyDate = $comment["prettyDate"];
 if (isset($_POST["edit-button"])) {
 
   if (isset($_POST["name"])) {
-    $name = trim($_POST["name"]);
+    $newName = trim($_POST["name"]);
   }
   if (isset($_POST["comment"])) {
-    $comment = trim($_POST["comment"]);
+    $newComment = trim($_POST["comment"]);
   }
 
-  if (!empty($name) && !empty($comment)) {
+  if (!empty($name) && !empty($neComment)) {
     $editedComment = [
-      "name" => $name,
-      "comment" => $comment,
+      "name" => $newName,
+      "comment" => $newComment,
       "date" => $date,
       "expireDate" => $expireDate,
       "prettyDate" => $prettyDate
