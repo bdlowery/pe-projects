@@ -1,6 +1,6 @@
 <form method="POST">
   <?php
-  $date = new DateTimeImmutable();
+  $date = new DateTimeImmutable("", new DateTimeZone('America/New_York'));
 
   $expireDate = $date->modify('+5 min');
   ?>
