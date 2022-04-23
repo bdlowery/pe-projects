@@ -81,6 +81,7 @@ form label {
 
 span.comment {
   line-height: 1.5;
+  word-break: break-all;
 }
 
 .name {
@@ -411,6 +412,97 @@ body[data-theme="new-reddit"] {
       }
     }
   }
+
+  .comment-group:nth-of-type(30n + 1)::before {
+    background-color: #d8bfd8;
+  }
+  .comment-group:nth-of-type(30n + 2)::before {
+    background-color: #a0522d;
+  }
+  .comment-group:nth-of-type(30n + 3)::before {
+    background-color: #483d8b;
+  }
+  .comment-group:nth-of-type(30n + 4)::before {
+    background-color: #66cdaa;
+  }
+  .comment-group:nth-of-type(30n + 5)::before {
+    background-color: #deb887;
+  }
+  .comment-group:nth-of-type(30n + 6)::before {
+    background-color: #ffe4e1;
+  }
+  .comment-group:nth-of-type(30n + 7)::before {
+    background-color: #2e8b57;
+  }
+  .comment-group:nth-of-type(30n + 8)::before {
+    background-color: #7b68ee;
+  }
+  .comment-group:nth-of-type(30n + 9)::before {
+    background-color: #90ee90;
+  }
+  .comment-group:nth-of-type(30n + 10)::before {
+    background-color: #228b22;
+  }
+  .comment-group:nth-of-type(30n + 11)::before {
+    background-color: #ff7f50;
+  }
+  .comment-group:nth-of-type(30n + 12)::before {
+    background-color: #ee82ee;
+  }
+  .comment-group:nth-of-type(30n + 13)::before {
+    background-color: #a52a2a;
+  }
+  .comment-group:nth-of-type(30n + 14)::before {
+    background-color: #4b0082;
+  }
+  .comment-group:nth-of-type(30n + 15)::before {
+    background-color: #000000;
+  }
+  .comment-group:nth-of-type(30n + 16)::before {
+    background-color: #afeeee;
+  }
+  .comment-group:nth-of-type(30n + 17)::before {
+    background-color: #d3d3d3;
+  }
+  .comment-group:nth-of-type(30n + 18)::before {
+    background-color: #9370db;
+  }
+  .comment-group:nth-of-type(30n + 19)::before {
+    background-color: #7fffd4;
+  }
+  .comment-group:nth-of-type(30n + 20)::before {
+    background-color: #7cfc00;
+  }
+  .comment-group:nth-of-type(30n + 21)::before {
+    background-color: #40e0d0;
+  }
+  .comment-group:nth-of-type(30n + 22)::before {
+    background-color: #ff6347;
+  }
+  .comment-group:nth-of-type(30n + 23)::before {
+    background-color: #ffe4b5;
+  }
+  .comment-group:nth-of-type(30n + 24)::before {
+    background-color: #20b2aa;
+  }
+  .comment-group:nth-of-type(30n + 25)::before {
+    background-color: #fff0f5;
+  }
+  .comment-group:nth-of-type(30n + 26)::before {
+    background-color: #ff8c00;
+  }
+  .comment-group:nth-of-type(30n + 27)::before {
+    background-color: #800000;
+  }
+  .comment-group:nth-of-type(30n + 28)::before {
+    background-color: #98fb98;
+  }
+  .comment-group:nth-of-type(30n + 29)::before {
+    background-color: #f08080;
+  }
+  .comment-group:nth-of-type(30n + 30)::before {
+    background-color: #ffdab9;
+  }
 }
 
 body[data-theme="smashing-magazine"] {
@@ -586,5 +678,48 @@ body[data-theme="smashing-magazine"] {
 
   .comment + .comment-edit {
     margin-top: 30px;
+  }
+
+  .comment-group:nth-of-type(15n + 1)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-1.png");
+  }
+  .comment-group:nth-of-type(15n + 2)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-2.png");
+  }
+  .comment-group:nth-of-type(15n + 3)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-3.png");
+  }
+  .comment-group:nth-of-type(15n + 4)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-4.png");
+  }
+  .comment-group:nth-of-type(15n + 5)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-5.png");
+  }
+  .comment-group:nth-of-type(15n + 6)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-6.png");
+  }
+  .comment-group:nth-of-type(15n + 7)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-7.png");
+  }
+  .comment-group:nth-of-type(15n + 8)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-8.png");
+  }
+  .comment-group:nth-of-type(15n + 9)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-9.png");
+  }
+  .comment-group:nth-of-type(15n + 10)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-10.png");
+  }
+  .comment-group:nth-of-type(15n + 11)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-11.png");
+  }
+  .comment-group:nth-of-type(15n + 12)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-12.png");
+  }
+  .comment-group:nth-of-type(15n + 13)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-13.png");
+  }
+  .comment-group:nth-of-type(15n + 14)::before {
+    background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-14.png");
   }
 }

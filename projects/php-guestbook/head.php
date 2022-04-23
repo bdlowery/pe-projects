@@ -25,6 +25,8 @@
 
 
   <style type="text/css">
-    <?php redditColors(); ?><?php smashingMagAvatars(); ?>
+    <?php //redditColors(); 
+    ?><?php //smashingMagAvatars(); 
+                              ?>
   </style>
 </head>

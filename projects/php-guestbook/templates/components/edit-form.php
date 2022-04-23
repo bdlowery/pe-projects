@@ -12,7 +12,7 @@ if (isset($_POST["edit-button"])) {
     $newComment = trim($_POST["comment"]);
   }
 
-  if (!empty($name) && !empty($neComment)) {
+  if (!empty($newName) && !empty($newComment)) {
     $editedComment = [
       "name" => $newName,
       "comment" => $newComment,
@@ -23,7 +23,6 @@ if (isset($_POST["edit-button"])) {
   }
 
   editComment($id, $editedComment);
-  header('Location: ?page=edit&id=' . $id);
 }
 ?>
 <form method="POST">

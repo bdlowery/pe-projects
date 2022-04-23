@@ -318,6 +318,7 @@ form label {
 
 span.comment {
   line-height: 1.5;
+  word-break: break-all;
 }
 
 .name {
@@ -588,6 +589,96 @@ body[data-theme=new-reddit] .display-comments .comment-details .posted::before {
   left: -7px;
   top: 0;
 }
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 1)::before {
+  background-color: #d8bfd8;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 2)::before {
+  background-color: #a0522d;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 3)::before {
+  background-color: #483d8b;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 4)::before {
+  background-color: #66cdaa;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 5)::before {
+  background-color: #deb887;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 6)::before {
+  background-color: #ffe4e1;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 7)::before {
+  background-color: #2e8b57;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 8)::before {
+  background-color: #7b68ee;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 9)::before {
+  background-color: #90ee90;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 10)::before {
+  background-color: #228b22;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 11)::before {
+  background-color: #ff7f50;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 12)::before {
+  background-color: #ee82ee;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 13)::before {
+  background-color: #a52a2a;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 14)::before {
+  background-color: #4b0082;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 15)::before {
+  background-color: #000000;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 16)::before {
+  background-color: #afeeee;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 17)::before {
+  background-color: #d3d3d3;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 18)::before {
+  background-color: #9370db;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 19)::before {
+  background-color: #7fffd4;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 20)::before {
+  background-color: #7cfc00;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 21)::before {
+  background-color: #40e0d0;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 22)::before {
+  background-color: #ff6347;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 23)::before {
+  background-color: #ffe4b5;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 24)::before {
+  background-color: #20b2aa;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 25)::before {
+  background-color: #fff0f5;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 26)::before {
+  background-color: #ff8c00;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 27)::before {
+  background-color: #800000;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 28)::before {
+  background-color: #98fb98;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 29)::before {
+  background-color: #f08080;
+}
+body[data-theme=new-reddit] .comment-group:nth-of-type(30n + 30)::before {
+  background-color: #ffdab9;
+}
 
 body[data-theme=smashing-magazine] {
   background-image: none;
@@ -730,4 +821,46 @@ body[data-theme=smashing-magazine] .edit-details .edit::before {
 }
 body[data-theme=smashing-magazine] .comment + .comment-edit {
   margin-top: 30px;
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 1)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-1.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 2)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-2.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 3)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-3.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 4)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-4.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 5)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-5.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 6)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-6.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 7)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-7.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 8)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-8.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 9)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-9.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 10)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-10.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 11)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-11.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 12)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-12.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 13)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-13.png");
+}
+body[data-theme=smashing-magazine] .comment-group:nth-of-type(15n + 14)::before {
+  background-image: url("https://www.smashingmagazine.com/images/userpics/avatarSM-14.png");
 }
