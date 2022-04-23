@@ -213,6 +213,12 @@ form label + textarea {
   src: local(""), url("fonts/ibm-plex-sans-v13-latin-500.woff2") format("woff2"), url("fonts/ibm-plex-sans-v13-latin-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+@font-face {
+  font-family: "Elena";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/ElenaWebBasicRegular.woff2") format("woff2");
+}
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -578,4 +584,147 @@ body[data-theme=new-reddit] .display-comments .comment-details .posted::before {
   position: absolute;
   left: -7px;
   top: 0;
+}
+
+body[data-theme=smashing-magazine] {
+  background-image: none;
+  background-color: #ffffff;
+}
+body[data-theme=smashing-magazine] main {
+  background-color: #ffffff;
+}
+body[data-theme=smashing-magazine] .site-header {
+  background-color: #d33a2c;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+body[data-theme=smashing-magazine] .site-header .masthead {
+  display: block;
+}
+body[data-theme=smashing-magazine] .site-header .masthead .loud-voice {
+  color: #ffffff;
+}
+body[data-theme=smashing-magazine] .site-header .site-menu {
+  flex-direction: row;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 21px;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 0px;
+  margin-top: 0px;
+  transform: translateX(-12px);
+}
+body[data-theme=smashing-magazine] .site-header .site-menu a {
+  padding: 20px 14px;
+}
+body[data-theme=smashing-magazine] .site-header .site-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  text-decoration: none;
+}
+body[data-theme=smashing-magazine] input,
+body[data-theme=smashing-magazine] textarea {
+  font-family: "Elena";
+  font-size: 18px;
+}
+body[data-theme=smashing-magazine] form .field + .field {
+  margin-top: 28px;
+}
+body[data-theme=smashing-magazine] form .field + button {
+  margin-top: 41px;
+}
+body[data-theme=smashing-magazine] .field label {
+  font-size: 18px;
+  font-family: Elena;
+}
+body[data-theme=smashing-magazine] .field textarea,
+body[data-theme=smashing-magazine] .field input {
+  border: 1px solid #d2dfe4;
+  border-radius: 11px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #effaff;
+}
+body[data-theme=smashing-magazine] .field label + input,
+body[data-theme=smashing-magazine] .field label + textarea {
+  margin-top: 14px;
+}
+body[data-theme=smashing-magazine] form button {
+  background-color: #41b14f;
+  background-image: linear-gradient(#9ec14c, #41b14f);
+  box-shadow: 0 4px #2d8f39, 0 0 0 0.5em #fff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  border: transparent;
+  border-radius: 11px;
+  padding: 18px 24px;
+  cursor: pointer;
+}
+body[data-theme=smashing-magazine] form button:hover {
+  background: #41b14f;
+  border-color: #41b14f;
+}
+body[data-theme=smashing-magazine] .display-comments {
+  background-image: none;
+}
+body[data-theme=smashing-magazine] .display-comments .comment-group {
+  background-color: #f0f0f0;
+  position: relative;
+  border: none;
+  box-shadow: none;
+  border-radius: 11px;
+  padding: 25px 25px 25px 105px;
+}
+body[data-theme=smashing-magazine] .display-comments .comment-group::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  background-size: cover;
+  border-radius: 22px;
+  border: 5px solid #d33a2c;
+  width: 73px;
+  height: 73px;
+  transform: translateX(15%) rotateZ(-11deg) scale(0.87);
+}
+body[data-theme=smashing-magazine] .comment-details .posted::before {
+  content: "—";
+  font-family: "Elena";
+  display: inline-block;
+  padding-right: 6px;
+}
+body[data-theme=smashing-magazine] .comment-details .posted {
+  font-family: "Elena";
+  font-size: 18px;
+  color: #666666;
+}
+body[data-theme=smashing-magazine] .comment-details .name {
+  font-size: 21px;
+  font-weight: 700;
+  color: #666666;
+}
+body[data-theme=smashing-magazine] .comment {
+  font-family: "Elena";
+  color: #333333;
+  font-size: 18px;
+}
+body[data-theme=smashing-magazine] .edit-details .edit,
+body[data-theme=smashing-magazine] .edit-details .delete {
+  padding: 15px 20px;
+  background: #ffffff;
+  color: #267dcc;
+  border: 1px solid #dddddd;
+  border-radius: 11px;
+  font-size: 18px;
+  font-weight: 700;
+}
+body[data-theme=smashing-magazine] .edit-details .edit::before {
+  content: "";
+  left: 0;
+}
+body[data-theme=smashing-magazine] .comment + .comment-edit {
+  margin-top: 30px;
 }
