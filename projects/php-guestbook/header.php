@@ -5,6 +5,8 @@
         <button data-change-theme="old">default</button>
         <button data-change-theme="old-reddit">old reddit</button>
         <button data-change-theme="new-reddit">new reddit</button>
+        <button data-change-theme="smashing-magazine">smashing magazine</button>
+
       </div>
       <div class="masthead">
         <h1 class="loud-voice">P<span class="small">(E)</span>HP Guestbook</h1>
