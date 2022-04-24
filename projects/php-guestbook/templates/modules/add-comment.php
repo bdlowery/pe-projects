@@ -7,10 +7,10 @@ $date = "";
 //checks if the form is submitted.
 if (isset($_POST["submit-button"])) {
   if (isset($_POST["name"])) {
-    $name = trim($_POST["name"]);
+    $name = htmlspecialchars(trim($_POST["name"]));
   }
   if (isset($_POST["comment"])) {
-    $comment = trim($_POST["comment"]);
+    $comment = htmlspecialchars(trim($_POST["comment"]));
   }
 
   //Check if the name and comment fields are filled in.

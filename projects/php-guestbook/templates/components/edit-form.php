@@ -6,10 +6,10 @@ $prettyDate = $comment["prettyDate"];
 if (isset($_POST["edit-button"])) {
 
   if (isset($_POST["name"])) {
-    $newName = trim($_POST["name"]);
+    $newName = htmlspecialchars(trim($_POST["name"]));
   }
   if (isset($_POST["comment"])) {
-    $newComment = trim($_POST["comment"]);
+    $newComment = htmlspecialchars(trim($_POST["comment"]));
   }
 
   if (!empty($newName) && !empty($newComment)) {
