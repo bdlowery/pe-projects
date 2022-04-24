@@ -188,7 +188,7 @@ form label + textarea {
   margin-left: 8px;
 }
 
-.edit-details span + span {
+.edit-details a + a {
   margin-left: 12px;
 }
 
@@ -344,7 +344,7 @@ span.comment {
   color: #828282;
 }
 
-.edit-details span:hover {
+.edit-details a:hover {
   text-decoration: underline;
 }
 
@@ -458,7 +458,7 @@ body[data-theme=old-reddit] .comment-edit .edit-details {
   font-weight: 700;
   text-transform: lowercase;
 }
-body[data-theme=old-reddit] .comment-edit .edit-details span + span {
+body[data-theme=old-reddit] .comment-edit .edit-details a + a {
   margin-left: 8px;
 }
 body[data-theme=old-reddit] .comment-edit .posted {

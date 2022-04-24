@@ -108,7 +108,7 @@ span.comment {
   color: #828282;
 }
 
-.edit-details span:hover {
+.edit-details a:hover {
   text-decoration: underline;
 }
 
@@ -243,7 +243,7 @@ body[data-theme="old-reddit"] {
 
       text-transform: lowercase;
 
-      span + span {
+      a + a {
         margin-left: 8px;
       }
     }

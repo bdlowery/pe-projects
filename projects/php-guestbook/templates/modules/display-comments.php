@@ -20,11 +20,12 @@ $comments = array_reverse(getComments()["items"]);
           <?php if ($comment["expireDate"] > $currentTime) { ?>
             <ul class="comment-edit">
               <li class="edit-details">
-                <span class="delete"><a href="?page=delete&id=<?= $id ?>">Delete</a></span>
-                <span class="edit"><a href="?page=edit&id=<?= $id ?>">Edit</a></span>
+                <a href="?page=delete&id=<?= $id ?>" class="delete">Delete</a>
+                <a href="?page=edit&id=<?= $id ?>" class="edit">Edit</a>
               </li>
-            <?php } ?>
             </ul>
+          <?php } ?>
+
         </li>
       </ul>
     </li>
