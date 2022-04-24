@@ -1,8 +1,10 @@
 <form method="POST">
   <?php
-  $date = new DateTimeImmutable("", new DateTimeZone('America/New_York'));
+  $date = new DateTimeImmutable();
 
-  $expireDate = $date->modify('+5 min');
+  $dateWithTimezone = $date->setTimezone(new DateTimeZone('America/New_York'));
+
+  $expireDate = $dateWithTimezone->modify('+5 min');
   ?>
 
   <div class="field">
@@ -13,8 +15,8 @@
   <div class="field">
     <label for="comment">Comment</label>
     <textarea name="comment" rows="8" cols="50"><?= $comment; ?></textarea>
-    <input type="hidden" value="<?= $date->format('Y-m-d H:i:s'); ?>" name="date">
-    <input type="hidden" value="<?= $date->format('F j, Y, g:i a'); ?>" name="pretty-date">
+    <input type="hidden" value="<?= $dateWithTimezone->format('Y-m-d H:i:s'); ?>" name="date">
+    <input type="hidden" value="<?= $dateWithTimezone->format('F j, Y, g:i a'); ?>" name="pretty-date">
     <input type="hidden" value="<?= $expireDate->format('Y-m-d H:i:s'); ?>" name="expire-date">
   </div>
 

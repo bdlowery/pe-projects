@@ -1,7 +1,9 @@
 <?php
 //Store current time so it can be compared with the expiry time in the json.
 $time = new DateTimeImmutable();
-$currentTime = $time->format('Y-m-d H:i:s');
+
+$timezone = $time->setTimezone(new DateTimeZone('America/New_York'));
+$currentTime = $timezone->format('Y-m-d H:i:s');
 
 //Get access to all of the comments
 $comments = array_reverse(getComments()["items"]);
