@@ -32,7 +32,7 @@
           </my-logo>
         </a>
         <picture> 
-          <img src="<?= getFile('images/bdl.svg') ?>" alt="">
+          <img src="images/bdl.svg" alt="">
         </picture>
         <?php include("templates/components/site-menu.php") ?>
       </div>
