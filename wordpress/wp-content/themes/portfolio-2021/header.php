@@ -31,10 +31,9 @@
             </svg>
           </my-logo>
         </a>
-        <picture>
-      
-      <img src="<?= getFile('images/bdl.svg') ?>" alt="">
-    </picture>
+        <picture> 
+          <img src="<?= getFile('images/bdl.svg') ?>" alt="">
+        </picture>
         <?php include("templates/components/site-menu.php") ?>
       </div>
     </div>
