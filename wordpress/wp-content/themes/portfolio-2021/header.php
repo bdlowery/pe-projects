@@ -31,9 +31,6 @@
             </svg>
           </my-logo>
         </a>
-        <picture> 
-          <img src="images/bdl.svg" alt="$todo">
-        </picture>
         <?php include("templates/components/site-menu.php") ?>
       </div>
     </div>
