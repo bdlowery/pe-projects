@@ -314,7 +314,7 @@ section {
   text-align: center;
 }
 .masthead .quiet-voice {
-  font-weight: 300;
+  font-weight: 400;
 }
 .masthead .title-voice {
   font-size: clamp(35px, 1rem + 7vw, 64px);
