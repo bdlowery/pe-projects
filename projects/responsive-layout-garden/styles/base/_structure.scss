@@ -1,0 +1,47 @@
+body {
+	display: flex;
+  min-height: 100vh;
+ 	flex-direction: column;
+}
+
+.page-content {
+	flex: 1;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+.inner-column {
+	max-width: 1200px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+// Base spacing
+
+.text-content {
+
+	h2 + p {
+		margin-top: 40px;
+	}
+
+	p + h2 {
+		margin-top: 40px;
+	}
+
+	p + a {
+		margin-top: 40px;
+	}
+
+}
+
+.masthead {
+	h1 + p {
+		margin-top: 10px;
+	}
+}

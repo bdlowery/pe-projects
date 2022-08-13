@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+picture {
+  display: block;
+}
+
+picture img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+mark {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #ffdd33;
+}
+
+.visually-hidden {
+  display: block;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
+  white-space: nowrap;
+  position: absolute;
+}
+
+code {
+  font-family: monospace;
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/fonts/inter-v12-latin-regular.woff2") format("woff2"), url("/fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/fonts/inter-v12-latin-700.woff2") format("woff2"), url("/fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-900 - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("/fonts/inter-v12-latin-900.woff2") format("woff2"), url("/fonts/inter-v12-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.inner-column {
+  max-width: 1200px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.text-content h2 + p {
+  margin-top: 40px;
+}
+.text-content p + h2 {
+  margin-top: 40px;
+}
+.text-content p + a {
+  margin-top: 40px;
+}
+
+.masthead h1 + p {
+  margin-top: 10px;
+}
+
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --primary-light: hsl(0, 0%, 90%);
+}
+
+.title-voice {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(40px, 1rem + 4vw, 64px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.quiet-voice {
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.regular-voice, p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  max-width: 64ch;
+  line-height: 1.5;
+}
+
+.stern-voice {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.loud-voice {
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.strong-voice {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 25ch;
+}
+
+.shout-voice {
+  font-size: 44px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.masthead .site-menu {
+  margin-top: 30px;
+}
+.masthead .site-menu .item-list {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  max-width: 64ch;
+  line-height: 1.5;
+  display: flex;
+  gap: 10px;
+}
+.masthead .site-menu .item-list .item {
+  padding: 4px 16px;
+}
+.masthead .site-menu .item-list .item:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.module-1 .inner-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.module-1 picture {
+  max-width: 650px;
+}
+
+@media (min-width: 450px) {
+  .module-1 .text-content .regular-voice {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .module-1 .inner-column {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.module-2 {
+  background-color: var(--primary-light);
+}
+
+.site-footer {
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+  font-family: "Inter";
+  box-shadow: 0 1px 20px #000;
+  border-top: 1px solid #8a8a8a;
+}
+
+.masthead {
+  padding: 70px 0;
+  background-color: #000;
+  box-shadow: 0 1px 20px #000;
+  border-bottom: 1px solid #8a8a8a;
+  color: #ffffff;
+}
+.masthead .inner-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.masthead .quiet-voice {
+  font-weight: 300;
+}
+.masthead .title-voice {
+  font-size: clamp(35px, 1rem + 7vw, 64px);
+}
+
+.button {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  max-width: 64ch;
+  line-height: 1.5;
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+
+picture {
+  width: 100%;
+}
+picture img {
+  --percent: 100%;
+  filter: grayscale(100%);
+}

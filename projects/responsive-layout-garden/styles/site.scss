@@ -1,0 +1,43 @@
+
+
+
+// BASE
+@import './base/reset/_meyer-reset';
+@import './base/_setup';
+@import './base/_typography';
+@import './base/_structure';
+
+@import './base/_color';
+@import './base/type-patterns';
+
+// COMPONENTS
+@import './components/_menu-header';
+
+// MODULES
+@import './modules/_module-1';
+@import './modules/_module-2';
+
+
+
+// GLOBAL
+@import './global/_site-footer.scss';
+@import './global/_site-header.scss';
+
+
+
+.button {
+	@include regular-voice();
+	display: inline-block;
+	padding: 8px 16px;
+	color: var(--secondary);
+	background-color: var(--primary);
+}
+
+picture {
+  width: 100%;
+  img {
+    --percent: 100%;
+    // filter: grayscale(var(--percent));
+    filter: grayscale(100%);
+  }
+}

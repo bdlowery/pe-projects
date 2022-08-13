@@ -1,0 +1,24 @@
+@import "styles/meyer-reset.css";
+@import "styles/setup.css";
+@import 'styles/typography.css';
+@import 'styles/structure.css';
+/* Global Landing Page Styles */
+.masthead {
+  padding: 70px 0;
+  background-color: #000;
+  box-shadow: 0 1px 20px #000;
+  border-bottom: 1px solid #8a8a8a;
+  color: #ffffff;
+}
+
+.masthead .inner-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead .quiet-voice {
+  font-weight: 300;
+}
