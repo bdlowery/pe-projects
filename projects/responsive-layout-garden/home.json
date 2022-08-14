@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "title": "Responsive Layout Garden",
+  "slug": "home",
+  "intro": "Or: How I Learned To Stop Worrying And Love The Responsiveness",
+
+  "sections": [
+    {
+      "name": "welcome",
+      "slug": "graphic-diptych",
+      "type": "graphic-diptych",
+      "content": "A good company with a cool product, we can make it happen when it matters most so you can count on us, I promise.",
+      "image": "mirror.jpg"
+    },
+    {
+      "name": "about-me",
+      "type": "module-2",
+      "heading": "Something that will instantly grab your attention",
+      "content": "A good company with a cool product, we can make it happen when it matters most so you can count on us, I promise.",
+      "image": "mirror.jpg"
+    },
+    {
+      "name": "login",
+      "type": "module-3",
+      "heading": "Something that will instantly grab your attention",
+      "content": "A good company with a cool product, we can make it happen when it matters most so you can count on us, I promise.",
+      "image": "mirror.jpg"
+    }
+  ]
+}

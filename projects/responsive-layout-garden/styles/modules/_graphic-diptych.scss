@@ -1,0 +1,27 @@
+graphic-diptych {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  picture {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 450px) {
+  graphic-diptych {
+    .text-content {
+      .regular-voice {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  graphic-diptych {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
