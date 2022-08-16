@@ -14,6 +14,7 @@ foreach($page['sections'] as $section) {
   $id = $section['type'] . '-' . $count;
   $name = $section['name'];
 ?>
+
   <section class="<?=$name?>" id="<?=$id?>">
     <div class="inner-column">
 
@@ -21,6 +22,7 @@ foreach($page['sections'] as $section) {
 
     </div>
   </section>
+  
 <?php $count++ ?>
 
 <?php } ?>

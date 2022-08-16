@@ -7,24 +7,60 @@
   "sections": [
     {
       "name": "welcome",
-      "slug": "graphic-diptych",
       "type": "graphic-diptych",
+      "heading": "Something that will instantly grab your attention",
       "content": "A good company with a cool product, we can make it happen when it matters most so you can count on us, I promise.",
+      "linkText": "Find out More",
+      "link": "#",
       "image": "mirror.jpg"
     },
     {
-      "name": "about-me",
-      "type": "module-2",
-      "heading": "Something that will instantly grab your attention",
-      "content": "A good company with a cool product, we can make it happen when it matters most so you can count on us, I promise.",
-      "image": "mirror.jpg"
+      "name": "strangelove",
+      "type": "profile",
+      "heading": "Dr Strangelove",
+      "subHeading": "@Strangelove • he/him",
+      "content": "Scientific adviser and a U.S. weapons strategist.",
+      "attributes": "‹ Nukes • Crazy • Mad • Scientist • Evil • Destructive ›",
+      "image": "dr-strangelove-color.jpg"
     },
     {
-      "name": "login",
-      "type": "module-3",
-      "heading": "Something that will instantly grab your attention",
+      "name": "features",
+      "type": "graphic-diptych",
+      "heading": "A flipped graphic diptych. Crazy stuff",
       "content": "A good company with a cool product, we can make it happen when it matters most so you can count on us, I promise.",
-      "image": "mirror.jpg"
+      "linkText": "Find out More",
+      "link": "#",
+      "image": "landscape.jpg",
+      "flipped": true
+    },
+    {
+      "name": "movies",
+      "type": "detailed-description",
+      "heading": "Best Movies",
+      "subHeadings": ["Se7en", "The Godfather", "The Shining", "Dr. Strangelove"],
+      "items": [
+        {
+          "image": "seven.jpg",
+          "subHeading": "Se7en",
+          "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives."
+        },
+        {
+          "image": "the-godfather.jpg",
+          "subHeading": "The Godfather",
+          "description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son."
+        },
+        {
+          "image": "the-shining.jpg",
+          "subHeading": "The Shining",
+          "description": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence."
+        },
+        {
+          "image": "dr-strangelove-color.jpg",
+          "subHeading": "Dr. Strangelove",
+          "description": "An insane American general orders a bombing attack on the Soviet Union, triggering a path to nuclear holocaust."
+        }
+      ]
     }
+
   ]
 }

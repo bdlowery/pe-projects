@@ -15,7 +15,8 @@
 
 // MODULES
 @import './modules/_graphic-diptych';
-@import './modules/_module-2';
+@import './modules/_profile';
+@import './modules/_detailed-description';
 
 
 
@@ -36,8 +37,11 @@
 picture {
   width: 100%;
   img {
-    --percent: 100%;
-    // filter: grayscale(var(--percent));
-    filter: grayscale(100%);
+    // --percent: 100%;
+    // filter: #{"grayscale(var(--percent))"};
   }
+}
+
+.strangelove, .movies {
+  background-color: var(--primary-light);
 }

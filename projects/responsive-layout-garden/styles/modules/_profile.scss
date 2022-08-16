@@ -1,0 +1,48 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  picture {
+    max-width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px dashed var(--primary);
+  }
+
+  .profile-text {
+    h2 {
+      @include shout-voice();
+      span {
+        display: block;
+        font-size: 0.6em;
+      }
+    }
+
+    p {
+      @include stern-voice();
+      font-weight: 700;
+
+      small {
+        display: block;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: smaller
+      }
+    }
+  }
+
+  h2 + p {
+    margin-top: 20px;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .profile {
+    flex-direction: row;
+    gap: 80px;
+  }
+}

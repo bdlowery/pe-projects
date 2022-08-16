@@ -1,17 +1,25 @@
 <?php 
-	$heading = $section['heading'] ?? 'Something that will instantly grab your attention';
+	$heading = $section['heading'] ?? 'This is a default heading';
+	$content = $section['content'] ?? 'This is some default content';
+	$link = $section['link'] ?? 'bdlowery.dev';
+	$linkText = $section['linkText'] ?? 'click me';
+	$image = $section['image'] ?? 'color1';
+
+	$flipped = $section['flipped'] ?? false;
+
+
  ?>
 
 
 
-<graphic-diptych>
+<graphic-diptych class="<?php if($flipped) echo "flipped"; ?>">
 	<div class="text-content">
 		<h2 class='title-voice'><?=$heading?></h2>
-		<p class='regular-voice'>A good company with a cool product, we can make it happen when it matters most so you can count on us, I promise.</p>
-		<a href="#" class='button'>Find Out More</a>
+		<p class='regular-voice'><?=$content?></p>
+		<a href="<?=$link?>" class='button'><?=$linkText?></a>
 	</div>
 	
 	<picture>
-		<img src="images/mirror.jpg" alt="">
+		<img src="images/<?=$image?>" alt="">
 	</picture>
 </graphic-diptych>

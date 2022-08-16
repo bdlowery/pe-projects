@@ -273,6 +273,9 @@ graphic-diptych {
 graphic-diptych picture {
   max-width: 650px;
 }
+graphic-diptych.flipped {
+  flex-direction: column-reverse;
+}
 
 @media (min-width: 450px) {
   graphic-diptych .text-content .regular-voice {
@@ -284,11 +287,113 @@ graphic-diptych picture {
     flex-direction: row;
     justify-content: center;
   }
+  graphic-diptych.flipped {
+    flex-direction: row-reverse;
+  }
 }
-.module-2 {
-  background-color: var(--primary-light);
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+.profile picture {
+  max-width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px dashed var(--primary);
+}
+.profile .profile-text h2 {
+  font-size: clamp(39px, 1rem + 7vw, 50px);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.profile .profile-text h2 span {
+  display: block;
+  font-size: 0.6em;
+}
+.profile .profile-text p {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  font-weight: 700;
+}
+.profile .profile-text p small {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: smaller;
+}
+.profile h2 + p {
+  margin-top: 20px;
 }
 
+@media (min-width: 800px) {
+  .profile {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+.detailed-description .items {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 40px;
+}
+.detailed-description h2 + .items {
+  margin-top: 60px;
+}
+.detailed-description .item {
+  display: flex;
+  flex-direction: column;
+}
+.detailed-description .item p, .detailed-description .item h3 {
+  max-width: 30ch;
+}
+.detailed-description .item h3 {
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.detailed-description picture {
+  max-width: 250px;
+}
+.detailed-description picture img {
+  aspect-ratio: 1/1;
+}
+.detailed-description h2 {
+  font-size: clamp(39px, 1rem + 7vw, 50px);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.detailed-description .description {
+  margin-top: 20px;
+}
+.detailed-description .description h3 + p {
+  margin-top: 10px;
+}
+
+@media (min-width: 500px) {
+  .detailed-description .items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 750px) {
+  .detailed-description .items {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1000px) {
+  .detailed-description .items {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 .site-footer {
   background-color: black;
   padding-top: 80px;
@@ -335,7 +440,6 @@ graphic-diptych picture {
 picture {
   width: 100%;
 }
-picture img {
-  --percent: 100%;
-  filter: grayscale(100%);
+.strangelove, .movies {
+  background-color: var(--primary-light);
 }
