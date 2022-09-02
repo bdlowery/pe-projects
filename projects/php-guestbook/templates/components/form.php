@@ -20,5 +20,10 @@
     <input type="hidden" value="<?= $expireDate->format('Y-m-d H:i:s'); ?>" name="expire-date">
   </div>
 
+  <div class="field submit-the-form">
+    <label for="submit-the-form">Do you want to submit the form?</label>
+    <input type="checkbox" name='submit-the-form'>
+  </div>
+
   <button name="submit-button" type="submit">add comment</button>
 </form>

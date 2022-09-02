@@ -143,6 +143,18 @@ footer {
   border: 2px solid red;
 }
 
+
+
+.submit-the-form {
+  position: relative;
+
+  label, input {
+    position: absolute;
+    left: -5000px;
+  }
+}
+
+
 // theme
 
 body[data-theme="old-reddit"] {
